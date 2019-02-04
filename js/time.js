@@ -5,3 +5,4 @@ onload=function(){
 		document.getElementById("time").innerHTML = date.toLocaleString();
 	},1000);
 }
+</script>
