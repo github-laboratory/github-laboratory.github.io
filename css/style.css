@@ -14,7 +14,7 @@ body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
-	background: #fff;	/*背景色*/
+	background: #A7F1FF;	/*背景色*/
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
 ul {list-style-type: none;}
@@ -47,16 +47,12 @@ header {
 	position: relative;
 	text-align: center;	/*内容を中央よせ*/
 }
+
 /*ロゴ画像設定*/
-#logo  img {
-	width: 35%;	/*画像幅*/
-	margin-bottom: 40px;	/*画像の下に空けるスペース*/
-}
-/*トップページのロゴ画像設定*/
-#top #logo img {
+#logo img {
 	position: absolute;
-	left: 31%;	/*headerブロックに対して左から32%の場所に配置*/
-	top: 40%;	/*headerブロックに対して上から40%の場所に配置*/
+	left: 30%;	/*headerブロックに対して左から30%の場所に配置*/
+	top: 10%;	/*headerブロックに対して上から10%の場所に配置*/
 	z-index: 1;
 }
 
@@ -159,7 +155,7 @@ footer .pr {
 	display: block;
 }
 
-/*トップページ内「更新情報・お知らせ」ブロック
+/*トップページ内「更新情報」ブロック
 ---------------------------------------------------------------------------*/
 /*ブロック全体の設定*/
 #new dl {
@@ -238,13 +234,9 @@ body {
 /*ヘッダー（ロゴが入った最上段のブロック）
 ---------------------------------------------------------------------------*/
 /*ロゴ画像設定*/
-#logo  img {
-	width: 90%;	/*画像幅*/
-}
-/*トップページのロゴ画像設定*/
-#top #logo img {
+#logo img {
 	width: 45%;	/*画像幅*/
-	top: 35%;	/*headerブロックに対して上から40%の場所に配置*/
+	top: 10%;	/*headerブロックに対して上から10%の場所に配置*/
 }
 
 /*メニュー
