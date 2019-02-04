@@ -65,6 +65,10 @@ header {
 	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 
+#money {
+	max-width: 50%;
+}
+
 div#time{
 	max-height: 40px;
 	padding: 5px;
