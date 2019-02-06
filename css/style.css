@@ -1293,7 +1293,6 @@ header + header {
 
 
 
-<style type="text/css">
 .svgSample1 text {
   font-weight       : bold;
   font-size         : 50px;
@@ -1312,4 +1311,3 @@ header + header {
 .svgSample1 > svg > use:nth-of-type(2) {
   stroke-width      : 0;
 }
-</style>
