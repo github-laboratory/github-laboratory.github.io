@@ -1288,3 +1288,28 @@ header + header {
 .bg-gray {
   background-color: #f4f7fe;
   color: #444444; }
+
+
+
+
+
+<style type="text/css">
+.svgSample1 text {
+  font-weight       : bold;
+  font-size         : 50px;
+  font-family       : Meiryo UI;
+  stroke            : #003366;
+  fill              : #ffffff;
+  letter-spacing    : 7px;
+  text-anchor       : middle;
+  dominant-baseline : alphabetic;
+}
+.svgSample1 > svg > use:nth-of-type(1) {
+  stroke-width      : 15px;
+  paint-order       : stroke;
+  stroke-linejoin   : round ;
+}
+.svgSample1 > svg > use:nth-of-type(2) {
+  stroke-width      : 0;
+}
+</style>
