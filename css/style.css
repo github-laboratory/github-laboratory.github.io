@@ -1295,16 +1295,16 @@ header + header {
 
 .svgSample1 text {
   font-weight       : bold;
-  font-size         : 50px;
+  font-size         : 10px;
   font-family       : Meiryo UI;
   stroke            : #003366;
   fill              : #ffffff;
-  letter-spacing    : 7px;
+  letter-spacing    : 2px;
   text-anchor       : middle;
   dominant-baseline : alphabetic;
 }
 .svgSample1 > svg > use:nth-of-type(1) {
-  stroke-width      : 15px;
+  stroke-width      : 5px;
   paint-order       : stroke;
   stroke-linejoin   : round ;
 }
