@@ -1295,7 +1295,7 @@ header + header {
 
 .svgSample1 text {
   font-weight       : bold;
-  font-size         : 20px;
+  font-size         : 15px;
   font-family       : Meiryo UI;
   stroke            : #003366;
   fill              : #ffffff;
@@ -1304,7 +1304,7 @@ header + header {
   dominant-baseline : alphabetic;
 }
 .svgSample1 > svg > use:nth-of-type(1) {
-  stroke-width      : 10px;
+  stroke-width      : 5px;
   paint-order       : stroke;
   stroke-linejoin   : round ;
 }
