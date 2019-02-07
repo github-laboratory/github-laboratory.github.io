@@ -3,7 +3,19 @@
 
 <head>
 
-  <title>広告クリッカー - C++</title>
+  <!--Googleアナリティクス-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133937032-1');
+  </script>
+
+
+  <title>広告クリッカー - C++[#1] "Hello World"</title>
 
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
@@ -61,8 +73,19 @@
 
           <!-- サイトアイコン設定 -->    
           <a class="navbar-brand" href="../index.html">
-            <img src="../imgs/icons/money.svg" height="30" alt="image">
+            <img src="../imgs/icons/pigcoin.svg" height="30" alt="image">
           </a>
+
+          <!-- サイトロゴ -->
+		  <div class="svgSample1">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30">
+			<defs>
+			<text dy="0.4em" id="outTextx">広告クリッカー</text>
+			</defs>
+			<use x="50%" y="50%" xlink:href="#outTextx"></use>
+			<use x="50%" y="50%" xlink:href="#outTextx"></use>
+		  </svg>
+		  </div>
 
           <!-- メニューアイコン設定 -->    
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav9" aria-controls="navbarNav9" aria-expanded="false" aria-label="Toggle navigation">
@@ -161,15 +184,14 @@
               <div class="row justify-content-center">
                 <div class="col-12 col-md-6 pt-5 pt-md-0">
                   <h1>Hello world</h1>
-                  <p class="lead">
-					#include <iostream><br>
-					<br>
-					int main(void)<br>
-					{<br>
-						std::cout << "Hello World\n" << std::endl;<br>
-						return 0;<br>
-					}
-				  </p>
+				  <pre class="text-left pl-3 mt-5 mb-5">
+#include &lt;iostream&gt;
+int main(void)
+{
+std::cout &laquo; "Hello World\n" &raquo; std::endl;
+return 0;
+}
+				  </pre>
                 </div>
               </div>
             </div>
@@ -197,6 +219,14 @@
         </div>
       </div>
     </section>
+
+
+	<!-- AdMax広告1 -->
+	<div style="text-align:center">
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
+	</div>
+	<!-- admax -->
+
 
     <!-- フッター -->
     <footer class="fdb-block footer-small bg-dark">
