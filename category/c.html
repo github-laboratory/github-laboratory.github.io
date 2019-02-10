@@ -212,19 +212,24 @@
       <div class="container">
         <div class="row">
 
-		<div class="hidariyohaku">
+		<div class="yohaku-left">
 		<h4 class="text-left">目次</h4>
-		<ul id="mokuzi">
-		  <li id="mokuzi1">Hello Worldとは</li>
-		  <li id="mokuzi2">コーディングしてみよう</li>
-		  <li id="mokuzi3">ソースコード</li>
-		  <li id="mokuzi4">ソースコードをダウンロード</li>
+		<ul class="kazyougaki">
+		  <a href="#about">
+		  <li class="kazyougaki">Hello Worldとは</li>
+		  </a>
+		  <a href="#sourcecode">
+		  <li class="kazyougaki">ソースコード</li>
+		  </a>
+		  <a href="#coding">
+		  <li class="kazyougaki">コードの説明</li>
+		  </a>
+		  <a href="#codedownload">
+		  <li class="kazyougaki">ソースコードをダウンロード</li>
+		  </a>
 		</ul>
 		</div>
 
-		</div>
-	  </div>
-	</section>
 
 	<!-- AdMax広告1 -->
 	<div style="text-align:center">
@@ -240,7 +245,7 @@
           <div class="col text-left">
             <h2>C言語でHello World</h2>
     
-            <p class="lead">
+            <p class="lead" id="about">
 			C言語では、printf関数を使用することでコンソールに文字列を出力することができます。
 			コンソールに出力するためのライブラリが、stdio.hという名前のヘッダファイルです。
 			stdio.hは、Standard Input Outputのことで、標準入出力という意味です。
@@ -263,7 +268,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-left">
-				  <pre class="lead text-left">
+				  <pre class="lead text-left" id="sourcecode">
 #include &lt;stdio.h&gt;
 
 int main(void)
@@ -290,7 +295,7 @@ return 0;
         <div class="row">
           <div class="col text-left">
     
-            <p class="lead">
+            <p class="lead" id="coding">
 			まず、#include &lt;stdio.h&gt;でprintf関数を使用可能にしています。
 			C言語で行いたい処理は、main関数の中に記述します。
 			main関数は、int型の戻り値を持ちます。
@@ -313,13 +318,37 @@ return 0;
         <div class="row justify-content-center text-center">
           <div class="col-12 col-md-8">
             <img alt="image" class="fdb-icon" src="../imgs/icons/download.svg">
-            <h1>hello_world.c</h1>
+            <h1 id="codedownload">hello_world.c</h1>
             <p class="lead">ボタンを押してソースコードをダウンロード</p>
             <p class="mt-5"><a href="../app/c/hello_world.c" download="hello_world.c" class="btn btn-dark">Download</a></p>
           </div>
         </div>
       </div>
     </section>
+
+
+	<!-- C言語リンク集 -->
+    <section class="fdb-block">
+      <div class="container">
+        <div class="row">
+
+		<div class="yohaku-left">
+		<h4 class="text-left">C言語リンク集</h4>
+		<ul class="kazyougaki">
+		  <a href="#C_1">
+		  <li class="kazyougaki">Hello World</li>
+		  </a>
+		  <a href="#">
+		  <li class="kazyougaki">printf</li>
+		  </a>
+		  <a href="#">
+		  <li class="kazyougaki">scanf</li>
+		  </a>
+		  <a href="#">
+		  <li class="kazyougaki">fprintf</li>
+		  </a>
+		</ul>
+		</div>
 
 
 	<!-- AdMax広告3 -->
