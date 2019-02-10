@@ -5073,3 +5073,7 @@ ul#mokuzi li#mokuzi1, li#mokuzi2, li#mokuzi3, li#mokuzi4, ol#mokuzi li#mokuzi1, 
 .breadcrumb li a:hover {
   text-decoration: underline;
 }
+
+.hidariyohaku {
+	padding-left:20;
+}
