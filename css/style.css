@@ -5043,3 +5043,33 @@ ul#mokuzi li#mokuzi1, li#mokuzi2, li#mokuzi3, li#mokuzi4, ol#mokuzi li#mokuzi1, 
   line-height: 1.5; /*文の行高*/
   padding: 0.5em 0; /*前後の文との余白*/
 }
+
+.breadcrumb {
+  padding-left:0;
+  margin-left:0;
+}
+
+.breadcrumb li{
+  display:inline;/*横に並ぶように*/
+  list-style: none;
+  font-weight: bold;/*太字*/
+}
+
+.breadcrumb li:after {/* >を表示*/
+  content: '>';
+  padding: 0 3px;
+  color: #555;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #52b5ee;/*色*/
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
