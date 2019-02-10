@@ -5046,7 +5046,7 @@ ul#mokuzi li#mokuzi1, li#mokuzi2, li#mokuzi3, li#mokuzi4, ol#mokuzi li#mokuzi1, 
 
 .breadcrumb {
   padding-left:0;
-  margin-left:0;
+  margin-left:20;
 }
 
 .breadcrumb li{
