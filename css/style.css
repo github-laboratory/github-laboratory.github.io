@@ -1398,6 +1398,7 @@ address{
 dl,ol,ul{
 	margin-top:0;
 	margin-bottom:1rem}
+
 	
 ol ol,ol ul,ul ol,ul ul{margin-bottom:0}
 	
@@ -5031,3 +5032,14 @@ body{min-width:992px!important}
 .sukima{
 	padding-top:50px;
 	padding-bottom:50px;}
+	
+ul, ol {
+  background: #fcfcfc;/*背景色*/
+  padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
+  border: solid 3px gray;/*線の種類 太さ 色*/
+}
+
+ul li, ol li {
+  line-height: 1.5; /*文の行高*/
+  padding: 0.5em 0; /*前後の文との余白*/
+}
