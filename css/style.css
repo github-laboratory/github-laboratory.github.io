@@ -5033,13 +5033,10 @@ body{min-width:992px!important}
 	padding-top:50px;
 	padding-bottom:50px;}
 	
-ul#mokuzi, ol#mokuzi {
+.kazyougaki {
   background: #fcfcfc;/*背景色*/
   padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
   border: solid 3px gray;/*線の種類 太さ 色*/
-}
-
-ul#mokuzi li#mokuzi1, li#mokuzi2, li#mokuzi3, li#mokuzi4, ol#mokuzi li#mokuzi1, li#mokuzi2, li#mokuzi3, li#mokuzi4 {
   line-height: 1.5; /*文の行高*/
   padding: 0.5em 0; /*前後の文との余白*/
 }
@@ -5074,6 +5071,6 @@ ul#mokuzi li#mokuzi1, li#mokuzi2, li#mokuzi3, li#mokuzi4, ol#mokuzi li#mokuzi1, 
   text-decoration: underline;
 }
 
-.hidariyohaku {
+.yohaku-left {
 	padding-left:20;
 }
