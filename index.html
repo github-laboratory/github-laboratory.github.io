@@ -3,6 +3,7 @@
 
 <head>
 
+
   <!--Googleアナリティクス-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
@@ -14,18 +15,20 @@
     gtag('config', 'UA-133937032-1');
   </script>
 
-  <!-- Font Awesome 読込 -->
+  <!-- Font Awesome SVG 読込 -->
   <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
 
 
   <title>広告クリッカー</title>
 
+
+  <!-- サイト情報 -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <meta name="description" content="Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。">
-  <meta name="keywords" content="プログラミング言語,ソースコード,入門">
-  <meta name="msapplication-TileImage" content=".imgs/icons/pigcoin.svg" />
+  <meta name="keywords" content="プログラミング言語,ソースコード,入門,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity">
+  <meta name="msapplication-TileImage" content=".imgs/pigcoin.svg" />
   <meta name="msapplication-TileColor" content="#000000" />
 
     
@@ -33,39 +36,15 @@
   <link type="text/css" rel="stylesheet" href="./css/style.css">
   
   <!-- ファビコン設定 -->
-  <link rel="icon" href="./imgs/icons/pigcoin.ico" >
+  <link rel="icon" href="./imgs/pigcoin.ico" >
 
-  <style>
-    #navigator {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    #navigator .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-
-    @media (max-width: 720px) {
-      #navigator {
-        border-bottom: 1px solid #ccc;
-      }
-    }
-
-    #navigator a {
-      font-size: 14px;
-    }
-
-    #navigator+section {
-      padding: 250px 0;
-    }
-  </style>
 
 </head>
 
 
 
 <body>
+
 
     <!-- ヘッダー -->
     <header class="bg-dark">
@@ -74,23 +53,24 @@
 		
           <!-- サイトアイコン設定 -->
           <a class="navbar-brand" href="./index.html">
-            <img src="./imgs/icons/pigcoin.svg" height="30" alt="image">
+            <img src="./imgs/pigcoin.svg" height="30" alt="siteicon">
           </a>
 
           <!-- サイトロゴ -->
-		  <div class="svgSample1">
+		  <a href="./index.html">
+		  <div class="logo">
 		  <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30">
 			<defs>
 			<text dy="0.4em" id="outTextx">広告クリッカー</text>
 			</defs>
 			<use x="50%" y="50%" xlink:href="#outTextx"></use>
-			<use x="50%" y="50%" xlink:href="#outTextx"></use>
 		  </svg>
 		  </div>
+		  </a>
 
           <!-- メニューアイコン設定 -->    
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav9" aria-controls="navbarNav9" aria-expanded="false" aria-label="Toggle navigation">
-            <input type="image" alt="image" src="./imgs/icons/setting.svg" width="30" height="30">
+            <input type="image" alt="setting" src="./imgs/icons/setting.svg" width="30" height="30">
           </button>
 
           <!-- メニューバー -->    
@@ -116,6 +96,7 @@
     </header>
 
 
+
   <!-- タイトル画面 -->
   <section class="fdb-block py-0 my-5">
     <div class="container bg-r py-5" style="background-image: url(./imgs/shapes/1.svg);">
@@ -124,8 +105,10 @@
           <h1>広告クリッカー</h1>
           <p>Androidアプリを開発し、広告を組み込む。<br>Webサイトを開設し、広告を貼る。<br>広告収入で儲ける。<br>そんなサイト。</p>
           <p class="mt-4">
-            <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./about.html">このサイトについて</a>
-            <a class="btn btn-primary ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./category/android.html">Android App</a>
+            <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./index.html">ホーム</a>
+            <a class="btn btn-primary ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./about.html">このサイトについて</a>
+            <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./contact.html">連絡先</a>
+            <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./privacy_policy.html">プライバシーポリシー</a>
           </p>
         </div>
       </div>
@@ -133,29 +116,31 @@
   </section>
 
 
+
   <!-- プログラミング言語選択バー -->
   <section class="fdb-block p-2" id="navigator">
     <div class="container-fluid">
 	
       <nav class="navbar navbar-expand-md">
+
         <button class="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav0" aria-controls="navbarNav0" aria-expanded="false" aria-label="Toggle navigation">
           <p>プログラミング言語一覧</p>
-          <input type="image" alt="image" src="./imgs/icons/pigcoin.svg" width="30" height="30">
+          <input type="image" alt="langs" src="./images/pigcoin.svg" width="30" height="30">
         </button>
 		
         <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNav0">
           <p class="m-auto">
-            <a class="btn btn-outline-primary m-1" href="./category/c.html">C</a>
-            <a class="btn btn-outline-primary m-1" href="./category/cpp.html">C++</a>
-            <a class="btn btn-outline-primary m-1" href="./category/cs.html">C#</a>
-            <a class="btn btn-outline-primary m-1" href="./category/java.html">Java</a>
-            <a class="btn btn-outline-primary m-1" href="./category/kotlin.html">Kotlin</a>
-            <a class="btn btn-outline-primary m-1" href="./category/python.html">Python</a>
-            <a class="btn btn-outline-primary m-1" href="./category/perl.html">Perl</a>
-            <a class="btn btn-outline-primary m-1" href="./category/htmlcss.html">HTML&amp;CSS</a>
-            <a class="btn btn-outline-primary m-1" href="./category/javascript.html">JavaScript</a>
-            <a class="btn btn-outline-primary m-1" href="./category/android.html">Android</a>
-            <a class="btn btn-outline-primary m-1" href="./category/unity.html">Unity</a>
+            <a class="btn btn-outline-primary m-1" href="./category/c/c.html">C</a>
+            <a class="btn btn-outline-primary m-1" href="./category/cpp/cpp.html">C++</a>
+            <a class="btn btn-outline-primary m-1" href="./category/cs/cs.html">C#</a>
+            <a class="btn btn-outline-primary m-1" href="./category/java/java.html">Java</a>
+            <a class="btn btn-outline-primary m-1" href="./category/kotlin/kotlin.html">Kotlin</a>
+            <a class="btn btn-outline-primary m-1" href="./category/python/python.html">Python</a>
+            <a class="btn btn-outline-primary m-1" href="./category/perl/perl.html">Perl</a>
+            <a class="btn btn-outline-primary m-1" href="./category/htmlcss/htmlcss.html">HTML&amp;CSS</a>
+            <a class="btn btn-outline-primary m-1" href="./category/javascript/javascript.html">JavaScript</a>
+            <a class="btn btn-outline-primary m-1" href="./category/android/android.html">Android</a>
+            <a class="btn btn-outline-primary m-1" href="./category/unity/unity.html">Unity</a>
           </p>
         </div>
 		
@@ -167,14 +152,15 @@
 
 
     <!-- 更新情報 -->
-		<div class="sukima">
-          <div style="text-align:center">
-            <h1>更新情報</h1>
-          </div>
-		</div>
+	<div class="sukima">
+      <div style="text-align:center">
+        <h1>更新情報</h1>
+      </div>
+	</div>
 
 
-	<!-- AdMax広告1 -->
+
+	<!-- AdMax広告_上 -->
 	<div style="text-align:center">
 		<script src="//adm.shinobi.jp/o/9f5c68d87fa32839c8a5044310e0d277"></script>
 	</div>
@@ -187,7 +173,6 @@
     <section class="fdb-block" id="news">
       <div class="container">
         <div class="row mt-5 align-items-center">
-
 
 
 		  <!-- C言語 -->
@@ -203,7 +188,7 @@ prinf(Hello World);
 ...											
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/c.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/c/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
 
@@ -218,11 +203,11 @@ prinf(Hello World);
               <pre class="text-left pl-3 mt-5 mb-5">
 #include &lt;iostrem&gt;
 int main(void) {
-std::cout &laquo; Hello World &laquo; std::endl;
+std::cout &laquo; "Hello World" &laquo; std::endl;
 ...										
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/cpp.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/cpp/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
 
@@ -241,9 +226,10 @@ class Hello {
 ...										
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/cs.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/cs/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
+		  
 		  		  
         </div>
       </div>
@@ -255,7 +241,6 @@ class Hello {
     <section class="fdb-block">
       <div class="container">
         <div class="row mt-5 align-items-center">
-
 
 
 		  <!-- Java -->
@@ -271,7 +256,7 @@ System.out.println("Hello World");
 ...										
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/java.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/java/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
 
@@ -290,7 +275,7 @@ fun main(args:Array&lt;string&gt;) {
 ...										
              </pre>
     
-              <p class="text-left pt-4"><a href="./category/kotlin.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/kotlin/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
     
@@ -309,9 +294,10 @@ print("Hello World")
 ...										
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/python.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/python/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
+
 		  		  
         </div>
       </div>
@@ -319,7 +305,7 @@ print("Hello World")
 
 
 
-	<!-- AdMax広告2 -->
+	<!-- AdMax広告_中 -->
 	<div style="text-align:center">
 		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
 	</div>
@@ -331,7 +317,6 @@ print("Hello World")
     <section class="fdb-block">
       <div class="container">
         <div class="row mt-5 align-items-center">
-
 
 
 		  <!-- Perl -->
@@ -347,7 +332,7 @@ print "Hello World\n"
 
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/python.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/perl/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
 
@@ -366,7 +351,7 @@ print "Hello World\n"
 ...										
              </pre>
     
-              <p class="text-left pt-4"><a href="./category/htmlcss.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/htmlcss/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
     
@@ -385,10 +370,11 @@ print "Hello World\n"
 ...										
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/python.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/javascript/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
 		  		  
+				  
         </div>
       </div>
     </section>
@@ -399,7 +385,6 @@ print "Hello World\n"
     <section class="fdb-block">
       <div class="container">
         <div class="row mt-5 align-items-center">
-
 
 
 		  <!-- Android -->
@@ -415,7 +400,7 @@ print "Hello World\n"
 ...										
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/android.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/android/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
 	
@@ -434,7 +419,7 @@ public class HelloWorld:MonoBehaviour {
 ...										
               </pre>
     
-              <p class="text-left pt-4"><a href="./category/unity.html" class="btn btn-primary">Read More</a></p>
+              <p class="text-left pt-4"><a href="./category/unity/hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
           </div>
 
@@ -457,7 +442,6 @@ public class HelloWorld:MonoBehaviour {
             </div>
           </div>
 
-
 	
         </div>
       </div>
@@ -465,7 +449,7 @@ public class HelloWorld:MonoBehaviour {
 
 
 
-	<!-- AdMax広告3 -->
+	<!-- AdMax広告_下 -->
 	<div style="text-align:center">
 		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
 	</div>
@@ -495,20 +479,24 @@ public class HelloWorld:MonoBehaviour {
             </ul>
     
             <p class="h5 mt-5">© 2019 広告クリッカー</p>
+
           </div>
         </div>
       </div>
     </footer>
 
 
+
   <div id="playground">
   </div>
 
 
+
   <!--スクリプト読込-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="./js/1.js"></script>
+  <script src="./js/2.js"></script>
+  <script src="./js/3.js"></script>
+
 
 
 </body>
