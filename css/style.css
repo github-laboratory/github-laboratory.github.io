@@ -5080,35 +5080,65 @@ body{min-width:992px!important}
 }
 
 .breadcrumb {
-  padding-left:20;
-  margin-left:0;
+  margin-left: 20px;
+  padding-left: 0;
 }
 
-.breadcrumb li{
-  display:inline;/*横に並ぶように*/
+.breadcrumb li {
+  position: relative;
+  display:inline-block;/*横に並ぶように*/
   list-style: none;
   font-weight: bold;/*太字*/
+  margin-right: 12px;
 }
-
-.breadcrumb li:after {/* >を表示*/
-  content: '>';
-  padding: 0 3px;
-  color: #555;
-}
-
-.breadcrumb li:last-child:after {
-  content: '';
+.breadcrumb li:after {/*三角の部分*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-style: solid;
+  border-color: transparent;
+  border-left-color: #3094ff;/*背景色*/
+  border-width: 14px 12px;
+  width: 0;
+  height: 0;
 }
 
 .breadcrumb li a {
+  display: inline-block;
+  padding: 0 3px 0 7px;
+  height: 28px;
+  line-height: 28px;
   text-decoration: none;
-  color: #52b5ee;/*色*/
+  color: #747772;
+  background: #3094ff;/*背景色*/
+  font-size: 13px;
 }
 
 .breadcrumb li a:hover {
-  text-decoration: underline;
+  color: #FFF;
 }
 
+.code {
+    position: relative;
+    margin: 2em 0;
+    padding: 25px 10px 7px;
+    border: solid 2px #FFC107;
+}
+.code .code-title {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #FFC107;
+    color: #ffffff;
+    font-weight: bold;
+}
 
 
 
