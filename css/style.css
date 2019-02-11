@@ -1,27 +1,37 @@
+@charset "UTF-8";
+
+
+
+/* ナビゲーター */
+#navigator {
+	position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navigator .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 720px) {
     #navigator {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+		border-bottom: 1px solid #ccc;
     }
+}
 
-    #navigator .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
+#navigator a {
+    font-size: 14px;
+}
 
-    @media (max-width: 720px) {
-      #navigator {
-        border-bottom: 1px solid #ccc;
-      }
-    }
+#navigator+section {
+    padding: 250px 0;
+}
 
-    #navigator a {
-      font-size: 14px;
-    }
 
-    #navigator+section {
-      padding: 250px 0;
-    }
 
+
+
+/* デフォルトCSS */
 *,
 *::before,
 *::after {
@@ -5053,17 +5063,18 @@ body{min-width:992px!important}
 .table .thead-dark th{color:inherit;border-color:#dee2e6}
 }
 
-.sukima{
-	padding-top:50px;
-	padding-bottom:50px;}
-	
-ul.kazyougaki, ol.kazyougaki {
+
+
+
+
+/* Webサイトフリー素材 */
+.kazyougaki ul, .kazyougaki ol {
   background: #fcfcfc;/*背景色*/
   padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
   border: solid 3px gray;/*線の種類 太さ 色*/
 }
 
-ul li.kazyougaki, ol li.kazyougaki {
+.kazyougaki ul li, .kazyougaki ol li {
   line-height: 1.5; /*文の行高*/
   padding: 0.5em 0; /*前後の文との余白*/
 }
@@ -5098,6 +5109,35 @@ ul li.kazyougaki, ol li.kazyougaki {
   text-decoration: underline;
 }
 
+
+
+
+
+
+/* ユーザー定義 */
+.sukima{
+	padding-top:50px;
+	padding-bottom:10px;
+}
+
 .yohaku-left {
-	padding-left:20;
+	padding-left:20px;
+	margin-left:20px;
+}
+
+.hukidashi h1 {
+  position: relative;
+  padding: 0.6em;
+  background: #e0edff;
+}
+
+.hukidashi h1:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
 }
