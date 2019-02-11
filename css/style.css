@@ -5182,6 +5182,70 @@ body{min-width:992px!important}
   border-style: solid;
 }
 
+.mokuzi ul {
+  padding: 0;
+}
+
+.mokuzi ul li {
+  position: relative;
+  list-style-type: none!important;/*ポチ消す*/
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  background: #dbebf8;
+  vertical-align: middle;
+  color: #505050;
+  border-radius: 15px 0px 0px 15px;/*左側の角丸く*/
+}
+
+.mokuzi ul li:before{ 
+  display:inline-block; 
+  vertical-align: middle;
+  /*以下白丸つくる*/
+  content:'';
+  width:1em;
+  height: 1em;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.kazyougaki ol {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding:0;
+}
+
+.kazyougaki ol li {
+  position: relative;
+  padding: 0.5em;
+  line-height: 1.5em;
+  background: #f1f8ff;
+  border-left : solid 35px #5c9ee7;
+  margin-bottom: 5px;
+}
+
+.kazyougaki ol li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*数字のデザイン変える*/
+  display:inline-block;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -35px;
+  width: 35px;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+}
+
 
 
 
