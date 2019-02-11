@@ -1,3 +1,27 @@
+    #navigator {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    #navigator .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    @media (max-width: 720px) {
+      #navigator {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+    #navigator a {
+      font-size: 14px;
+    }
+
+    #navigator+section {
+      padding: 250px 0;
+    }
+
 *,
 *::before,
 *::after {
@@ -1290,7 +1314,7 @@ header + header {
   background-color: #f4f7fe;
   color: #444444; }
   
-.svgSample1 text {
+.logo text {
   font-weight       : bold;
   font-size         : 15px;
   font-family       : Meiryo UI;
@@ -1300,12 +1324,12 @@ header + header {
   text-anchor       : middle;
   dominant-baseline : alphabetic;}
   
-.svgSample1 > svg > use:nth-of-type(1) {
+.logo > svg > use:nth-of-type(1) {
   stroke-width      : 5px;
   paint-order       : stroke;
   stroke-linejoin   : round ;}
   
-.svgSample1 > svg > use:nth-of-type(2) {
+.logo > svg > use:nth-of-type(2) {
   stroke-width      : 0;}
 
 :root{
