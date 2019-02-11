@@ -5148,6 +5148,10 @@ body{min-width:992px!important}
   border-bottom: solid 3px #d7d7d7;/*下線*/
 }
 
+.midashi h3 {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
 
 
 
