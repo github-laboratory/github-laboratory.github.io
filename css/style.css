@@ -5269,13 +5269,13 @@ body{min-width:992px!important}
 	margin-left:20px;
 }
 
-.hukidashi h1 {
+.hukidashi h1, .hukidashi h3 {
   position: relative;
   padding: 0.6em;
   background: #e0edff;
 }
 
-.hukidashi h1:after {
+.hukidashi h1:after, .hukidashi h3:after {
   position: absolute;
   content: '';
   top: 100%;
