@@ -3127,7 +3127,9 @@ textarea.form-control{height:auto}.form-group{margin-bottom:1rem}
 
 .accordion .card:last-of-type{border-top-left-radius:0;border-top-right-radius:0}
 
+/*
 .breadcrumb{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:.75rem 1rem;margin-bottom:1rem;list-style:none;background-color:#e9ecef;border-radius:.25rem}
+*/
 
 .breadcrumb-item+.breadcrumb-item{padding-left:.5rem}
 
