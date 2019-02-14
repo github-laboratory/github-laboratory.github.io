@@ -200,21 +200,15 @@
           <div class="col text-left">
 
 		    <div class="midashi">
-            <h2>C言語でHello World</h2>
+            <h2>Hello Worldとは</h2>
 			</div>
-    
+			
             <p class="lead">
 			<br>
-			C言語では、printf関数を使用することでコンソールに文字列を出力することができます。
-			コンソールに出力するためのライブラリが、stdio.hという名前のヘッダファイルです。
-			stdio.hは、Standard Input Outputのことで、標準入出力という意味です。
-			これを#includeすることで、標準の入出力先であるコンソール上に入出力が可能になります。
-			<br>
-			</p>
-			<p class="lead">
-			<br>
-			それでは、printf関数を用いてHello Worldの文字列をコンソールに出力してみましょう。
-			以下のソースコードを見てください。
+			プログラミング言語を学ぶ際、、最初に学ぶのがターミナルにHello Wolrdを表示するプログラムです。
+			最も基本的なプログラムであり、言語の特徴を把握するにはぴったりです。
+			C言語では、printf関数を使用することでターミナルに文字列を出力することができます。
+			ひとまず、ソースコードを見てみましょう。
 			<br>
 			</p>
 
@@ -264,18 +258,42 @@ int main(void)
       <div class="container">
         <div class="row">
           <div class="col text-left">
+
+		    <div class="midashi">
+            <h2>コードの説明</h2>
+			</div>
     
             <p class="lead">
 			<br>
-			まず、#include &lt;stdio.h&gt;でprintf関数を使用可能にしています。
-			C言語で行いたい処理は、main関数の中に記述します。
-			main関数は、int型の戻り値を持ちます。
-			引数のvoidは何もないという意味で、つまりは引数を必要としないということです。
-			printfは()の中を出力します。
-			文字列は""で囲みます。
-			\nは改行を表します。
-			return 0;でプログラムが正常に終了したことを表します。
+			まず、#include &lt;stdio.h&gt;について説明します。
+			#includeの部分は、&lt;&gt;で囲んだファイルをソースコードに追加することを指示します。
+			studio.hは標準入出力と呼ばれるライブラリで、特定のカテゴリの関数をまとめた辞書のようなものです。
+			printf関数は、stdio.hの中に含まれています。
+			stdio.hを#includeすることでprintf関数を使用可能にしているのです。
 			<br>
+			<br>
+			次に、int main(void) {}の部分についてです。
+			C言語では、通常行いたい処理はmain関数の中に記述します。
+			intの部分は、main関数が整数型の戻り値を持つことを表しています。
+			戻り値は、関数が結果的に出力する値のことで、他の関数で受け取って使用します。
+			()の中身は引数と呼ばれ、関数はこれを受け取って処理に使用します。
+			voidは、この関数は引数を必要を必要としませんよ、ということを表します。
+			<br>
+			<br>
+			さて、main関数の中身を見ていきましょう。
+			printf関数は、()の中身を出力します。
+			文字列を出力する場合は""で囲みます。
+			\nは改行を表し、無くてもエラーにはなりませんが、ターミナルにきれいに出力するためには必須です。
+			関数の最後には必ず;を付けなければいけません。
+			<br>
+			<br>
+			returnで、戻り値を設定することができます。
+			return 0;は、main関数の戻り値となり、プログラムが正常に終了したことを伝えます。
+			今回は値を受け取る関数がありませんが、この一文を追加しておく方が無難です。
+			0である必要はなく、1や-1を返すことも可能です。
+			<br>
+			<br>
+			以上をまとめると、このプログラムはstdio.hを使用し、その中に含まれるprintf関数でHello Worldの文字列を出力し、正常終了したことを伝えています。
 			</p>
 
           </div>
@@ -291,9 +309,9 @@ int main(void)
         <div class="row justify-content-center text-center">
           <div class="col-12 col-md-8">
 		  
-            <img alt="image" class="fdb-icon" src="../../../imgs/icons/download.svg">
+            <img alt="download" class="fdb-icon" src="../../../imgs/icons/download.svg">
             
-			<h1 id="codedownload">hello_world.c</h1>
+			<h1>hello_world.c</h1>
             
 			<p class="lead">ソースコードをダウンロード</p>
             <p class="mt-5"><a href="../code/1_hello_world.c" download="hello_world.c" class="btn btn-dark">Download</a></p>
