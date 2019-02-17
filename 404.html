@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <!--Googleアナリティクス-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133937032-1');
+  </script>
+
+
+  <title>プログラミング入門 - 広告クリッカー</title>
+
+
+  <!-- サイト情報 -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！">
+  <meta name="keywords" content="プログラミング言語,入門,ソースコード,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity">
+  <meta name="msapplication-TileImage" content=".imgs/pigcoin.svg" />
+  <meta name="msapplication-TileColor" content="#000000" />
+
+    
+  <!-- スタイルシート読込 -->
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+  
+  <!-- ファビコン設定 -->
+  <link rel="icon" href="./imgs/pigcoin.ico" >
+
+
+</head>
+
+
+
+<body>
+
+
+    <!-- ヘッダー -->
+    <header class="bg-dark">
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+		
+          <!-- サイトアイコン設定 -->
+          <a class="navbar-brand" href="./index.html">
+            <img src="./imgs/pigcoin.svg" height="30" alt="siteicon">
+          </a>
+
+          <!-- サイトロゴ -->
+		  <a href="./index.html">
+		  <div class="logo">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30">
+			<defs>
+			<text dy="0.4em" id="outTextx">広告クリッカー</text>
+			</defs>
+			<use x="50%" y="50%" xlink:href="#outTextx"></use>
+		  </svg>
+		  </div>
+		  </a>
+
+          <!-- メニューアイコン設定 -->    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav9" aria-controls="navbarNav9" aria-expanded="false" aria-label="Toggle navigation">
+            <input type="image" alt="setting" src="./imgs/icons/setting.svg" width="30" height="30">
+          </button>
+
+          <!-- メニューバー -->    
+          <div class="collapse navbar-collapse" id="navbarNav9">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./privacy_policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+		  
+        </nav>
+      </div>
+    </header>
+
+
+
+  <!-- タイトル画面 -->
+  <section class="fdb-block py-0 my-5">
+    <div class="container bg-r py-5" style="background-image: url(./imgs/shapes/1.svg);">
+      <div class="row justify-content-start">
+        <div class="col-12 col-sm-10 col-md-8 text-center text-sm-left">
+          <h1>広告クリッカー</h1>
+          <p>Androidアプリを開発し、広告を組み込む。<br>Webサイトを開設し、広告を貼る。<br>広告収入で儲ける。<br>そんなサイト。</p>
+          <p class="mt-4">
+            <a class="btn btn-primary ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./index.html">ホーム</a>
+            <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./about.html">このサイトについて</a>
+            <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./contact.html">連絡先</a>
+            <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./privacy_policy.html">プライバシーポリシー</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- プログラミング言語選択バー -->
+  <section class="fdb-block p-2" id="navigator">
+    <div class="container-fluid">
+	
+      <nav class="navbar navbar-expand-md">
+
+        <button class="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav0" aria-controls="navbarNav0" aria-expanded="false" aria-label="Toggle navigation">
+          <p>プログラミング言語一覧</p>
+          <input type="image" alt="langs" src="./imgs/pigcoin.svg" width="30" height="30">
+        </button>
+		
+        <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNav0">
+          <p class="m-auto">
+            <a class="btn btn-outline-primary m-1" href="./category/c/c.html">C</a>
+            <a class="btn btn-outline-primary m-1" href="./category/cpp/cpp.html">C++</a>
+            <a class="btn btn-outline-primary m-1" href="./category/cs/cs.html">C#</a>
+            <a class="btn btn-outline-primary m-1" href="./category/java/java.html">Java</a>
+            <a class="btn btn-outline-primary m-1" href="./category/kotlin/kotlin.html">Kotlin</a>
+            <a class="btn btn-outline-primary m-1" href="./category/python/python.html">Python</a>
+            <a class="btn btn-outline-primary m-1" href="./category/perl/perl.html">Perl</a>
+            <a class="btn btn-outline-primary m-1" href="./category/htmlcss/htmlcss.html">HTML&amp;CSS</a>
+            <a class="btn btn-outline-primary m-1" href="./category/javascript/javascript.html">JavaScript</a>
+            <a class="btn btn-outline-primary m-1" href="./category/android/android.html">Android</a>
+            <a class="btn btn-outline-primary m-1" href="./category/unity/unity.html">Unity</a>
+          </p>
+        </div>
+		
+      </nav>
+	  
+    </div>
+  </section>
+
+
+
+	<!-- AdMax広告_上 -->
+	<div style="text-align:center">
+		<script src="//adm.shinobi.jp/o/9f5c68d87fa32839c8a5044310e0d277"></script>
+	</div>
+	<!-- admax -->
+
+
+
+    <!-- 更新情報 -->
+	<div class="hukidashi sukima" style="text-align:center" width="200">
+      <h1>更新情報</h1>
+    </div>
+
+
+
+	<!-- C言語, C++, C# -->
+	
+    <section class="fdb-block">
+      <div class="container">
+        <div class="row mt-5 align-items-center">
+
+
+		  <!-- C言語 -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>C言語 <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+#include &lt;stdio.h&gt;
+int main(void) {
+	printf("Hello World"\n);
+	...											
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/c/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+
+
+
+		  <!-- C++ -->    
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>C++ <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+#include &lt;iostrem&gt;
+int main(void) {
+	std::cout &lt;&lt; "Hello World" &lt;&lt; std::endl;
+	...										
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/cpp/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+
+
+    
+		  <!-- C# -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>C# <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+using System;
+nameplace HelloWorld {
+	class Hello {
+		...										
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/cs/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+		  
+		  		  
+        </div>
+      </div>
+    </section>
+
+
+
+	<!-- Java, Kotlin, Python -->
+    <section class="fdb-block">
+      <div class="container">
+        <div class="row mt-5 align-items-center">
+
+
+		  <!-- Java -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>Java <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+public class HelloWorld {
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		...										
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/java/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+
+
+
+		  <!-- Kotlin -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>Kotlin <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+fun main(args:Array&lt;string&gt;) {
+	println("Hello World")
+}
+...										
+             </pre>
+    
+              <p class="text-left pt-4"><a href="./category/kotlin/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+    
+	
+	
+		  <!-- Python -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>Python <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+print "Hello World"
+...										
+
+
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/python/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+
+		  		  
+        </div>
+      </div>
+    </section>
+
+
+
+	<!-- AdMax広告_中 -->
+	<div style="text-align:center">
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
+	</div>
+	<!-- admax -->
+
+
+
+	<!-- Perl, HTML&ampCSS;, JavaScript -->
+    <section class="fdb-block">
+      <div class="container">
+        <div class="row mt-5 align-items-center">
+
+
+		  <!-- Perl -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>Perl <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+#! /usr/bin/perl
+print "Hello World\n"
+...
+										
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/perl/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+
+
+
+		  <!-- HTML&amp;CSS -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>HTML&amp;CSS <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+...										
+             </pre>
+    
+              <p class="text-left pt-4"><a href="./category/htmlcss/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+    
+	
+	
+		  <!-- JavaScript -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>JavaScript <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+...										
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/javascript/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+		  		  
+				  
+        </div>
+      </div>
+    </section>
+
+
+
+	<!-- Android, Unity -->
+    <section class="fdb-block">
+      <div class="container">
+        <div class="row mt-5 align-items-center">
+
+
+		  <!-- Android -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>Android <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+package com.sample;
+import android.support.v7.app.AppCompactActivity;
+import android.os.Bundle;
+...										
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/android/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+	
+
+
+		  <!-- Unity -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>Unity <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Hello World</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+using UnityEngine;
+using System.Collections;
+public class HelloWorld:MonoBehaviour {
+...										
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./category/unity/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+
+
+
+		  <!-- PC関連情報 -->
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="fdb-box fdb-touch p-5 rounded">
+              <h2>PC関連情報 <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
+              <p class="lead"><em>Linux</em></p>
+    
+              <pre class="text-left pl-3 mt-5 mb-5">
+ChaletOS
+Zorin OS
+elementary OS
+...										
+              </pre>
+    
+              <p class="text-left pt-4"><a href="./pcinfo/1.html" class="btn btn-primary">Read More</a></p>
+            </div>
+          </div>
+
+	
+        </div>
+      </div>
+    </section>
+
+
+
+	<!-- AdMax広告_下 -->
+	<div style="text-align:center">
+		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
+	</div>
+	<!-- admax -->
+
+
+
+    <!-- フッター -->
+    <footer class="fdb-block footer-small bg-dark">
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col">
+		  
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./privacy_policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+    
+            <p class="h5 mt-5">© 2019 広告クリッカー</p>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!--ライブラリ読込-->
+  <script src="./js/jquery.js"></script>
+  <script src="./js/popper.js"></script>
+  <script src="./js/bootstrap.js"></script>
+
+
+
+</body>
+
+</html>
+
+<!-- index.html -->
