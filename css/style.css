@@ -11162,3 +11162,19 @@ a.text-dark:focus,a.text-dark:hover{
   width: 0;
   height: 0;
 }
+
+.error h1 {
+
+  /*文字色*/
+  color: #364e96;
+  
+  /*上下の余白*/
+  padding: 0.5em 0;
+  
+  /*上線*/
+  border-top: solid 3px #364e96;
+  
+  /*下線*/
+  border-bottom: solid 3px #364e96;
+
+}
