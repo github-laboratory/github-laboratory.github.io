@@ -361,7 +361,7 @@ h6, .h6 {
 .lead {
   color: black;
   font-size: 0.2rem;
-  font-weight: 400;
+  /*font-weight: 400;*/
 }
 
 .display-1 {
@@ -11171,7 +11171,7 @@ code {
 .box {
 
     padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 1em 0;
     color: #ffffff;
 
 	/*背景色*/
