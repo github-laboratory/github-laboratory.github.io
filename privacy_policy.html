@@ -24,7 +24,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <meta name="description" content="広告クリッカーのプライバシーポリシー・個人情報保護方針について。当サイトは、サイト訪問者様について知り得た情報に関して、個人情報に適用される関係法令を遵守し、適切にお取り扱い致します。">
-  <meta name="keywords" content="プログラミング言語,ソースコード,入門,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity">
+  <meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
   <meta name="msapplication-TileImage" content=".imgs/pigcoin.svg" />
   <meta name="msapplication-TileColor" content="#000000" />
 
@@ -106,6 +106,7 @@
             <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./about.html">このサイトについて</a>
             <a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./contact.html">連絡先</a>
             <a class="btn btn-primary ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./privacy_policy.html">プライバシーポリシー</a>
+            <a class="btn btn-success ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-0" href="./monologue/monologue.html">TUSの独り言</a>
           </p>
         </div>
       </div>
@@ -137,6 +138,7 @@
             <a class="btn btn-outline-primary m-1" href="./category/javascript/javascript.html">JavaScript</a>
             <a class="btn btn-outline-primary m-1" href="./category/android/android.html">Android</a>
             <a class="btn btn-outline-primary m-1" href="./category/unity/unity.html">Unity</a>
+            <a class="btn btn-outline-primary m-1" href="./category/ue/ue.html">Unreal Engine</a>
           </p>
         </div>
 		
@@ -170,9 +172,8 @@
 				</div>
 					<br>
 					当サイトは第三者の配信する広告サービスを利用しています。
-					広告配信事業者は、ユーザーの興味に応じた広告を表示する為、
-					Cookie（クッキー）を使用することがあります。
-					Cookieを無効にするにはブラウザの設定をご覧ください。<br>
+					広告配信事業者は、ユーザーの興味に応じた広告を表示する為、Cookie（クッキー）を使用することがあります。
+					Cookieを無効にするにはブラウザの設定変更が必要となる場合がございます。<br>
 					<br><br>
 				
 				<div class="midashi">	
@@ -182,16 +183,15 @@
 					当サイトでは、Googleによるアクセス解析ツール「Google Analytics」を利用しています。
 					Google Analyticsはトラフィックデータ収集の為、Cookieを使用しています。
 					当該情報は匿名で収集されており、個人を特定するものではありません。
-					詳細に関しましては、Googleアナリティクス利用規約をご覧ください。<br>
+					詳細に関しましては、<a href="https://www.google.com/intl/ja/analytics/terms/jp.html">Googleアナリティクス利用規約</a>をご覧ください。<br>
 					<br><br>
 				
 				<div class="midashi">
 				<h3>連絡先フォームについて</h3>
 				</div>
 					<br>
-					当サイトは、連絡先フォームへご入力頂いたお名前・メールアドレスなどの個人情報
-					及びメッセージ内容に含まれる個人情報について、個人情報に適用される関係法令
-					を遵守し、適切にお取り扱い致します。<br>
+					当サイトは、連絡先フォームへご入力頂いたお名前・メールアドレスなどの個人情報及びメッセージ内容に含まれる個人情報について、
+					個人情報に適用される関係法令を遵守し、適切にお取り扱い致します。<br>
 					<br><br>
 				
 				
@@ -210,7 +210,7 @@
 					<br>
 					当サイトからリンクやバナーを通じ他サイトに移動された場合、移動先のサイトから提供される情報、サービスについて一切の責任を負いませんのでご了承ください。
 					当サイトのコンテンツにつきましては、可能な限り正確な情報を記載するように努めておりますが、誤った情報や古くなった情報を含んでいる場合がございます。
-					当サイトから得た情報によって生じた如何なる損害に対して一切の責任を負いかねます。
+					また、当サイトから得た情報によって生じた如何なる損害に対して一切の責任を負いかねます。
 					<br><br>
 					
 				</p>
@@ -262,6 +262,12 @@
   <script src="./js/jquery.js"></script>
   <script src="./js/popper.js"></script>
   <script src="./js/bootstrap.js"></script>
+  <script src="./js/prettify.js"></script>
+  <script>
+  jQuery(function($){
+	prettyPrint();
+  });
+  </script>
 
 
 
