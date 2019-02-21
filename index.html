@@ -23,8 +23,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！">
-  <meta name="keywords" content="プログラミング言語,入門,ソースコード,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity">
+  <meta name="description" content="Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！おまけでUnityやUnreal Engineを用いたゲーム開発にも挑戦！">
+  <meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
   <meta name="msapplication-TileImage" content=".imgs/pigcoin.svg" />
   <meta name="msapplication-TileColor" content="#000000" />
 
@@ -178,12 +178,12 @@
               <h2>C言語 <strong class="float-xl-right d-lg-block d-xl-inline">[#1]</strong></h2>
               <p class="lead"><em>Hello World</em></p>
     
-              <pre class="text-left pl-3 mt-5 mb-5">
+              <pre class="prettyprint linenums lang-css lead text-left"><code>
 #include &lt;stdio.h&gt;
 int main(void) {
-	printf("Hello World"\n);
-	...											
-              </pre>
+	printf("Hello World\n");
+	...							
+              <code></pre>
     
               <p class="text-left pt-4"><a href="./category/c/program/1_hello_world.html" class="btn btn-primary">Read More</a></p>
             </div>
@@ -488,6 +488,12 @@ Unityならもっと簡単に作れるはず・・・
   <script src="./js/jquery.js"></script>
   <script src="./js/popper.js"></script>
   <script src="./js/bootstrap.js"></script>
+  <script src="../../../js/prettify.js"></script>
+  <script>
+  jQuery(function($){
+	prettyPrint();
+  });
+  </script>
 
 
 
