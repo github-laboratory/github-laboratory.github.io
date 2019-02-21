@@ -11184,6 +11184,21 @@ code {
 
 }
 
+.box {
+
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #ffffff;
+
+	/*背景色*/
+    background: #2c2c2f;
+
+}
+.box p {
+    margin: 0; 
+    padding: 0;
+}
+
 
 
 
