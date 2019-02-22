@@ -11096,6 +11096,7 @@ code {
   vertical-align: middle;
   text-align: center;
   box-sizing: border-box;
+  z-index:1;
 }
 .ribbon2:before {/*左側のリボン端*/
   content: '';
