@@ -11244,7 +11244,7 @@ code {
   height: 0;
 }
 
-.error h1 {
+.error h1, .error h3 {
 
   /*文字色*/
   color: #364e96;
