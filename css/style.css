@@ -11097,27 +11097,6 @@ code {
   text-align: center;
   box-sizing: border-box;
 }
-.ribbon2:before {/*左側のリボン端*/
-  content: '';
-  position: absolute;
-  width: 10px;
-  bottom: -10px;
-  left: -35px;
-  z-index: -2;
-  border: 20px solid #56adf3;
-  border-left-color: transparent;/*山形に切り抜き*/
-}
-
-.ribbon2:after {/*右側のリボン端*/
-  content: '';
-  position: absolute;
-  width: 10px;
-  bottom: -10px;
-  right: -35px;
-  z-index: -2;
-  border: 20px solid #56adf3;
-  border-right-color: transparent;/*山形に切り抜き*/
-}
 
 .ribbon2 h3 {
   display: inline-block;
@@ -11128,24 +11107,6 @@ code {
   font-size: 18px;
   color: #FFF;
   background: #2196F3;/*真ん中の背景色*/
-}
-.ribbon2 h3:before {
-  position: absolute;
-  content: '';
-  top: 100%;
-  left: 0;
-  border: none;
-  border-bottom: solid 10px transparent;
-  border-right: solid 15px #397eb5;/*左の折り返し部分*/
-}
-.ribbon2 h3:after {
-  position: absolute;
-  content: '';
-  top: 100%;
-  right: 0;
-  border: none;
-  border-bottom: solid 10px transparent;
-  border-left: solid 15px #397eb5;/*右の折り返し部分*/
 }
 
 .mokuzi ul {
