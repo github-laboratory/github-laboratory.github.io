@@ -117,7 +117,7 @@
 		
         <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNav0">
           <p class="m-auto">
-            <a class="btn btn-outline-primary m-1" href="../c.html">C</a>
+            <a class="btn btn-primary m-1" href="../c.html">C</a>
             <a class="btn btn-outline-primary m-1" href="../../cpp/cpp.html">C++</a>
             <a class="btn btn-outline-primary m-1" href="../../cs/cs.html">C#</a>
             <a class="btn btn-outline-primary m-1" href="../../java/java.html">Java</a>
@@ -127,6 +127,7 @@
             <a class="btn btn-outline-primary m-1" href="../../htmlcss/htmlcss.html">HTML&amp;CSS</a>
             <a class="btn btn-outline-primary m-1" href="../../javascript/javascript.html">JavaScript</a>
             <a class="btn btn-outline-primary m-1" href="../../unity/unity.html">Unity</a>
+            <a class="btn btn-outline-primary m-1" href="../../ue/ue.html">Unreal Engine</a>
           </p>
         </div>
 		
@@ -194,7 +195,7 @@
 
 
     <!-- 本文1 -->
-    <section class="fdb-block" id="honbun1">
+    <section class="fdb-block">
       <div class="container">
         <div class="row">
           <div class="col text-left">
@@ -210,12 +211,15 @@
 			<br>
 			"Hello World"という文字列自体に特に意味はありません。
 			<br>
+			<br>
 			別に"こんにちわ"でも、"お腹空いた"でも構わないのですが、何事もまず挨拶をしっかりとしておきましょう、ということです。
 			<br>
 			<br>
 			最も基本的なプログラムであり、言語の特徴を把握するにはぴったりです。
 			<br>
+			<br>
 			C言語では、printf関数を使用することでターミナルに文字列を出力することができます。
+			<br>
 			<br>
 			ターミナルとは、Windowsではコマンドプロンプトに代表される、黒い画面のことです。
 			<br>
@@ -285,12 +289,14 @@ int main(void)
 			について説明します。
 			<br>
 			<br>
-			#includeの部分は、&lt;&gt;で囲んだファイルをソースコードに追加することを指示します。
+			#includeの部分は、&lt;&gt;で囲んだヘッダファイルをソースコードに追加するように指示しています。
 			<br>
-			studio.hは標準入出力と呼ばれるライブラリで、特定のカテゴリの関数をまとめた辞書のようなものです。
+			<br>
+			ヘッダファイル"studio.h"は標準入出力と呼ばれるライブラリで、入出力のカテゴリに属する関数をまとめた辞書のようなものです。
+			<br>
 			<br>
 			printf関数は、stdio.hの中に含まれています。
-			stdio.hを#includeすることでprintf関数を使用可能にしているのです。
+			<br>
 			<br>
 			</p>
 			<p class="lead">
@@ -305,8 +311,13 @@ int main(void)
 			</p>
 			<p class="lead">
 			<br>
+			<br>
 			C言語では、通常行いたい処理はmain関数の中に記述します。
-			intの部分は、main関数が整数型の戻り値を持つことを表しています。
+			<br>
+			<br>
+			intの部分は戻り値と呼ばれ、ここではmain関数が整数型の戻り値を持つことを表しています。
+			<br>
+			<br>
 			戻り値は、関数が結果的に出力する値のことで、他の関数で受け取って使用します。
 			()の中身は引数と呼ばれ、関数はこれを受け取って処理に使用します。
 			voidは、この関数は引数を必要を必要としませんよ、ということを表します。
