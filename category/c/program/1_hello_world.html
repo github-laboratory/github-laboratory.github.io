@@ -35,7 +35,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <meta name="description" content="C言語入門 - ターミナルに'Hello world'を出力する">
+  <meta name="description" content="C言語入門 - コマンドラインに'Hello world'を出力する">
   <meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
   <meta name="msapplication-TileImage" content="../../../imgs/pigcoin.svg" />
   <meta name="msapplication-TileColor" content="#000000" />
@@ -218,10 +218,10 @@
 			最も基本的なプログラムであり、言語の特徴を把握するにはぴったりです。
 			<br>
 			<br>
-			C言語では、printf関数を使用することでターミナルに文字列を出力することができます。
+			C言語では、printf関数を使用することでコマンドラインに文字列を出力することができます。
 			<br>
 			<br>
-			ターミナルとは、Windowsではコマンドプロンプトに代表される、黒い画面のことです。
+			コマンドラインとは、映画などでハッカーがカタカタやっている、あの黒い画面のことです。
 			<br>
 			<br>
 			ひとまず、ソースコード(プログラムの設計図)を見てみましょう。
@@ -319,20 +319,43 @@ int main(void)
 			<br>
 			<br>
 			戻り値は、関数が結果的に出力する値のことで、他の関数で受け取って使用します。
+			<br>
+			<br>
 			()の中身は引数と呼ばれ、関数はこれを受け取って処理に使用します。
+			<br>
+			<br>
 			voidは、この関数は引数を必要を必要としませんよ、ということを表します。
 			<br>
 			<br>
+			</p>
+			
+			<p class="lead">
+			<br>
+			<br>
 			さて、main関数の中身を見ていきましょう。
+			<br>
+			<br>
 			printf関数は、()の中身を出力します。
+			<br>
+			<br>
 			文字列を出力する場合は""で囲みます。
+			<br>
+			<br>
 			\nは改行を表し、無くてもエラーにはなりませんが、ターミナルにきれいに出力するためには必須です。
+			<br>
+			<br>
 			関数の最後には必ず;を付けなければいけません。
 			<br>
 			<br>
 			returnで、戻り値を設定することができます。
+			<br>
+			<br>
 			return 0;は、main関数の戻り値となり、プログラムが正常に終了したことを伝えます。
+			<br>
+			<br>
 			今回は値を受け取る関数がありませんが、この一文を追加しておく方が無難です。
+			<br>
+			<br>
 			0である必要はなく、1や-1を返すことも可能です。
 			<br>
 			<br>
