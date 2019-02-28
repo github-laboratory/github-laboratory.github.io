@@ -529,35 +529,6 @@ $(function() {
 });
 </script>
 
-<script>
-$(function() {
-	var TopBtn = $('#PageTopBtn');
-	var OldPos = 0;
-	TopBtn.hide();
-	
-	$(window).scroll(function() {
-		var CurrentPos = $(this).scrollTop(); //現在の位置を取得
-		
-		//現在の位置が前回の位置より小さい、かつ位置が300より大きい
-		if (CurrentPos < OldPos && $(this).scrollTop() > 300) {
-			TopBtn.slideDown();
-		}
-		else {
-			TopBtn.slideUp();
-		}
-		
-		OldPos = CurrentPos; //現在の位置を前回値として代入
-    });
-    //ボタンを押下するとトップへ移動
-    TopBtn.click(function() {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 300);
-        return false;
-    });
-});
-</script>
-
 
 
 </body>
