@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +26,7 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <meta name="description" content="Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！おまけでUnityやUnreal Engineを用いたゲーム開発にも挑戦！">
   <meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
-  <meta name="msapplication-TileImage" content=".imgs/pigcoin.svg" />
+  <meta name="msapplication-TileImage" content="./imgs/pigcoin.svg" />
   <meta name="msapplication-TileColor" content="#000000" />
 
     
@@ -454,6 +455,10 @@ Unityならもっと簡単に作れるはず・・・いや、まだ難しい・
 
 
 
+	<p id="PageTopBtn"><a href="#wrap">▲Page Top</a></p>
+
+
+
     <!-- フッター -->
     <footer class="fdb-block footer-small bg-dark">
       <div class="container">
@@ -490,10 +495,37 @@ Unityならもっと簡単に作れるはず・・・いや、まだ難しい・
   <script src="./js/bootstrap.js"></script>
   <script src="./js/prettify.js"></script>
   <script>
-  jQuery(function($){
+  $(function($){
 	prettyPrint();
   });
   </script>
+
+$(function() {
+	var TopBtn = $('#PageTopBtn');
+	var OldPos = 0;
+	TopBtn.hide();
+	
+	$(window).scroll(function() {
+		var CurrentPos = $(this).scrollTop(); //現在の位置を取得
+		
+		//現在の位置が前回の位置より小さい、かつ位置が300より大きい
+		if (CurrentPos < OldPos && $(this).scrollTop() > 300) {
+			TopBtn.slideDown();
+		}
+		else {
+			TopBtn.slideUp();
+		}
+		
+		OldPos = CurrentPos; //現在の位置を前回値として代入
+    });
+    //ボタンを押下するとトップへ移動
+    TopBtn.click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
+});
 
 
 
