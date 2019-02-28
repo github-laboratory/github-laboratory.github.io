@@ -1,0 +1,505 @@
+@charset "UTF-8";
+
+
+
+/* ソースコード装飾(prettify) */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+pre.prettyprint { display: block; background-color: #333; }
+pre .nocode { background-color: none; color: #000; }
+pre .str { color: #ffa0a0; } /* string  - pink */
+pre .kwd { color: #f0e68c; font-weight: bold; }
+pre .com { color: #87ceeb; } /* comment - skyblue */
+pre .typ { color: #98fb98; } /* type    - lightgreen */
+pre .lit { color: #cd5c5c; } /* literal - darkred */
+pre .pun { color: #fff; }    /* punctuation */
+pre .pln { color: #fff; }    /* plaintext */
+pre .tag { color: #f0e68c; font-weight: bold; } /* html/xml tag    - lightyellow */
+pre .atn { color: #bdb76b; font-weight: bold; } /* attribute name  - khaki */
+pre .atv { color: #ffa0a0; } /* attribute value - pink */
+pre .dec { color: #98fb98; } /* decimal         - lightgreen */
+
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; } 
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+@media print {
+
+  pre.prettyprint { background-color: none; }
+  pre .str, code .str { color: #060; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #600; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #006; font-weight: bold; }
+  pre .atn, code .atn { color: #404; }
+  pre .atv, code .atv { color: #060; }
+
+}
+
+code {
+	overflow: auto;
+	resize: horizontal;
+}
+
+.code {
+    position: relative;
+    margin: 2em 0;
+    padding: 25px 10px 7px;
+	background: #333;
+}
+
+.code .code-title {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #FFC107;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.box {
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    color: #ffffff;
+    background: #2c2c2f;
+}
+
+.box p {
+    margin: 0; 
+    padding: 0;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ソースコード装飾(prettify) */
+
+
+
+
+
+/* パンくずリスト */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.breadcrumb {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.breadcrumb li {
+  position: relative;
+  display:inline-block;
+  list-style: none;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.breadcrumb li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-style: solid;
+  border-color: transparent;
+  border-left-color: #3094ff;
+  border-width: 14px 12px;
+  width: 0;
+  height: 0;
+}
+
+.breadcrumb li a {
+  display: inline-block;
+  padding: 0 3px 0 7px;
+  height: 28px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #FFF;
+  background: #3094ff;
+  font-size: 13px;
+}
+
+.breadcrumb li a:hover {
+  color: #000;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* パンくずリスト */
+
+
+
+
+
+/* 目次＆箇条書き装飾 */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.mokuzi ul {
+  padding: 0;
+}
+
+.mokuzi ul li {
+  position: relative;
+  list-style-type: none!important;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  background: #dbebf8;
+  vertical-align: middle;
+  color: #505050;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.mokuzi ul li:before{ 
+  display:inline-block; 
+  vertical-align: middle;
+  content:'';
+  width:1em;
+  height: 1em;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.kazyougaki ol {
+  counter-reset:number;
+  list-style-type: none!important;
+  padding:0;
+}
+
+.kazyougaki ol li {
+  position: relative;
+  padding: 0.5em;
+  line-height: 1.5em;
+  background: #f1f8ff;
+  border-left : solid 35px #5c9ee7;
+  margin-bottom: 5px;
+}
+
+.kazyougaki ol li:before{
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  display:inline-block;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -35px;
+  width: 35px;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+}
+
+.kazyougaki ul, .kazyougaki ol {
+  background: #fcfcfc;
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+
+.kazyougaki ul li, .kazyougaki ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 目次＆箇条書き */
+
+
+
+
+
+/* 間隔調整 */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.sukima{
+	padding-top:50px;
+	padding-bottom:10px;
+}
+
+.sukima2{
+	padding-top:20px;
+	padding-bottom:50px;
+}
+
+.sukima3{
+	margin-bottom:20px;
+}
+
+.yohaku-left {
+	padding-left:20px;
+	margin-left:20px;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 間隔調整 */
+
+
+
+
+
+/* 見出し装飾 */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.hukidashi h1, .hukidashi h3 {
+  position: relative;
+  padding: 0.6em;
+  background: #e0edff;
+}
+
+.hukidashi h1:after, .hukidashi h3:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
+}
+
+.midashi h2 {
+  padding: 0.4em 0.5em;
+  color: #494949;
+  background: #f4f4f4;
+  border-left: solid 5px #7db4e6;
+  border-bottom: solid 3px #d7d7d7;
+}
+
+.midashi h3 {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+.ribbon {
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 40px 0 18px;
+  font-size: 18px;
+  background: #ffc668;
+  color: #FFF;
+  box-sizing: border-box;
+}
+
+.ribbon:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.ribbon:after {
+  top: 0;
+  right: 0;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+
+.ribbon2 {
+  display: inline-block;
+  position: relative;
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.ribbon2 h3 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 45px;
+  font-size: 18px;
+  color: #FFF;
+  background: #2196F3;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 見出し装飾 */
+
+
+
+
+
+/* お探しのページが見つかりませんでした */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.error h1 {
+  color: #364e96;
+  padding: 0.5em 0;
+  border-top: solid 3px #364e96;
+  border-bottom: solid 3px #364e96;
+}
+
+.error h3 {
+  color: #364e96;
+  padding: 0.5em 0;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* お探しのページが見つかりませんでした */
+
+
+
+
+
+/* ページの先頭に戻るボタン */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#PageTopBtn {
+    position: fixed; /*ボタンの配置場所を固定*/
+    bottom: -10px; /*下からのボタンの配置場所を指定*/
+    right: 10px; /*右からのボタンの配置場所を指定*/
+}
+
+#PageTopBtn a {
+    display: block; /*配置の調整*/
+    text-decoration: none; /*文字の下線を消す*/
+    color: #fff; /*文字の色*/
+    background: #00bfff; /*ボタンの背景色*/
+    text-align: center; /*文字を中央に配置*/
+    border-radius: 5%; /*ボタンの角を少し丸くする*/
+    outline: none; /*クリックしたときの黒い枠を消す*/
+}
+
+#PageTopBtn a:hover {
+    text-decoration: none; 
+    background: #87cefa; /*マウスオーバー時の背景色*/
+}
+
+/* PC表示 */
+@media (min-width: 768px) {
+
+	#PageTopBtn {
+		font-size: 13px; /*文字のサイズ*/
+	}
+
+	#PageTopBtn a {
+		width: 100px; /*ボタンの幅*/
+		height: 70px; /*ボタンの高さ*/
+		padding: 24px 0; /*文字の配置場所の調整*/
+	}
+}
+
+/* SP表示 */
+@media (max-width: 767px) {
+
+	#PageTopBtn {
+		font-size: 10px;
+	}
+
+	#PageTopBtn a {
+		width: 70px;
+		height: 50px;
+		padding: 17px 0;
+	}
+}
+
+/* メニュー全体 */
+#menu{
+	/*配置*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 100;
+}
+
+/* メニュー開閉ボタン */
+#menu div{
+	/*デザイン*/
+	width: 30px;
+	height: 30px;
+	background: rgba(200,200,200,1);
+	/*配置*/
+	overflow: hidden;
+	position: absolute;
+	right: 50;
+}
+
+#menu .menuopen{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: auto;
+}
+
+#menu .menuclose{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: auto;
+}
+
+/* メニュー一覧 */
+#menu ul{
+	/*デザイン*/
+	background: rgba(200,200,200,1);
+	width: 80%;
+	/*配置*/
+	position: absolute;
+	top: 30px;/*#menu divの高さ*/
+	right: 0;
+	display: none;
+}
+
+#menu li{
+	/*デザイン*/
+	padding: 10px;
+	color: rgba(0,0,0,1);
+	border-bottom: 1px rgba(255,255,255,1) solid;
+	/*配置*/
+	pointer-events: auto;
+}
+
+/* メニューオープン時 */
+#menu:target .menuopen{
+	/*配置*/
+	display: none;
+}
+
+#menu:target .menuclose{
+	/*配置*/
+	display: block;
+}
+
+#menu:target ul{
+	/*配置*/
+	display: block;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ページの先頭に戻るボタン */
+
+
+
+/* -- plus.css --*/
