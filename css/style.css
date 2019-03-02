@@ -1602,7 +1602,7 @@ footer a {
 }
 
 header {
-  positon: fixed;
+  position: fixed;
   height: 70px;
   background-color: #FFFFFF;
 }
