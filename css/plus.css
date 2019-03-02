@@ -555,10 +555,6 @@ code {
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
-#header {
-	position: fixed;
-	z-index: 1;
-}
 
 
 /* -- plus.css --*/
