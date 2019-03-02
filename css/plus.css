@@ -506,6 +506,7 @@ code {
 
 #nav-drawer {
   position: relative;
+  height: 72px;
 }
 
 /*チェックボックス等は非表示に*/
