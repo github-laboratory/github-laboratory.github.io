@@ -513,14 +513,6 @@ code {
   display:none;
 }
 
-/*アイコンのスペース*/
-#nav-open {
-  display: inline-block;
-  width: 30px;
-  height: 22px;
-  vertical-align: middle;
-}
-
 /*閉じる用の薄黒カバー*/
 #nav-close {
   display: none;/*はじめは隠しておく*/
