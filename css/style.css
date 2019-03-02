@@ -1610,6 +1610,10 @@ header {
   background-color: #FFFFFF;
 }
 
+header p {
+  color:#fff
+}
+
 header .navbar-nav a.nav-link {
     color: #777;
 }
