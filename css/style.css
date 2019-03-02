@@ -1680,6 +1680,23 @@ header + header {
        0px -2px 9px #00007f;
 }
 
+h1.logo {
+  display        : inline-block;
+  color          : #ffffff;
+  font-size      : 30px;
+  font-family    : Meiryo UI;
+  letter-spacing : 3.5px;
+  text-shadow    : 
+       2px  2px 9px #00007f,
+      -2px  2px 9px #00007f,
+       2px -2px 9px #00007f,
+      -2px -2px 9px #00007f,
+       2px  0px 9px #00007f,
+       0px  2px 9px #00007f,
+      -2px  0px 9px #00007f,
+       0px -2px 9px #00007f;
+}
+
 :root{
 	--blue:#007bff;
 	--indigo:#6610f2;
