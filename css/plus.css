@@ -531,11 +531,11 @@ code {
 #nav-content {
   overflow: auto;
   position: fixed;
-  top: 100;
-  left: 0;
+  top: 70px;
+  left: 0px;
   z-index: 9999;/*最前面に*/
   width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 250px;/*最大幅（調整してください）*/
+  max-width: 280px;/*最大幅（調整してください）*/
   height: 100%;
   background: #222;/*背景色*/
   transition: .3s ease-in-out;/*滑らかに表示*/
