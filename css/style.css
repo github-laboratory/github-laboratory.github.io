@@ -3552,7 +3552,7 @@ pre code{
 }
 
 .card-img-group{
-	display: inline-block;
+	display: table-cell;
 	width:50%;
 }
 
