@@ -1668,7 +1668,8 @@ header + header {
   display        : inline-block;
   color          : #ffffff;
   font-size      : 20px;
-  letter-spacing : 4px;
+  font-family    : Meiryo UI;
+  letter-spacing : 5px;
   text-shadow    : 
        2px  2px 9px #00007f,
       -2px  2px 9px #00007f,
