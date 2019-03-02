@@ -1663,26 +1663,21 @@ header + header {
   background-color: #f4f7fe;
   color: #444444;
 }
-  
-.logo text {
-  font-weight       : bold;
-  font-size         : 20px;
-  font-family       : Meiryo UI;
-  stroke            : #003366;
-  fill              : #ffffff;
-  letter-spacing    : 2px;
-  text-anchor       : middle;
-  dominant-baseline : alphabetic;
-}
-  
-.logo > svg > use:nth-of-type(1) {
-  stroke-width      : 100px;
-  paint-order       : stroke;
-  stroke-linejoin   : round ;
-}
-  
-.logo > svg > use:nth-of-type(2) {
-  stroke-width      : 0;
+
+.logo {
+  display        : inline-block;
+  color          : #ffffff;
+  font-size      : 35px;
+  letter-spacing : 4px;
+  text-shadow    : 
+       2px  2px 9px #00007f,
+      -2px  2px 9px #00007f,
+       2px -2px 9px #00007f,
+      -2px -2px 9px #00007f,
+       2px  0px 9px #00007f,
+       0px  2px 9px #00007f,
+      -2px  0px 9px #00007f,
+       0px -2px 9px #00007f;
 }
 
 :root{
