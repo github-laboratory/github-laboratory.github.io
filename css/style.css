@@ -3551,9 +3551,9 @@ pre code{
 	border-radius:calc(.25rem - 1px);
 }
 
-.card-img-2{
+.card-img-group{
 	width:50%;
-	border-radius:calc(.25rem - 1px);
+	display: flex;
 }
 
 .card-img-top{
