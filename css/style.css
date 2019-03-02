@@ -3458,6 +3458,10 @@ pre code{
 	border-radius:.25rem;
 }
 
+.card-active {
+	background-color:blue;
+}
+
 .card>hr{
 	margin-right:0;
 	margin-left:0;
