@@ -47,63 +47,58 @@
 
 
     <!-- ヘッダー -->
-    <header class="bg-dark">
-		<div class="container">
-			<div class="row">
+    <header class="container bg-dark">
+		<div class="row">
+			<nav class="navbar">
 
-				<div class="col-3 text-left">
-					<nav class="navbar navbar-expand-md">
-
-					<!-- サイトアイコン設定 -->
-					<a class="navbar-toggler-icon" href="./index.html">
-					<img src="./imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
-					<p>言語一覧</p>
-					</a>
-				</div>
-
-				<div class="col-6 text-center">
-				
-					<!-- サイトロゴ -->
+				<!-- サイトアイコン設定 -->
+				<div class="navber-toggler-icon col-3 text-left">
 					<a href="./index.html">
-					<div class="logo">
-					<svg xmlns="http://www.w3.org/2000/svg" width="150" height="30">
-						<defs>
-							<text dy="0.4em" id="outTextx">広告クリッカー</text>
-						</defs>
-						<use x="50%" y="50%" xlink:href="#outTextx"></use>
-					</svg>
-					</div>
+						<img src="./imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
 					</a>
 				</div>
 
-				<div class="col-3 text-left">
-          <!-- メニューアイコン設定 -->    
-          <button class="navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarNav9" aria-controls="navbarNav9" aria-expanded="false" aria-label="Toggle navigation">
-            <input type="image" alt="setting" src="./imgs/icons/setting.svg" width="30" height="30">
-          </button>
-		  
-		  </div>
+				<!-- サイトロゴ -->
+				<div class="logo col-6 text-center">
+					<a href="./index.html">
+						<svg xmlns="http://www.w3.org/2000/svg" width="150" height="30" alt="sitelogo">
+							<defs>
+								<text dy="0.4em" id="outTextx">広告クリッカー</text>
+							</defs>
+							<use x="50%" y="50%" xlink:href="#outTextx"></use>
+					</a>
+				</div>
 
-          <!-- メニューバー -->    
-          <div class="collapse navbar-collapse" id="navbarNav9">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./privacy_policy.html">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
+				<!-- メニューアイコン設定 -->    
+				<button class="navbar-toggler-icon col-3 text-right" type="button" data-toggle="collapse" data-target="#navSites" aria-controls="navSites" aria-expanded="false" aria-label="Toggle navigation">
+					<img src="./imgs/icons/setting.svg" width="30" height="30" alt="siteselection">
+				</button>
+
+					<!-- メニューバー -->    
+					<div class="collapse navbar-collapse" id="navSites">
+						<ul class="navbar-nav mr-auto">
+
+							<li class="nav-item active">
+								<a class="nav-link" href="./index.html">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="./about.html">About</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="./contact.html">Contact</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="./privacy_policy.html">Privacy Policy</a>
+							</li>
+
+						</ul>
+					</div>
 		  
-        </nav>
-      </div>
+			</nav>
+		</div>
     </header>
 
 
