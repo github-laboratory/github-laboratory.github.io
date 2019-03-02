@@ -3551,11 +3551,6 @@ pre code{
 	border-radius:calc(.25rem - 1px);
 }
 
-.card-img-group{
-	display: table-cell;
-	width:50%;
-}
-
 .card-img-top{
 	width:100%;
 	border-top-left-radius:calc(.25rem - 1px);
