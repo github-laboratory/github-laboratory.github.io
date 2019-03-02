@@ -537,7 +537,7 @@ code {
   z-index: 9999;/*最前面に*/
   width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
   max-width: 280px;/*最大幅（調整してください）*/
-  height: 120%;
+  height: 100%;
   background: #eee;/*背景色*/
   transition: .3s ease-in-out;/*滑らかに表示*/
   -webkit-transform: translateX(-105%);
