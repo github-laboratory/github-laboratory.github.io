@@ -4,7 +4,6 @@
 <head>
 
 
-  <!-- Googleアナリティクス -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
   <script>
@@ -19,24 +18,24 @@
   <title>プログラミング入門 - 広告クリッカー</title>
 
 
-  <!-- サイト情報 -->
+  <!-- Site Information -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！おまけでUnityやUnreal Engineを用いたゲーム開発にも挑戦！">
+  <meta name="description" content="Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！UnityやUnreal Engineを用いたゲーム開発にも挑戦！">
   <meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
-  <meta name="msapplication-TileImage" content="./imgs/pigcoin.svg" />
+  <meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
   <meta name="msapplication-TileColor" content="#000000" />
 
     
-  <!-- スタイルシート読込 -->
-  <link type="text/css" rel="stylesheet" href="./css/style.css">
-  <link type="text/css" rel="stylesheet" href="./css/flex.css">
-  <link type="text/css" rel="stylesheet" href="./css/plus.css">
+  <!-- Load Stylesheets -->
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <link type="text/css" rel="stylesheet" href="/css/flex.css">
+  <link type="text/css" rel="stylesheet" href="/css/plus.css">
 
 
-  <!-- ファビコン設定 -->
-  <link rel="icon" href="./imgs/pigcoin.ico" >
+  <!-- Fabicon -->
+  <link rel="icon" href="/imgs/pigcoin.ico" >
 
 
 </head>
@@ -46,75 +45,73 @@
 <body>
 
 
-    <!-- ヘッダー -->
+    <!-- Header -->
     <header class="bg-dark">
-	
-	<div class="container">
-		<div class="row">
-			<nav class="navbar col-12">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar col-12">
 
-				<!-- サイトアイコン設定 -->
-				<div id="siteicon" class="col-3 text-left">
-					<button type="button" width="30" height="30 data-toggle="collapse" data-target="#navSites" aria-controls="navSites" aria-expanded="false" aria-label="Toggle navigation">
-						<a href="./index.html">
-							<img src="./imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
+					<!-- Site Icon -->
+					<div class="col-3 text-left">
+						<button type="button" width="30" height="30">
+							<a href="/index.html">
+								<img src="/imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
+							</a>
+							<p>Home</p>
+						</button>
+					</div>
+
+					<!-- Site Logo -->
+					<div class="col-6 text-center mb-3">
+						<a href="/index.html">
+							<span class="logo">広告クリッカー</span>
 						</a>
-						<p>Home</p>
-					</button>
-				</div>
+					</div>
 
-				<!-- サイトロゴ -->
-				<div id="sitelogo" class="col-6 text-center mb-3">
-					<a href="./index.html">
-						<span class="logo">広告クリッカー</span>
-					</a>
-				</div>
+					<!-- Menu Icon -->    
+					<div class="col-3 text-right">
+						<button type="button" width="30" height="30" data-toggle="collapse" data-target="#navSites" aria-controls="navSites" aria-expanded="false" aria-label="Toggle navigation">
+							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+							<p>Menu</p>
+						</button>
+					</div>
 
-				<!-- メニューアイコン設定 -->    
-				<div id="setting" class="col-3 text-right">
-					<button type="button" width="30" height="30 data-toggle="collapse" data-target="#navSites" aria-controls="navSites" aria-expanded="false" aria-label="Toggle navigation">
-						<img src="./imgs/icons/setting.svg" width="30" height="30" alt="siteselection">
-						<p>Menu</p>
-					</button>
-				</div>
-
-					<!-- メニューバー -->    
+					<!-- Menu Bar -->    
 					<div class="collapse navbar-collapse" id="navSites">
 						<ul class="navbar-nav mr-auto">
 
 							<li class="nav-item active">
-								<a class="nav-link" href="./index.html">Home</a>
+								<a class="nav-link" href="/index.html">Home</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" href="./about.html">About</a>
+								<a class="nav-link" href="/about.html">About</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" href="./contact.html">Contact</a>
+								<a class="nav-link" href="/contact.html">Contact</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" href="./privacy_policy.html">Privacy Policy</a>
+								<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
 							</li>
 
 						</ul>
 					</div>
 		  
-			</nav>
+				</nav>
+			</div>
 		</div>
-	</div>
-
     </header>
 
 
 
-  <!-- タイトル画面 -->
-  <section class="fdb-block py-2 my-2">
-    <div class="container bg-r py-5" style="background-image: url(./imgs/shapes/1.svg);">
-      <div class="row justify-content-start">
-        <div class="col-12 col-sm-10 text-center text-sm-left">
-          <h1>広告クリッカー</h1>
+  <!-- Title Screen -->
+	<section class="fdb-block py-0 my-2">
+		<div class="container bg-r py-5" style="background-image: url(/imgs/shapes/1.svg);">
+			<div class="row justify-content-start">
+				<div class="col-12 col-sm-10 text-center text-sm-left">
+					<h1>広告クリッカー</h1>
           <p>Androidアプリを開発し、広告を組み込む。<br>Webサイトを開設し、広告を貼る。<br>広告収入で儲ける。<br>そんなサイト。</p>
           <p class="mt-4">
             <a class="btn btn-primary ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-1" href="./index.html">ホーム</a>
