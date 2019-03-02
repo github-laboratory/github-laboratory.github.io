@@ -47,7 +47,8 @@
 
 
     <!-- ヘッダー -->
-    <header class="container bg-dark">
+    <header class="bg-dark">
+	<div class="container">
 		<div class="row">
 			<nav class="navbar col-12">
 
@@ -70,9 +71,11 @@
 				</div>
 
 				<!-- メニューアイコン設定 -->    
-				<button class="navbar-toggler-icon col-3 text-right" type="button" data-toggle="collapse" data-target="#navSites" aria-controls="navSites" aria-expanded="false" aria-label="Toggle navigation">
-					<img src="./imgs/icons/setting.svg" width="30" height="30" alt="siteselection">
-				</button>
+				<div class="navbar-toggler-icon col-3 text-right">
+					<button type="button" data-toggle="collapse" data-target="#navSites" aria-controls="navSites" aria-expanded="false" aria-label="Toggle navigation">
+						<img src="./imgs/icons/setting.svg" width="30" height="30" alt="siteselection">
+					</button>
+				</div>
 
 					<!-- メニューバー -->    
 					<div class="collapse navbar-collapse" id="navSites">
