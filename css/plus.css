@@ -555,6 +555,9 @@ code {
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
+.ver-middle {
+	vertical-align: middle;
+}
 
 
 /* -- plus.css --*/
