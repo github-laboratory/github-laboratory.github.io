@@ -1636,7 +1636,7 @@ header.bg-dark .navbar-nav a.nav-link:hover {
 }
 
 header.bg-dark .navbar-nav .active a.nav-link {
-    color: #FFFFFF;
+    color: blue;
 }
 
 header.bg-dark .navbar-toggler-icon {
