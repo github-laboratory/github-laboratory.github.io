@@ -1667,7 +1667,7 @@ header + header {
 .logo {
   display        : inline-block;
   color          : #ffffff;
-  font-size      : 30px;
+  font-size      : 20px;
   letter-spacing : 4px;
   text-shadow    : 
        2px  2px 9px #00007f,
