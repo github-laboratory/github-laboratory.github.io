@@ -1676,7 +1676,7 @@ header + header {
 }
   
 .logo > svg > use:nth-of-type(1) {
-  stroke-width      : 10px;
+  stroke-width      : 100px;
   paint-order       : stroke;
   stroke-linejoin   : round ;
 }
