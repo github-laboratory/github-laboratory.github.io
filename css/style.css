@@ -1632,11 +1632,11 @@ header.bg-dark .navbar-nav a.nav-link {
 }
 
 header.bg-dark .navbar-nav a.nav-link:hover {
-    color: #329ef7;
+    color: #727272;
 }
 
 header.bg-dark .navbar-nav .active a.nav-link {
-    color: blue;
+    color: #FFFFFF;
 }
 
 header.bg-dark .navbar-toggler-icon {
