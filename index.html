@@ -69,34 +69,37 @@
 					</div>
 
 					<!-- Menu Icon -->    
-					<div class="col-3 text-right">
-						<button type="button" width="30" height="30" data-toggle="collapse" data-target="#navSites" aria-controls="#navSites" aria-expanded="false" aria-label="Toggle navigation">
-							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
-							<p>Menu</p>
-						</button>
-					</div>
+					<div class="col-3 text-right" id="nav-drawer">
 
-					<!-- Menu Bar -->    
-					<div class="collapse navbar-collapse" id="navSites">
-						<ul class="navbar-nav mr-auto">
+						<input class="nav-unshown" id="nav-input" type="checkbox" width="30" height="30">
+						<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+						<p>Menu</p>
 
-							<li class="nav-item active">
-								<a class="nav-link" href="/index.html">Home</a>
-							</li>
+						<label id="nav-open" for="nav-input"></label>
+						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 
-							<li class="nav-item">
-								<a class="nav-link" href="/about.html">About</a>
-							</li>
+						<div id="nav-content">
+							<ul class="navbar-nav mr-auto">
 
-							<li class="nav-item">
-								<a class="nav-link" href="/contact.html">Contact</a>
-							</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="/index.html">Home</a>
+								</li>
 
-							<li class="nav-item">
-								<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
-							</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/about.html">About</a>
+								</li>
 
-						</ul>
+								<li class="nav-item">
+									<a class="nav-link" href="/contact.html">Contact</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+								</li>
+
+							</ul>
+						</div>
+
 					</div>
 		  
 				</nav>
