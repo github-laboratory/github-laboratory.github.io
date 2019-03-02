@@ -3552,8 +3552,8 @@ pre code{
 }
 
 .card-img-group{
+	display: inline-block;
 	width:50%;
-	display: flex;
 }
 
 .card-img-top{
