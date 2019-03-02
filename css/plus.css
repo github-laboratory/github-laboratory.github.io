@@ -489,5 +489,18 @@ code {
 /* ページの先頭に戻るボタン */
 
 
+.anime {
+	animation-name : titleAnime;
+	animation-duration : 5s;
+	animation-timing-function: ease-in-out;
+	animation-delay : 0s;
+	animation-iteration-count: infinite;
+	animation-direction : alternate;
+}
+
+@keyframes titleAnime {
+100% {transform :
+            rotateY(360deg);}
+}
 
 /* -- plus.css --*/
