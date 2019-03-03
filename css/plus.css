@@ -241,21 +241,24 @@ code {
 
 /* 見出し装飾 */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.hukidashi h1, .hukidashi h3 {
-  position: relative;
-  padding: 0.6em;
-  background: #e0edff;
+.caption h2 {
+     position: relative;
+     color: white;
+     padding:0.5em 0.5em 0.5em 2em;
+     background-color: #446689;
+     border-radius:1.5em;
 }
-
-.hukidashi h1:after, .hukidashi h3:after {
-  position: absolute;
-  content: '';
-  top: 100%;
-  left: 30px;
-  border: 15px solid transparent;
-  border-top: 15px solid #e0edff;
-  width: 0;
-  height: 0;
+ 
+.caption h2::after {
+     position: absolute;
+     top: 50%;
+     left:1em;
+     transform:translateY(-50%);
+     content: '';
+     width: 13px;
+     height:13px;
+     background-color: white;
+     border-radius:100%;
 }
 
 .midashi h2 {
