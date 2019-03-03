@@ -649,20 +649,6 @@ ul.bxslider {
   padding: 10px;
 }
 
-.left{
-    width: 100px;
-}
-
-.left > img{
-    height: 100px;
-    width: 100px;
-}
-
-.right{
-    font-size: 0.75rem;
-    overflow: scroll;
-}    
-
 
 
 /* -- plus.css --*/
