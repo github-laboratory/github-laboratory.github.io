@@ -1581,7 +1581,6 @@ footer a {
 header {
   height: 70px;
   background-color: #FFFFFF;
-  z-index:100;
 }
 
 header p {
