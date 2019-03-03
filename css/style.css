@@ -3543,13 +3543,13 @@ pre code{
 
 .card-img-overlay{
 	position:absolute;
-	top:100;
+	top:150;
 	right:0;
 	bottom:0;
 	left:0;
 	padding:1.25rem;
-	background-color:black;
-	opacity:0.5;
+	background-color:#3f3f3f;
+	opacity:0.8;
 }
 
 .card-img{
