@@ -27,31 +27,11 @@
   <meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
   <meta name="msapplication-TileColor" content="#000000" />
 
-    
+
   <!-- Load Stylesheets -->
   <link type="text/css" rel="stylesheet" href="/css/style.css">
   <link type="text/css" rel="stylesheet" href="/css/flex.css">
   <link type="text/css" rel="stylesheet" href="/css/plus.css">
-
-  <!--ライブラリ読込-->
-  <script src="./js/jquery.js"></script>
-  <script src="./js/popper.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/prettify.js"></script>
-  <script>
-  $(function($){
-	prettyPrint();
-  });
-  </script>
-	<script src="/js/slider.js"></script>
-	<script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                auto: true,
-                pause: 5000,
-            });
-        });
-</script>
 
 
   <!-- Fabicon -->
@@ -247,25 +227,25 @@
 
 
 
-	<!-- AdMax_Top -->
+	<!-- AdMax Top -->
 	<div class="text-center">
 		<script src="//adm.shinobi.jp/o/9f5c68d87fa32839c8a5044310e0d277"></script>
 	</div>
 
 
 
-    <!-- News -->
+	<!-- News -->
 	<div class="text-center" width="200">
 		<h1>更新情報</h1>
-    </div>
+	</div>
 
 
 
-<div class="slider">
-<img src="/imgs/langs/c.svg" width="500" height="500" alt="">
-<img src="/imgs/langs/cpp.svg" width="500" height="500" alt="">
-<img src="/imgs/langs/cs.svg" width="500" height="500" alt="">
-</div>
+	<div class="slider">
+		<img src="/imgs/langs/c.svg" width="200" height="200" alt="">
+		<img src="/imgs/langs/cpp.svg" width="200" height="200" alt="">
+		<img src="/imgs/langs/cs.svg" width="200" height="200" alt="">
+	</div>
 
 
 
@@ -550,50 +530,78 @@ Unityならもっと簡単に作れるはず・・・いや、まだ難しい・
 
 
 
-	<!-- AdMax広告_下 -->
-	<div style="text-align:center">
+	<!-- AdMax Bottom -->
+	<div class="text-center">
 		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
 	</div>
-	<!-- admax -->
 
 
 
-	<p id="PageTopBtn"><a href="#wrap">▲Page Top</a></p>
+	<!-- Footer -->
+	<footer class="fdb-block footer-small bg-dark">
+		<div class="container">
+			<div class="row text-center align-items-center">
+				<div class="col-12">
 
+					<ul class="nav justify-content-center">
 
+						<li class="nav-item active">
+							<a class="nav-link" href="/index.html">Home</a>
+						</li>
 
-    <!-- フッター -->
-    <footer class="fdb-block footer-small bg-dark">
-      <div class="container">
-        <div class="row text-center align-items-center">
-          <div class="col">
-		  
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./privacy_policy.html">Privacy Policy</a>
-              </li>
-            </ul>
+						<li class="nav-item">
+							<a class="nav-link" href="/about.html">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/contact.html">Contact</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+						</li>
+
+					</ul>
     
-            <p class="h5 mt-5">© 2019 広告クリッカー</p>
+					<p class="h5 mt-5">© 2019 広告クリッカー</p>
 
-          </div>
-        </div>
-      </div>
-    </footer>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Paga Top Button -->
+	<p id="PageTopBtn"><a href="#wrap">▲ Page Top</a></p>
+
+
+
+	<!--Load Script-->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/popper.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/js/prettify.js"></script>
+		<script type="text/javascript">
+		$(function($){
+			prettyPrint();
+		});
+		</script>
+	<script type="text/javascript" src="/js/slider.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 5000,
+			});
+		});
+		</script>
 
 
 
 </body>
 
 </html>
+
 
 <!-- index.html -->
