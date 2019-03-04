@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
 
 
-  <!--Googleアナリティクス-->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-    gtag('config', 'UA-133937032-1');
-  </script>
-
-
-  <title>プログラミング入門 - 広告クリッカー</title>
+	gtag('config', 'UA-133937032-1');
+	</script>
 
 
-  <!-- サイト情報 -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！おまけでUnityやUnreal Engineを用いたゲーム開発にも挑戦！">
-  <meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
-  <meta name="msapplication-TileImage" content="./imgs/pigcoin.svg" />
-  <meta name="msapplication-TileColor" content="#000000" />
+	<title>用語集 - 広告クリッカー</title>
+
+
+	<!-- Site Information -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="description" content="プログラミングに関する用語をまとめました。Androidアプリを開発し、広告を組み込む。Webサイトを開設し、広告を貼る。広告収入で儲ける。そんなサイト。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！">
+	<meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
+	<meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
+	<meta name="msapplication-TileColor" content="#000000" />
 
     
-  <!-- スタイルシート読込 -->
-  <link type="text/css" rel="stylesheet" href="./css/style.css">
-  
-  <!-- ファビコン設定 -->
-  <link rel="icon" href="./imgs/pigcoin.ico" >
+	<!-- Load Stylesheets -->
+	<link type="text/css" rel="stylesheet" href="/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/css/flex.css">
+	<link type="text/css" rel="stylesheet" href="/css/plus.css">
+
+
+	<!-- Fabicon -->
+	<link rel="icon" href="/imgs/pigcoin.ico" >
 
 
 </head>
@@ -43,301 +45,382 @@
 <body>
 
 
-    <!-- ヘッダー -->
-    <header class="bg-dark">
-      <div class="container">
-        <nav class="navbar navbar-expand-md">
-		
-          <!-- サイトアイコン設定 -->
-          <a class="navbar-brand" href="./index.html">
-            <img src="./imgs/pigcoin.svg" height="30" alt="siteicon">
-          </a>
+    <!-- Header -->
+    <header class="bg-dark" id="navigator">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar col-12">
 
-          <!-- サイトロゴ -->
-		  <a href="./index.html">
-		  <div class="logo">
-		  <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30">
-			<defs>
-			<text dy="0.4em" id="outTextx">広告クリッカー</text>
-			</defs>
-			<use x="50%" y="50%" xlink:href="#outTextx"></use>
-		  </svg>
-		  </div>
-		  </a>
+					<!-- Site Icon -->
+					<div class="col-3 text-left">
+						<button class="text-center" type="button">
+							<a href="/index.html">
+								<img src="/imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
+							</a>
+							<p>Home</p>
+						</button>
+					</div>
 
-          <!-- メニューアイコン設定 -->    
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav9" aria-controls="navbarNav9" aria-expanded="false" aria-label="Toggle navigation">
-            <input type="image" alt="setting" src="./imgs/icons/setting.svg" width="30" height="30">
-          </button>
+					<!-- Site Logo -->
+					<div class="col-6 text-center mb-4">
+						<a href="/index.html">
+							<span class="logo">広告クリッカー</span>
+						</a>
+					</div>
 
-          <!-- メニューバー -->    
-          <div class="collapse navbar-collapse" id="navbarNav9">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./privacy_policy.html">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
+					<!-- Menu Icon -->    
+					<div class="col-3 text-right" id="nav-drawer">
+
+						<input class="nav-unshown" id="nav-input" type="checkbox">
+							<label class="text-center" id="nav-open" for="nav-input">
+								<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+								<p>Menu</p>
+							</label>
+
+						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+						<div class="bg-dark p-3 mb-3" id="nav-content">
+							<ul class="navbar-nav ml-3 mr-auto text-left">
+
+								<li class="nav-item">
+									<a class="nav-link" href="/index.html">Home</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/about.html">About</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/contact.html">Contact</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+								</li>
+
+							</ul>
+
+							<!-- programing Languages Selection Bar -->
+							<div class="p-3">
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/c/c.html">
+											<img class="card-img" src="/imgs/langs/c.svg" alt="lang_c" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cpp/cpp.html">
+											<img class="card-img" src="/imgs/langs/cpp.svg" alt="lang_cpp" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cs/cs.html">
+											<img class="card-img" src="/imgs/langs/cs.svg" alt="lang_cs" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/java/java.html">
+											<img class="card-img" src="/imgs/langs/java.svg" alt="lang_java" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/kotlin/kotlin.html">
+											<img class="card-img" src="/imgs/langs/kotlin.svg" alt="lang_kotlin" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/python/python.html">
+											<img class="card-img" src="/imgs/langs/python.svg" alt="lang_python" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/perl/perl.html">
+											<img class="card-img" src="/imgs/langs/perl.svg" alt="lang_perl" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/htmlcss/htmlcss.html">
+											<img class="card-img" src="/imgs/langs/html.svg" alt="lang_html" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/javascript/javascript.html">
+											<img class="card-img" src="/imgs/langs/javascript.svg" alt="lang_javascript" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/android/android.html">
+											<img class="card-img" src="/imgs/langs/android.svg" alt="lang_android" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/unity/unity.html">
+											<img class="card-img" src="/imgs/langs/unity.svg" alt="lang_unity" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/ue/ue.html">
+											<img class="card-img" src="/imgs/langs/ue.svg" alt="lang_ue" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
 		  
-        </nav>
-      </div>
+				</nav>
+			</div>
+		</div>
     </header>
 
 
 
-  <!-- プログラミング言語選択バー -->
-  <section class="fdb-block p-2" id="navigator">
-    <div class="container-fluid">
-	
-      <nav class="navbar navbar-expand-md">
-
-        <button class="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav0" aria-controls="navbarNav0" aria-expanded="false" aria-label="Toggle navigation">
-          <p>プログラミング言語一覧</p>
-          <input type="image" alt="langs" src="./imgs/pigcoin.svg" width="30" height="30">
-        </button>
-		
-        <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNav0">
-          <p class="m-auto">
-            <a class="btn btn-outline-primary m-1" href="./category/c/c.html">C</a>
-            <a class="btn btn-outline-primary m-1" href="./category/cpp/cpp.html">C++</a>
-            <a class="btn btn-outline-primary m-1" href="./category/cs/cs.html">C#</a>
-            <a class="btn btn-outline-primary m-1" href="./category/java/java.html">Java</a>
-            <a class="btn btn-outline-primary m-1" href="./category/kotlin/kotlin.html">Kotlin</a>
-            <a class="btn btn-outline-primary m-1" href="./category/python/python.html">Python</a>
-            <a class="btn btn-outline-primary m-1" href="./category/perl/perl.html">Perl</a>
-            <a class="btn btn-outline-primary m-1" href="./category/htmlcss/htmlcss.html">HTML&amp;CSS</a>
-            <a class="btn btn-outline-primary m-1" href="./category/javascript/javascript.html">JavaScript</a>
-            <a class="btn btn-outline-primary m-1" href="./category/android/android.html">Android</a>
-            <a class="btn btn-outline-primary m-1" href="./category/unity/unity.html">Unity</a>
-            <a class="btn btn-outline-primary m-1" href="./category/ue/ue.html">Unreal Engine</a>
-          </p>
-        </div>
-		
-      </nav>
-	  
-    </div>
-  </section>
-
-
-
-	<!-- AdMax広告_上 -->
-	<div style="text-align:center">
+	<!-- AdMax Top -->
+	<div class="text-center">
 		<script src="//adm.shinobi.jp/o/9f5c68d87fa32839c8a5044310e0d277"></script>
 	</div>
-	<!-- admax -->
 
 
 
-    <!-- 用語集1 -->
-    <section class="fdb-block">
-      <div class="container">
-        <div class="row">
-          <div class="col text-left">
+	<!-- glossary 1 -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
 
-		    <div class="midashi">
-            <h2>用語集</h2>
+					<div class="caption">
+						<h2>用語集</h2>
+					</div>
+
+					<div class="my-2">
+						<h5 id="beru_kennkyuuzyo" class="mb-1">ベル研究所</h5>
+							<p class="lead">
+								「ベル」の名前の通り、電話交換機を発明した有名な研究所。
+								電気工学の研究を中心としながらも、幅広い分野の研究で実績を残している。
+								C言語を開発したことでも有名。
+								しかし、研究者の捏造行為が発覚したことを機に信用を失い、現在では基礎研究から撤退している。
+							</p>
+					</div>
+
+					<div class="my-2">
+						<h5 id="jetbrains_sya" class="mb-1">ジェットブレインズ社</h5>
+							<p class="lead"><br>
+								ここに入力
+							</p>
+					</div>
+
+					<div class="my-2">
+						<h5 id="puroguraminngu_genngo" class="mb-1">プログラミング言語</h5>
+							<p class="lead">
+								コンピュータプログラムを記述するための人工言語。
+								コンピュータが扱うことのできる機械語を人間にも理解し易い記述に対応付けたもの。
+								人間はスペルミスや文法的なエラーが存在しても前後の文脈から補正することができるが、
+								コンピュータはプログラムの意図を読み取ることができないため、プログラミング言語においてスペルミスや文法的なミスは許されない。
+							</p>
+					</div>
+
+					<div class="my-2">
+						<h5 id="kikaigo" class="mb-1">機械語</h5>
+							<p class="lead">
+								0と1のみで表される数字の羅列。
+								実用的には、0と1それぞれを電流が「流れていない」、「流れている」といった2状態に対応させ、ハードウェアの状態を表す。
+							</p>
+
+					<div class="my-2">
+						<h5 id="os" class="mb-1">OS(Operating System)</h5>
+							<p class="lead">
+								アプリケーションとハードウェアの橋渡しを行う役割を持つシステムソフトウェア。
+							</p>
+					</div>
+
+					<div class="my-2">
+						<h5 id="kousuizyunn_genngo" class="mb-1">高水準言語(高級言語)</h5>
+							<p class="lead">
+								抽象度の高い処理が記述できるプログラミング言語。
+								ハードウェアの違いを気にせず、人間にとって分かり易い記述が可能。
+							</p>
+					</div>
+
+					<div class="my-2">
+						<h5 id="teisuizyunn_genngo" class="mb-1">低水準言語(低級言語)</h5>
+							<p class="lead">
+								特定のハードウェアに関する処理を記述できるプログラミング言語。
+								コンピュータにとって分かり易い記述が可能。
+							</p>
+					</div>
+
+					<div class="my-2">
+						<h5 id="ここに入力" class="mb-1">ここに入力</h5>
+							<p class="lead">
+								ここに入力
+							</p>
+					</div>
+
+				</div>
 			</div>
-			
-            <p class="lead">
-			<br>
-			</p>
-			
-			<h5 id="beru_kennkyuuzyo">ベル研究所</h5>
-			<p class="lead"><br>
-			「ベル」の名前の通り、電話交換機を発明した有名な研究所。
-			電気工学の研究を中心としながらも、幅広い分野の研究で実績を残している。
-			C言語を開発したことでも有名。
-			しかし、研究者の捏造行為が発覚したことを機に信用を失い、現在では基礎研究から撤退している。
-			<br>
-			<br>
-			<br></p>
-			
-			<h5 id="puroguraminngu_genngo">プログラミング言語</h5>
-			<p class="lead"><br>
-			コンピュータプログラムを記述するための人工言語。
-			コンピュータが扱うことのできる機械語を人間にも理解し易い記述に対応付けたもの。
-			人間はスペルミスや文法的なエラーが存在しても前後の文脈から補正することができるが、コンピュータはプログラムの意図を読み取ることができないため、プログラミング言語においてスペルミスや文法的なミスは許されない。
-			<br>
-			<br>
-			<br></p>
-	
-			<h5 id="kikaigo">機械語</h5>
-			<p class="lead"><br>
-			0と1のみで表される数字の羅列。
-			実用的には、0と1それぞれを電流が「流れていない」、「流れている」といった2状態に対応させ、ハードウェアの状態を表す。
-			<br>
-			<br>
-			<br></p>
-	
-			<h5 id="os">OS(Operating System)</h5>
-			<p class"lead"><br>
-			アプリケーションとハードウェアの橋渡しを行う役割を持つシステムソフトウェア。
-			<br>
-			<br>
-			<br></p>
-			
-			<h5 id="kousuizyunn_genngo">高水準言語(高級言語)</h5>
-			<p class="lead"><br>
-			抽象度の高い処理が記述できるプログラミング言語。
-			ハードウェアの違いを気にせず、人間にとって分かり易い記述が可能。
-			<br>
-			<br>
-			<br></p>
-
-			<h5 id="teisuizyunn_genngo">低水準言語(低級言語)</h5>
-			<p class="lead"><br>
-			特定のハードウェアに関する処理を記述できるプログラミング言語。
-			コンピュータにとって分かり易い記述が可能。
-			<br>
-			<br>
-			<br></p>
-
-			<h5 id="ここに入力">ここに入力</h5>
-			<p class="lead"><br>
-			ここに入力
-			<br>
-			<br>
-			<br></p>
-
-			<h5 id="ここに入力">ここに入力</h5>
-			<p class="lead"><br>
-			ここに入力
-			</p>
-
-          </div>
-        </div>
-      </div>
-    </section>
+		</div>
+	</section>
 
 
 
-	<!-- AdMax広告_中 -->
-	<div style="text-align:center">
+	<!-- AdMax middle -->
+	<div class="text-center">
 		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
 	</div>
-	<!-- admax -->
 
 
 
-    <!-- 用語集2 -->
-    <section class="fdb-block">
-      <div class="container">
-        <div class="row">
-          <div class="col text-left">
+	<!-- glossary 2 -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
 			
-            <p class="lead">
-			<br>
-			</p>
-			
-			<h5 id="ここに入力">ここに入力</h5>
-			<p class="lead"><br>
-			ここに入力
-			<br>
-			<br>
-			<br></p>
-			
-			<h5 id="ここに入力">ここに入力</h5>
-			<p class="lead"><br>
-			ここに入力			
-			<br>
-			<br>
-			<br></p>
-			
-			<h5 id="ここに入力">ここに入力</h5>
-			<p class="lead"><br>
-			ここに入力
-			<br>
-			<br>
-			<br></p>
+					<div class="my-2">
+						<h5 id="ここに入力" class="mb-1">ここに入力</h5>
+							<p class="lead">
+								ここに入力
+							</p>
+					</div>
 
-			<h5 id="ここに入力">ここに入力</h5>
-			<p class="lead"><br>
-			ここに入力
-			<br>
-			<br>
-			<br></p>
+					<div class="my-2">
+						<h5 id="ここに入力" class="mb-1">ここに入力</h5>
+							<p class="lead">
+								ここに入力
+							</p>
+					</div>
 
-			<h5 id="ここに入力">ここに入力</h5>
-			<p class="lead"><br>
-			ここに入力
-			<br>
-			<br>
-			<br></p>
+					<div class="my-2">
+						<h5 id="ここに入力" class="mb-1">ここに入力</h5>
+							<p class="lead">
+								ここに入力
+							</p>
+					</div>
 
-			<h5 id="ここに入力">ここに入力</h5>
-			<p class="lead"><br>
-			ここに入力
-			</p>
+					<div class="my-2">
+						<h5 id="ここに入力" class="mb-1">ここに入力</h5>
+							<p class="lead">
+								ここに入力
+							</p>
+					</div>
 
-          </div>
-        </div>
-      </div>
-    </section>
+					<div class="my-2">
+						<h5 id="ここに入力" class="mb-1">ここに入力</h5>
+							<p class="lead">
+								ここに入力
+							</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
-	<!-- AdMax広告_下 -->
-	<div style="text-align:center">
+	<!-- AdMax Bottom -->
+	<div class="text-center">
 		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
 	</div>
-	<!-- admax -->
 
 
 
-    <!-- フッター -->
-    <footer class="fdb-block footer-small bg-dark">
-      <div class="container">
-        <div class="row text-center align-items-center">
-          <div class="col">
-		  
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./privacy_policy.html">Privacy Policy</a>
-              </li>
-            </ul>
+	<!-- Footer -->
+	<footer class="fdb-block footer-small bg-dark">
+		<div class="container">
+			<div class="row text-center align-items-center">
+				<div class="col-12">
+
+					<ul class="nav justify-content-center">
+
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/about.html">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/contact.html">Contact</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+						</li>
+
+					</ul>
     
-            <p class="h5 mt-5">© 2019 広告クリッカー</p>
+					<p class="h5 mt-5">© 2019 広告クリッカー</p>
 
-          </div>
-        </div>
-      </div>
-    </footer>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
-  <!--ライブラリ読込-->
-  <script src="./js/jquery.js"></script>
-  <script src="./js/popper.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/prettify.js"></script>
-  <script>
-  jQuery(function($){
-	prettyPrint();
-  });
-  </script>
+	<!-- Paga Top Button -->
+	<p id="PageTopBtn"><a href="#">▲ Page Top</a></p>
+
+
+
+	<!--Load Script-->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/popper.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/prettify.js"></script>
+		<script type="text/javascript">
+		$(function($){
+			prettyPrint();
+		});
+		</script>
+
+	<script type="text/javascript" src="/js/slider.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 5000,
+			});
+		});
+		</script>
 
 
 
 </body>
 
 </html>
+
 
 <!-- grossary.html -->
