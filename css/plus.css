@@ -354,52 +354,45 @@ code {
 #PageTopBtn {
     position: fixed; /*ボタンの配置場所を固定*/
     bottom: -10px; /*下からのボタンの配置場所を指定*/
-    right: 5px; /*右からのボタンの配置場所を指定*/
+    right: 10px; /*右からのボタンの配置場所を指定*/
 }
-
 #PageTopBtn a {
     display: block; /*配置の調整*/
     text-decoration: none; /*文字の下線を消す*/
     color: #fff; /*文字の色*/
     background: #00bfff; /*ボタンの背景色*/
     text-align: center; /*文字を中央に配置*/
-    border-radius: 5%; /*ボタンの角を少し丸くする*/
+    border-radius: 50%; /*ボタンを丸くする*/
     outline: none; /*クリックしたときの黒い枠を消す*/
 }
-
 #PageTopBtn a:hover {
     text-decoration: none; 
     background: #87cefa; /*マウスオーバー時の背景色*/
 }
 
-/* PC表示 */
+/* パソコンで表示する場合のCSS */
 @media (min-width: 768px) {
-
-	#PageTopBtn {
-		font-size: 13px; /*文字のサイズ*/
-	}
-
-	#PageTopBtn a {
-		width: 100px; /*ボタンの幅*/
-		height: 70px; /*ボタンの高さ*/
-		padding: 24px 0; /*文字の配置場所の調整*/
-	}
+#PageTopBtn {
+    font-size: 13px; /*文字のサイズ*/
+}
+#PageTopBtn a {
+    width: 70px; /*ボタンの幅*/
+    height: 70px; /*ボタンの高さ*/
+    padding: 24px 0; /*文字の配置場所の調整*/
+}
 }
 
-/* SP表示 */
+/* スマホで表示する場合のCSS */
 @media (max-width: 767px) {
-
-	#PageTopBtn {
-		font-size: 10px;
-	}
-
-	#PageTopBtn a {
-		width: 70px;
-		height: 50px;
-		padding: 17px 0;
-	}
+#PageTopBtn {
+    font-size: 10px;
 }
-
+#PageTopBtn a {
+    width: 60px;
+    height: 60px;
+    padding: 22px 0;
+}
+}
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ページの先頭に戻るボタン */
 
