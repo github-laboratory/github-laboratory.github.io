@@ -1569,11 +1569,11 @@ footer .bg-dark {
 	color: #dcdcdc;
 }
 
-footer .bg-dark .nav-link {
+footer .bg-dark a {
 	color: #dcdcdc;
 }
 
-footer .bg-dark .active .nav-link {
+footer .bg-dark .active a {
 	color: #fff;
 }
 
