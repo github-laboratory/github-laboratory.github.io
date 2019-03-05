@@ -1584,6 +1584,7 @@ footer a {
 header {
 	height: 70px;
 	background-color: #FFFFFF;
+	position: fixed;
 }
 
 header p {
@@ -1591,15 +1592,15 @@ header p {
 }
 
 header .navbar-nav a .nav-link {
-	color: #777;
+	color: #777 !important;
 }
 
 header .navbar-nav a .nav-link:hover {
-	color: #329ef7;
+	color: #329ef7 !important;
 }
 
 header .navbar-nav .active a .nav-link {
-	color: #444444;
+	color: #444444 !important;
 }
 
 header .navbar-toggler-icon {
@@ -1607,15 +1608,15 @@ header .navbar-toggler-icon {
 }
 
 header .bg-dark .navbar-nav a .nav-link {
-	color: #dcdcdc;
+	color: #dcdcdc !important;
 }
 
 header .bg-dark .navbar-nav a .nav-link:hover {
-	color: #727272;
+	color: #727272 !important;
 }
 
 header .bg-dark .navbar-nav .active a .nav-link {
-	color: #FFFFFF;
+	color: #fff !important;
 }
 
 header .bg-dark .navbar-toggler-icon {
