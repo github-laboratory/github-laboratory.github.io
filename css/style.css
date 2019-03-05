@@ -9862,6 +9862,7 @@ code {
 
 #navigator {
 	position: fixed;
+	z-index: 100;
 }
 
 #nav-drawer {
