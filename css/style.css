@@ -1584,8 +1584,6 @@ footer a {
 header {
 	height: 70px;
 	background-color: #FFFFFF;
-	position:fixed;
-	z-index: 10;
 }
 
 header p {
@@ -3262,7 +3260,7 @@ pre code {
 	text-decoration: none
 }
 
-.navbar-nav {
+.navbar-nav, #navigator {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: column;
