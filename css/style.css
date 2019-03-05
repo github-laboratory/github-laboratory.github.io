@@ -9860,11 +9860,6 @@ code {
 
 /* -- navigator.css -- */
 
-#navigator {
-	position: fixed;
-	z-index: 100;
-}
-
 #nav-drawer {
 	position: relative;
 	height: 72px;
