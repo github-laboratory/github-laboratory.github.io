@@ -9802,6 +9802,7 @@ code {
 	color: #fff;
 	background: #00bfff;
 	text-align: center;
+	vertical-align: middle;
 	border-radius: 50%;
 	outline: none;
 }
