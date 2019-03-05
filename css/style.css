@@ -9790,6 +9790,7 @@ code {
 	position: fixed;
 	bottom: -10px;
 	right: 10px;
+	font-size: 12px;
 }
 
 #pagetopbtn a {
@@ -9809,10 +9810,10 @@ code {
 
 @media (min-width: 768px) {
 
-	#pagetopbtn {
-		font-size: 13px;
+/*	#pagetopbtn {
+		font-size: 12px;
 	}
-
+*/
 	#pagetopbtn a {
 		width: 70px;
 		height: 70px;
@@ -9823,10 +9824,10 @@ code {
 
 @media (max-width: 767px) {
 
-	#pagetopbtn {
+/*	#pagetopbtn {
 		font-size: 10px;
 	}
-
+*/
 	#pagetopbtn a {
 		width: 60px;
 		height: 60px;
