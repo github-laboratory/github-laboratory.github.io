@@ -1568,7 +1568,7 @@ footer a {
 	color: #dcdcdc;
 }
 
-footer .nav-link:hover {
+footer a:hover {
 	color: #007bff;
 }
 
@@ -9794,14 +9794,8 @@ code {
 	color: #fff;
 	background: #00bfff;
 	text-align: center;
-	vertical-align: middle;
 	border-radius: 50%;
 	outline: none;
-}
-
-#pagetopbtn a:hover {
-	text-decoration: none; 
-	background: #87cefa;
 }
 
 @media (min-width: 768px) {
