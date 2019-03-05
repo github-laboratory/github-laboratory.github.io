@@ -1564,20 +1564,15 @@ footer .flex-column .nav-link {
 	padding-left: 0;
 }
 
-footer .bg-dark {
-	background: #2d313c;
+.bg-dark a {
 	color: #dcdcdc;
 }
 
-footer .bg-dark a {
-	color: #dcdcdc;
-}
-
-footer .bg-dark .active a {
+.bg-dark .active a {
 	color: #fff;
 }
 
-footer .bg-dark .nav-link:hover {
+.bg-dark .nav-link:hover {
 	color: #007bff;
 }
 
