@@ -1568,12 +1568,12 @@ footer .flex-column .nav-link {
 	color: #dcdcdc;
 }
 
-.bg-dark .active a {
-	color: #fff;
-}
-
 .bg-dark .nav-link:hover {
 	color: #007bff;
+}
+
+.bg-dark .active a {
+	color: #fff;
 }
 
 footer a {
