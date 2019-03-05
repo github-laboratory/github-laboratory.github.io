@@ -1585,6 +1585,7 @@ header {
 	height: 70px;
 	background-color: #FFFFFF;
 	position:fixed;
+	z-index: 10;
 }
 
 header p {
