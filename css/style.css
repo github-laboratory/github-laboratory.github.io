@@ -9920,11 +9920,11 @@ code {
 }
 
 #nav-content .card a:hover {
-	background: #4169e1;
+	background: #87cefa;
 }
 
 #nav-content .card-group .active a {
-	color: #0000ff;
+	color: #00bfff;
 }
 
 /* -- navigator.css -- */
