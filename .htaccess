@@ -1,4 +1,4 @@
 ErrorDocument 404 /404.html
 
-RewriteEngine on
-RewriteRule ^$/index.html[R=301,L]
+RewriteEngine On
+RewriteRule ^$ /index.html [R=301,L]
