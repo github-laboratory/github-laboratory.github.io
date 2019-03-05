@@ -1584,7 +1584,6 @@ footer a {
 header {
 	height: 70px;
 	background-color: #FFFFFF;
-	position: fixed;
 }
 
 header p {
@@ -9860,6 +9859,10 @@ code {
 /* -- animation.css -- */
 
 /* -- navigator.css -- */
+
+#navigator {
+	position: fixed;
+}
 
 #nav-drawer {
 	position: relative;
