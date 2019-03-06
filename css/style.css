@@ -3464,7 +3464,7 @@ pre code {
 }
 
 .card-active {
-	background-color: blue;
+	background-color: #00bfff;
 }
 
 .card > hr {
@@ -9900,10 +9900,6 @@ code {
 
 #nav-content .card a:hover {
 	background: #87cefa;
-}
-
-#nav-content .card-group .active a {
-	color: #00bfff;
 }
 
 /* -- navigator.css -- */
