@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
 
 
-  <!--Googleアナリティクス-->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-    gtag('config', 'UA-133937032-1');
-  </script>
+	gtag('config', 'UA-133937032-1');
+	</script>
 
-  <!-- ナビゲーションスクリプト -->
-  <script>
-    var page = window.location.pathname.split('/')
-    page = page[page.length - 1]
+	<script>
+	var page = window.location.pathname.split('/')
+	page = page[page.length - 1]
 
-    var nav = document.querySelector('a[href="' + page + '"]')
-    if (nav) {
-      nav.classList.add('active')
-    }
+	var nav = document.querySelector('a[href="' + page + '"]')
+	if (nav) {
+		nav.classList.add('active')
+	}
 
-  </script>
+	</script>
 
 
-  <title>Kotlin入門 - Top - 広告クリッカー</title>
+	<title>Kotlin入門 - 広告クリッカー</title>
 
 
-  <!-- サイト情報 -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <meta name="description" content="Kotlin入門 トップページ">
-  <meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
-  <meta name="msapplication-TileImage" content="../../imgs/pigcoin.svg" />
-  <meta name="msapplication-TileColor" content="#000000" />
+	<!-- Site Information -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="description" content="Kotlin入門　- Kotlinを基礎から徹底的に解説！C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！">
+	<meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
+	<meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
+	<meta name="msapplication-TileColor" content="#000000" />
 
 
-  <!-- スタイルシート読み込み -->
-  <link type="text/css" rel="stylesheet" href="../../css/style.css">
+	<!-- Load Stylesheets -->
+	<link type="text/css" rel="stylesheet" href="/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/css/plus.css">
 
-  <!-- ファビコン設定 -->
-  <link rel="icon" href="../../imgs/pigcoin.ico" >
+
+	<!-- Fabicon -->
+	<link rel="icon" href="/imgs/pigcoin.ico" >
 
 
 </head>
@@ -55,235 +55,405 @@
 <body>
 
 
-    <!-- ヘッダー -->
-    <header class="bg-dark">
-      <div class="container">
-        <nav class="navbar navbar-expand-md">
+    <!-- Header -->
+    <header class="bg-dark" id="navigator">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar col-12">
 
-          <!-- サイトアイコン設定 -->    
-          <a class="navbar-brand" href="../../index.html">
-            <img src="../../imgs/pigcoin.svg" height="30" alt="siteicon">
-          </a>
+					<!-- Site Icon -->
+					<div class="col-3 text-left">
+						<button class="text-center" type="button">
+							<a href="/index.html">
+								<img src="/imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
+							</a>
+							<p>Home</p>
+						</button>
+					</div>
 
-          <!-- サイトロゴ -->
-		  <a href="../../index.html">
-		  <div class="logo">
-		  <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30">
-			<defs>
-			<text dy="0.4em" id="outTextx">広告クリッカー</text>
-			</defs>
-			<use x="50%" y="50%" xlink:href="#outTextx"></use>
-		  </svg>
-		  </div>
-		  </a>
+					<!-- Site Logo -->
+					<div class="col-6 text-center mb-4">
+						<a href="/index.html">
+							<span class="logo">広告クリッカー</span>
+						</a>
+					</div>
 
-          <!-- メニューアイコン設定 -->    
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav9" aria-controls="navbarNav9" aria-expanded="false" aria-label="Toggle navigation">
-            <input type="image" alt="setting" src="../../imgs/icons/setting.svg" width="30" height="30">
-          </button>
+					<!-- Menu Icon -->    
+					<div class="col-3 text-right" id="nav-drawer">
 
-          <!-- メニューバー -->        
-          <div class="collapse navbar-collapse" id="navbarNav9">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../privacy_policy.html">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
+						<input class="nav-unshown" id="nav-input" type="checkbox">
+							<label class="text-center" id="nav-open" for="nav-input">
+								<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+								<p>Menu</p>
+							</label>
+
+						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+						<div class="bg-dark p-3 mb-3" id="nav-content">
+							<ul class="navbar-nav ml-3 mr-auto text-left">
+
+								<li class="nav-item">
+									<a class="nav-link" href="/index.html">Home</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/about.html">About</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/contact.html">Contact</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+								</li>
+
+							</ul>
+
+							<!-- programing Languages Selection Bar -->
+							<div class="p-3">
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/c/c.html">
+											<img class="card-img" src="/imgs/langs/c.svg" alt="lang_c" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cpp/cpp.html">
+											<img class="card-img" src="/imgs/langs/cpp.svg" alt="lang_cpp" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cs/cs.html">
+											<img class="card-img" src="/imgs/langs/cs.svg" alt="lang_cs" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/java/java.html">
+											<img class="card-img" src="/imgs/langs/java.svg" alt="lang_java" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/kotlin/kotlin.html">
+											<img class="card-img card-active" src="/imgs/langs/kotlin.svg" alt="lang_kotlin" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/python/python.html">
+											<img class="card-img" src="/imgs/langs/python.svg" alt="lang_python" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/perl/perl.html">
+											<img class="card-img" src="/imgs/langs/perl.svg" alt="lang_perl" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/htmlcss/htmlcss.html">
+											<img class="card-img" src="/imgs/langs/html.svg" alt="lang_html" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/javascript/javascript.html">
+											<img class="card-img" src="/imgs/langs/javascript.svg" alt="lang_javascript" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/android/android.html">
+											<img class="card-img" src="/imgs/langs/android.svg" alt="lang_android" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/unity/unity.html">
+											<img class="card-img" src="/imgs/langs/unity.svg" alt="lang_unity" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/ue/ue.html">
+											<img class="card-img" src="/imgs/langs/ue.svg" alt="lang_ue" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
 		  
-        </nav>
-      </div>
+				</nav>
+			</div>
+		</div>
     </header>
 
 
 
-  <!-- プログラミング言語選択バー -->
-  <section class="fdb-block p-2" id="navigator">
-    <div class="container-fluid">
-	
-      <nav class="navbar navbar-expand-md">
-        <button class="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav0" aria-controls="navbarNav0" aria-expanded="false" aria-label="Toggle navigation">
-          <input type="image" alt="lang_kotlin" src="../../imgs/langs/kotlin.svg" width="30" height="30">
-        </button>
-		
-        <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNav0">
-          <p class="m-auto">
-            <a class="btn btn-outline-primary m-1" href="../c/c.html">C</a>
-            <a class="btn btn-outline-primary m-1" href="../cpp/cpp.html">C++</a>
-            <a class="btn btn-outline-primary m-1" href="../cs/cs.html">C#</a>
-            <a class="btn btn-outline-primary m-1" href="../java/java.html">Java</a>
-            <a class="btn btn-primary m-1" href="./kotlin.html">Kotlin</a>
-            <a class="btn btn-outline-primary m-1" href="../python/python.html">Python</a>
-            <a class="btn btn-outline-primary m-1" href="../perl/perl.html">Perl</a>
-            <a class="btn btn-outline-primary m-1" href="../htmlcss/htmlcss.html">HTML&amp;CSS</a>
-            <a class="btn btn-outline-primary m-1" href="../javascript/javascript.html">JavaScript</a>
-            <a class="btn btn-outline-primary m-1" href="../android/android.html">Android</a>
-            <a class="btn btn-outline-primary m-1" href="../unity/unity.html">Unity</a>
-            <a class="btn btn-outline-primary m-1" href="../ue/ue.html">Unreal Engine</a>
-          </p>
-        </div>
-		
-      </nav>
-	  
-    </div>
-  </section>
-
-
-
-	<!-- AdMax広告_上 -->
-	<div style="text-align:center">
+	<!-- AdMax Top -->
+	<div class="text-center">
 		<script src="//adm.shinobi.jp/o/9f5c68d87fa32839c8a5044310e0d277"></script>
 	</div>
-	<!-- admax -->
 
 
 
-    <!-- 言語説明 -->
-    <section class="fdb-block">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-		
-          <div class="col-12 col-md-10 col-lg-8 text-center sukima3">
-            <img src="../../imgs/langs/kotlin.svg" alt="lang_kotlin" class="img-fluid" width="100" height="100">
-		  </div>
+	<!-- Langs Description -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
 
-          <div class="col-12 col-md-10 col-lg-8">
+				<div class="col-12 col-md-10 col-lg-8 text-center my-3">
+					<img src="/imgs/langs/kotlin.svg" alt="lang_kotlin" class="img-fluid" width="100" height="100">
+				</div>
 
-            <h2 class="ribbon"><strong>Kotlin</strong> </h2>
+				<div class="col-12 col-md-10 col-lg-8 text-center">
+					<h2 class="ribbon"><strong>Kotlin</strong></h2>
+				</div>
 
-            <h5>
-              Kotlinは、Javaとの互換性を維持しながら、より簡潔な記述を実現した言語
-            </h5>
+				<div class="col-12 col-md-10 col-lg-8 text-left">
+					<h4>
+						Kotlinは、Javaとの互換性を維持しながら、より簡潔な記述を実現した言語
+					</h4>
+				</div>
 
-          </div>
-		  
-        </div>
-      </div>
-    </section>
-
-
-
-<!-- パンくずリスト -->
-<div class="container">
-<ul class="breadcrumb">
-
-  <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-  <a href="../../index.html" itemprop="url">
-   <span itemprop="title">Home</span>
-  </a>
-
-  </li>
-  <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-  <a href="./kotlin.html" itemprop="url">
-   <span itemprop="title">Kotlin</span>
-  </a>
-  </li>
-
-</ul>
-</div>
-
-
-
-	<!-- AdMax広告_中 -->
-	<div style="text-align:center">
-		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
-	</div>
-	<!-- admax -->
-
-
-
-	<!-- Kotlinリンク集 -->
-    <section class="fdb-block">
-      <div class="container">
-	  <div class="row">
-        <div class="row">
-
-		<div class="kazyougaki yohaku-left">
-		<h4 class="text-left">Kotlinリンク集</h4>
-
-		<ol>
-		  <a href="./program/1_hello_world.html">
-		  <li>Hello Worldを表示してみよう</li>
-		  </a>
-		  <a href="#">
-		  <li>作成中</li>
-		  </a>
-		  <a href="#">
-		  <li>作成中</li>
-		  </a>
-		  <a href="#">
-		  <li>作成中</li>
-		  </a>
-		  <a href="#">
-		  <li>作成中</li>
-		  </a>
-		</ol>
-
+			</div>
 		</div>
-		
-		</div>
-	  </div>
 	</section>
 
 
 
-	<!-- AdMax広告_下 -->
-	<div style="text-align:center">
+	<!-- Breadcrumb -->
+	<section class="fdb-block">
+		<div class="container">
+			<ul class="breadcrumb">
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/index.html" itemprop="url">
+						<span itemprop="title">Home</span>
+					</a>
+				</li>
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/category/kotlin/kotlin.html" itemprop="url">
+						<span itemprop="title">Kotlin</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</section>
+
+
+
+	<!-- AdMax middle -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
+	</div>
+
+
+
+	<section class="fdb-block py-2 my-2">
+		<div class="container">
+
+			<article class="m-3 row">
+
+				<div class="col-4 p-2 w-100 h-100">
+					<a href="#">
+						<img src="/imgs/langs/kotlin.svg" width="90" height="90">
+					</a>
+				</div>
+
+				<div class="col-8 p-2 w-100 h-100 text-left">
+					<a href="#">					
+						<h3>タイトル</h3>
+						<p>ここに入力</p>
+					</a>
+				</div>
+
+			</article>
+
+			<article class="m-3 row">
+
+				<div class="col-4 p-2 w-100 h-100">
+					<a href="#">
+						<img src="/imgs/langs/kotlin.svg" width="90" height="90">
+					</a>
+				</div>
+
+				<div class="col-8 p-2 w-100 h-100 text-left">
+					<a href="#">					
+						<h3>タイトル</h3>
+						<p>ここに入力</p>
+					</a>
+				</div>
+
+			</article>
+
+			<article class="m-3 row">
+
+				<div class="col-4 p-2 w-100 h-100">
+					<a href="#">
+						<img src="/imgs/langs/kotlin.svg" width="90" height="90">
+					</a>
+				</div>
+
+				<div class="col-8 p-2 w-100 h-100 text-left">
+					<a href="#">					
+						<h3>タイトル</h3>
+						<p>ここに入力</p>
+					</a>
+				</div>
+
+			</article>
+
+			<article class="m-3 row">
+
+				<div class="col-4 p-2 w-100 h-100">
+					<a href="#">
+						<img src="/imgs/langs/kotlin.svg" width="90" height="90">
+					</a>
+				</div>
+
+				<div class="col-8 p-2 w-100 h-100 text-left">
+					<a href="#">					
+						<h3>タイトル</h3>
+						<p>ここに入力</p>
+					</a>
+				</div>
+
+			</article>
+
+			<article class="m-3 row">
+
+				<div class="col-4 p-2 w-100 h-100">
+					<a href="#">
+						<img src="/imgs/langs/kotlin.svg" width="90" height="90">
+					</a>
+				</div>
+
+				<div class="col-8 p-2 w-100 h-100 text-left">
+					<a href="#">					
+						<h3>タイトル</h3>
+						<p>ここに入力</p>
+					</a>
+				</div>
+
+			</article>
+
+			<article class="m-3 row">
+
+				<div class="col-4 p-2 w-100 h-100">
+					<a href="#">
+						<img src="/imgs/langs/kotlin.svg" width="90" height="90">
+					</a>
+				</div>
+
+				<div class="col-8 p-2 w-100 h-100 text-left">
+					<a href="#">					
+						<h3>タイトル</h3>
+						<p>ここに入力</p>
+					</a>
+				</div>
+
+			</article>
+
+		</div>
+	</section>
+
+
+
+	<!-- AdMax Bottom -->
+	<div class="text-center">
 		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
 	</div>
-	<!-- admax -->
 
 
 
-    <!-- フッター -->
-    <footer class="fdb-block footer-small bg-dark">
-      <div class="container">
-        <div class="row text-center align-items-center">
-          <div class="col">
-		  
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../privacy_policy.html">Privacy Policy</a>
-              </li>
-            </ul>
+	<!-- Footer -->
+	<footer class="fdb-block footer-small bg-dark">
+		<div class="container">
+			<div class="row text-center align-items-center">
+				<div class="col-12">
+
+					<ul class="nav justify-content-center">
+
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/about.html">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/contact.html">Contact</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+						</li>
+
+					</ul>
     
-            <p class="h5 mt-5">© 2019 広告クリッカー</p>
+					<p class="h5 mt-5">© 2019 広告クリッカー</p>
 
-          </div>
-        </div>
-      </div>
-    </footer>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
-  <!--ライブラリ読込-->
-  <script src="../../js/jquery.js"></script>
-  <script src="../../js/popper.js"></script>
-  <script src="../../js/bootstrap.js"></script>
-  <script src="../../js/prettify.js"></script>
-  <script>
-  jQuery(function($){
-	prettyPrint();
-  });
-  </script>
+	<!-- Paga Top Button -->
+	<p id="pagetopbtn"><a href="#">▲ Page Top</a></p>
+
+
+
+	<!--Load Script-->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/popper.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/prettify.js"></script>
+		<script type="text/javascript">
+		$(function($){
+			prettyPrint();
+		});
+		</script>
+
+	<script type="text/javascript" src="/js/slider.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 5000,
+			});
+		});
+		</script>
 
 
 
