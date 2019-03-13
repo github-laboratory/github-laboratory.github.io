@@ -3,8 +3,15 @@
 
 
 /* -- plus.css -- */
+.content {
+	padding-top: 70px;
+}
 
-
+.link
+{
+	margin-top: -100px;
+	padding-top: 100px;
+}
 /* -- plus.css --*/
 
 
