@@ -284,11 +284,13 @@
 					</div>
 
 						<div class="caption2 my-2">
+							<a href="#os">
 							<h3 id="kikaigo">機械語</h3>
 								<p class="lead">
 									0と1のみで表される数字の羅列。
 									実用的には、0と1それぞれを電流が「流れていない」、「流れている」といった2状態に対応させ、ハードウェアの状態を表す。
 								</p>
+							</a>
 						</div>
 
 						<div class="caption2 my-2">
@@ -461,6 +463,19 @@
 			});
 		});
 		</script>
+
+	<script>
+	$(function () {
+	var headerHight = 70;
+	$('a[href^=#]').click(function(){
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top-headerHight;
+		$("html, body").animate({scrollTop:position}, 550, "swing");
+		return false;
+		});
+	});
+	</script>
 
 
 
