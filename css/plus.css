@@ -3,8 +3,12 @@
 
 
 /* -- plus.css -- */
-
-
+:target:before {
+	content: "";
+	display: block;
+	height: 70px;
+	margin: -70px;
+}
 /* -- plus.css --*/
 
 
