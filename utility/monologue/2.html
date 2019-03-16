@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-133937032-1');
+	</script>
+
+	<script>
+	var page = window.location.pathname.split('/')
+	page = page[page.length - 1]
+
+	var nav = document.querySelector('a[href="' + page + '"]')
+	if (nav) {
+		nav.classList.add('active')
+	}
+
+	</script>
+
+
+	<title>TUSの独り言[#2] - "VRの今後について考える(；一_一)" - 広告クリッカー</title>
+
+
+	<!-- Site Information -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="description" content="TUSの独り言 - 'VRの今後について考える(；一_一)' - プログラミングに関する最新情報や、人生について語る。C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！">
+	<meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
+	<meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
+	<meta name="msapplication-TileColor" content="#000000" />
+
+
+	<!-- Load Stylesheets -->
+	<link type="text/css" rel="stylesheet" href="/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/css/plus.css">
+
+
+	<!-- Fabicon -->
+	<link rel="icon" href="/imgs/pigcoin.ico" >
+
+
+</head>
+
+
+
+<body>
+
+
+    <!-- Header -->
+    <header class="bg-dark" id="navigator">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar col-12">
+
+					<!-- Site Icon -->
+					<div class="col-3 text-left">
+						<button class="text-center" type="button">
+							<a href="/index.html">
+								<img src="/imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
+							</a>
+							<p>Home</p>
+						</button>
+					</div>
+
+					<!-- Site Logo -->
+					<div class="col-6 text-center mb-4">
+						<a href="/index.html">
+							<span class="logo">広告クリッカー</span>
+						</a>
+					</div>
+
+					<!-- Menu Icon -->    
+					<div class="col-3 text-right" id="nav-drawer">
+
+						<input class="nav-unshown" id="nav-input" type="checkbox">
+							<label class="text-center" id="nav-open" for="nav-input">
+								<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+								<p>Menu</p>
+							</label>
+
+						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+						<div class="bg-dark p-3 mb-3" id="nav-content">
+							<ul class="navbar-nav ml-3 mr-auto text-left">
+
+								<li class="nav-item">
+									<a class="nav-link" href="/index.html">Home</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/about.html">About</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/contact.html">Contact</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+								</li>
+
+							</ul>
+
+							<!-- programing Languages Selection Bar -->
+							<div class="p-3">
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/c/c.html">
+											<img class="card-img" src="/imgs/langs/c.svg" alt="lang_c" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cpp/cpp.html">
+											<img class="card-img" src="/imgs/langs/cpp.svg" alt="lang_cpp" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cs/cs.html">
+											<img class="card-img" src="/imgs/langs/cs.svg" alt="lang_cs" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/java/java.html">
+											<img class="card-img" src="/imgs/langs/java.svg" alt="lang_java" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/kotlin/kotlin.html">
+											<img class="card-img" src="/imgs/langs/kotlin.svg" alt="lang_kotlin" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/python/python.html">
+											<img class="card-img" src="/imgs/langs/python.svg" alt="lang_python" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/perl/perl.html">
+											<img class="card-img" src="/imgs/langs/perl.svg" alt="lang_perl" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/htmlcss/htmlcss.html">
+											<img class="card-img" src="/imgs/langs/html.svg" alt="lang_html" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/javascript/javascript.html">
+											<img class="card-img" src="/imgs/langs/javascript.svg" alt="lang_javascript" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/android/android.html">
+											<img class="card-img" src="/imgs/langs/android.svg" alt="lang_android" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/unity/unity.html">
+											<img class="card-img" src="/imgs/langs/unity.svg" alt="lang_unity" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/ue/ue.html">
+											<img class="card-img" src="/imgs/langs/ue.svg" alt="lang_ue" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+		  
+				</nav>
+			</div>
+		</div>
+    </header>
+
+
+
+	<!-- AdMax Top -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/9f5c68d87fa32839c8a5044310e0d277"></script>
+	</div>
+
+
+
+	<!-- Langs Description -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+
+				<div class="col-12 col-md-10 col-lg-8 text-center my-3">
+					<img src="/imgs/icons/github.svg" alt="usricon" class="img-fluid" width="100" height="100">
+				</div>
+
+				<div class="col-12 col-md-10 col-lg-8 text-center">
+					<h2 class="ribbon"><strong>TUSの独り言</strong></h2>
+				</div>
+
+				<div class="col-12 col-md-10 col-lg-8 text-left">
+					<h4>
+						プログラミングを勉強するのって大変だよね、いや、人生って大変だよねってことを独りで勝手に呟く、そんなページ
+					</h4>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Breadcrumb -->
+	<section class="fdb-block">
+		<div class="container">
+			<ul class="breadcrumb">
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/index.html" itemprop="url">
+						<span itemprop="title">Home</span>
+					</a>
+				</li>
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/monologue/monologue.html" itemprop="url">
+						<span itemprop="title">TUSの独り言</span>
+					</a>
+				</li>
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/monologue/story/2.html" itemprop="url">
+						<span itemprop="title">第2話</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</section>
+
+
+
+	<!-- AdMax middle -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
+	</div>
+
+
+	<!-- Text 1 -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="caption2">
+						<h3>VRの今後について考える(；一_一)</h3>
+					</div>
+
+					<p class="lead">
+						<br>
+						衝撃的なニュースが飛び込んでまいりました(ﾟдﾟ)！
+						<br>
+						<br>
+						任天堂がバーチャルボーイから24年ぶりにVRに帰ってきました。
+						<br>
+						<br>
+						Nintendo Labo関連らしいですね。
+						<br>
+						<br>
+						ただ・・・本格参入という訳ではないでしょう(´・ω・｀)
+						<br>
+						<br>
+						段ボールだし。
+						<br>
+						<br>
+						というか、最近のVRの動向が良く分かりません。
+						<br>
+						<br>
+						VR元年と騒がれた時の熱はどこへやら、テレビでもあまり聞かなくなりました。
+						<br>
+						<br>
+						この原因は、理想と現実の乖離が大きかった、というところにあると考えています。
+						<br>
+						<br>
+						VR,バーチャルリアリティは映画などでも昔から取り上げられてきましたが、それらのメディアで作り上げられたイメージと、
+						今現在の技術で実現できるVRがあまりにもかけ離れているのです。
+						<br>
+						<br>
+						実際、完全な別世界といえる程の没入感を創り出すところまでいくにはあと何十年かかるやら、といった状況だと思います。
+						<br>
+						<br>
+						現在は視覚によるVRが主流ですが、触覚によるVRも研究されていたりします。
+						<br>
+						<br>
+						糸を指に括り付けて入力に対する応答をコントロールし、そこにあたかも物体が存在するように錯覚させるらしいです。
+						<br>
+						<br>
+						具体的には、仮想空間に置いた物体に手を伸ばすと、物体の縁に触れたときに指を逆方向に引っ張ったり、振動させたりすることで触感を創り出すのです。
+						<br>
+						<br>
+						論文を読んだことがある程度の知識で、実際に体感したことが無いため詳しいことは分かりませんが、技術が向上すればブレイクスルーに繋がると考えています。
+						<br>
+						<br>
+						VRが今後発展していくには五感全てを錯覚させる技術が必要になるでしょう。
+						<br>
+						<br>
+						もしこれからもVR開発が続くとしたら、味覚や嗅覚に関するVRシステムをプログラミングする日が来るかもしれません(｀・ω・´)
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Text 2 -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+    
+					<p class="lead">
+						<br>
+						さて、VR開発を行うプログラマーには何が求められるのでしょうか。
+						<br>
+						<br>
+						フロントエンドがやりたいなら、開発ツールの勉強をすべきですね。
+						<br>
+						<br>
+						VR研究を行う某大学の研究室では、Unityを使って開発を行っているようです。
+						<br>
+						<br>
+						このように、大学や企業では、ツールを利用して開発を行う場合が多いです。
+						<br>
+						<br>
+						規模の大きな企業ではデベロッパーツールから自社開発を行うこともありますが、ほとんどの場合、外部から専用ツールの供給を受けます。
+						<br>
+						<br>
+						先述の任天堂では3DモデリングソフトにMayaというソフトを使っていますし、PCのシューティングゲームなんかでは物理エンジンにhavokを使っていたりします。
+						<br>
+						<br>
+						ツールの開発がしたいならプログラミング言語をがっつり勉強すべきですが、フロントエンドの開発ではツールの習熟度が結構問われます。
+						<br>
+						<br>
+						ゲーム開発をしたいと考えてC++を学ぶのも良いですが、適度にUnityやUnreal Engineなどのツールに触れておくといいかもしれません(｀・ω・´)
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- AdMax Bottom -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="fdb-block footer-small bg-dark">
+		<div class="container">
+			<div class="row text-center align-items-center">
+				<div class="col-12">
+
+					<ul class="nav justify-content-center">
+
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/about.html">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/contact.html">Contact</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+						</li>
+
+					</ul>
+    
+					<p class="h5 mt-5">© 2019 広告クリッカー</p>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Paga Top Button -->
+	<p id="pagetopbtn"><a href="#">▲ Page Top</a></p>
+
+
+
+	<!--Load Script-->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/popper.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/prettify.js"></script>
+		<script type="text/javascript">
+		$(function($){
+			prettyPrint();
+		});
+		</script>
+
+	<script type="text/javascript" src="/js/slider.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 5000,
+			});
+		});
+		</script>
+
+
+
+</body>
+
+</html>
+
+<!-- /tus/monologue/2.html -->
