@@ -60,21 +60,25 @@
 						</a>
 					</div>
 
-					<!-- Menu Icon -->    
+					<!-- Menu Bar -->
 					<div class="col-3 text-right" id="nav-drawer">
-
 						<input class="nav-unshown" id="nav-input" type="checkbox">
-							<label class="text-center" id="nav-open" for="nav-input">
-								<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
-								<p>Menu</p>
-							</label>
+
+						<!-- Menu Icon -->
+						<label class="text-center" id="nav-open" for="nav-input">
+							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+							<p>Menu</p>
+						</label>
 
 						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 
+						<!-- Contents -->
 						<div class="bg-dark p-3 mb-3" id="nav-content">
-							<ul class="navbar-nav ml-3 mr-auto text-left">
 
-								<li class="nav-item">
+							<!-- Menu -->
+							<ul class="navbar-nav ml-4 mr-auto text-left">
+
+								<li class="nav-item active">
 									<a class="nav-link" href="/index.html">Home</a>
 								</li>
 
@@ -92,8 +96,39 @@
 
 							</ul>
 
-							<!-- programing Languages Selection Bar -->
+							<!-- Utility Menu -->
+							<div class="p-3 mt-3">
+
+								<p class="text-center">Utility</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/utility/tips.html">
+											<img class="card-img" src="/imgs/icons/pigcoin.svg" alt="tips" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/monologue.html">
+											<img class="card-img" src="/imgs/icons/user.svg" alt="monologue" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/glossary.html">
+											<img class="card-img" src="/imgs/icons/file.svg" alt="glossary" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+							<!-- Programing Languages Selection Menu -->
 							<div class="p-3">
+
+								<p class="text-center">Languages</p>
 
 								<div class="card-group">
 
@@ -257,20 +292,20 @@
 	</div>
 
 
-
+	<!-- Article -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips/text_editor.html">
+					<a href="/utility/tips/text_editor.html">
 						<img src="/imgs/screenshots/notepad++.png" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips/text_editor.html">
+					<a href="/utility/tips/text_editor.html">
 						<h3>テキストエディタ</h3>
 						<p>おすすめテキストエディタの紹介</p>
 					</a>
@@ -315,15 +350,15 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips/ideone.html">
+					<a href="/utility/tips/ideone.html">
 						<img src="/imgs/screenshots/ideone.png" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips/ideone.html">
+					<a href="/utility/tips/ideone.html">
 						<h3>ideone.com</h3>
-						<p>ブラウザ上で手軽にプログラミング</p>
+						<p>ブラウザ上で手軽にプログラミング！</p>
 					</a>
 				</div>
 
@@ -349,13 +384,13 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips/linux.html">
+					<a href="/utility/tips/linux.html">
 						<img src="/imgs/screenshots/chalet_os.png" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips/linux.html">
+					<a href="/utility/tips/linux.html">
 						<h3>Linux</h3>
 						<p>おすすめLinuxディストリビューションの紹介</p>
 					</a>
@@ -436,8 +471,6 @@
 			});
 		});
 		</script>
-
-
 
 </body>
 
