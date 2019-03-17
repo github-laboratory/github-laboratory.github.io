@@ -3,7 +3,6 @@
 
 <head>
 
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
 	<script>
@@ -14,9 +13,7 @@
 	gtag('config', 'UA-133937032-1');
 	</script>
 
-
 	<title>お探しのページが見つかりませんでした - 広告クリッカー</title>
-
 
 	<!-- Site Information -->
 	<meta charset="UTF-8">
@@ -26,23 +23,19 @@
 	<meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
 	<meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
 	<meta name="msapplication-TileColor" content="#000000" />
-
     
 	<!-- Load Stylesheets -->
 	<link type="text/css" rel="stylesheet" href="/css/style.css">
 	<link type="text/css" rel="stylesheet" href="/css/plus.css">
 
-
 	<!-- Fabicon -->
 	<link rel="icon" href="/imgs/pigcoin.ico" >
-
 
 </head>
 
 
 
 <body>
-
 
     <!-- Header -->
     <header class="bg-dark" id="navigator">
@@ -67,21 +60,25 @@
 						</a>
 					</div>
 
-					<!-- Menu Icon -->    
+					<!-- Menu Bar -->
 					<div class="col-3 text-right" id="nav-drawer">
-
 						<input class="nav-unshown" id="nav-input" type="checkbox">
-							<label class="text-center" id="nav-open" for="nav-input">
-								<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
-								<p>Menu</p>
-							</label>
+
+						<!-- Menu Icon -->
+						<label class="text-center" id="nav-open" for="nav-input">
+							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+							<p>Menu</p>
+						</label>
 
 						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 
+						<!-- Contents -->
 						<div class="bg-dark p-3 mb-3" id="nav-content">
-							<ul class="navbar-nav ml-3 mr-auto text-left">
 
-								<li class="nav-item">
+							<!-- Menu -->
+							<ul class="navbar-nav ml-4 mr-auto text-left">
+
+								<li class="nav-item active">
 									<a class="nav-link" href="/index.html">Home</a>
 								</li>
 
@@ -99,8 +96,39 @@
 
 							</ul>
 
-							<!-- programing Languages Selection Bar -->
+							<!-- Utility Menu -->
+							<div class="p-3 mt-3">
+
+								<p class="text-center">Utility</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/utility/tips.html">
+											<img class="card-img" src="/imgs/icons/pigcoin.svg" alt="tips" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/monologue.html">
+											<img class="card-img" src="/imgs/icons/user.svg" alt="monologue" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/glossary.html">
+											<img class="card-img" src="/imgs/icons/file.svg" alt="glossary" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+							<!-- Programing Languages Selection Menu -->
 							<div class="p-3">
+
+								<p class="text-center">Languages</p>
 
 								<div class="card-group">
 
@@ -223,9 +251,10 @@
 
 	<!-- Title Screen -->
 	<section class="fdb-block py-2 my-2">
-		<div class="container bg-r py-5" style="background-image: url(/imgs/shapes/1.svg);">
+		<div class="container bg-r py-5" style="background-image: url(/imgs/shapes/title.svg);">
 			<div class="row justify-content-start">
 				<div class="col-12 col-sm-10 text-center text-sm-left">
+
 					<h1 class="logo anime">広告クリッカー</h1>
 					<p>Androidアプリを開発し、広告を組み込む。<br>Webサイトを開設し、広告を貼る。<br>広告収入で儲ける。<br>そんなサイト。</p>
 
@@ -234,7 +263,7 @@
 						<a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-1" href="/about.html">このサイトについて</a>
 						<a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-1" href="/contact.html">お問い合わせ</a>
 						<a class="btn btn-dark ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-1" href="/privacy_policy.html">個人情報保護方針</a>
-						<a class="btn btn-success ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-1" href="/tus/monologue.html">TUSの独り言</a>
+						<a class="btn btn-success ml-sm-3 mr-3 mr-sm-0 mt-3 mt-sm-1" href="/project/project.html">Project Page</a>
 					</p>
 
 				</div>
@@ -305,21 +334,22 @@
 
 
 
+	<!-- Article [C,C++,C#] -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips.html">
-						<img src="/imgs/icons/pigcoin.png" width="90" height="90">
+					<a href="/utility/tips/text_editor.html">
+						<img src="/imgs/screenshots/notepad++.png" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">
-						<h3>TUSの豆知識</h3>
-						<p>ここにおすすめの記事が表示されます</p>
+					<a href="/utility/tips/text_editor.html">
+						<h3>テキストエディタ</h3>
+						<p>おすすめテキストエディタの紹介</p>
 					</a>
 				</div>
 
@@ -345,14 +375,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/glossary.html">
-						<img src="/imgs/icons/file.svg" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/pigcoin.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/glossary.html">
-						<h3>プログラム用語集</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -379,15 +409,15 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips.html">
-						<img src="/imgs/icons/gift.png" width="90" height="90">
+					<a href="/utility/tips/ideone.html">
+						<img src="/imgs/screenshots/ideone.png" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">
-						<h3>TUSの豆知識</h3>
-						<p>ここにおすすめの記事が表示されます</p>
+					<a href="/utility/tips/ideone.html">
+						<h3>ideone.com</h3>
+						<p>ブラウザ上で手軽にプログラミング</p>
 					</a>
 				</div>
 
@@ -413,14 +443,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/monologue.html">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+					<a href="/utility/monologue.html">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/monologue.html">
-						<h3>TUSの独り言</h3>
+					<a href="/utility/monologue.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -432,14 +462,7 @@
 
 
 
-	<!-- AdMax middle -->
-	<div class="text-center">
-		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
-	</div>
-
-
-
-	<!-- News -->
+	<!-- News [Java,Kotlin,Python] -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 			<div class="row">
@@ -493,20 +516,21 @@
 
 
 
+	<!-- Article [Java,Kotlin,Python] -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips.html">
-						<img src="/imgs/icons/pigcoin.png" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/pigcoin.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">
-						<h3>TUSの豆知識</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -533,14 +557,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/glossary.html">
-						<img src="/imgs/icons/file.svg" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/pigcoin.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/glossary.html">
-						<h3>プログラム用語集</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -567,14 +591,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips.html">
-						<img src="/imgs/icons/gift.png" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/gift.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">
-						<h3>TUSの豆知識</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -601,14 +625,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/monologue.html">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+					<a href="/utility/monologue.html">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/monologue.html">
-						<h3>TUSの独り言</h3>
+					<a href="/utility/monologue.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -620,14 +644,14 @@
 
 
 
-	<!-- AdMax Bottom -->
+	<!-- AdMax middle -->
 	<div class="text-center">
-		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
 	</div>
 
 
 
-	<!-- News -->
+	<!-- News [Perl,HTML&amp;CSS,JavaScript] -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 			<div class="row">
@@ -681,20 +705,21 @@
 
 
 
+	<!-- Article [Perl,HTML&amp;CSS,JavaScript] -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips.html">
-						<img src="/imgs/icons/pigcoin.png" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/pigcoin.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">
-						<h3>TUSの豆知識</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -721,14 +746,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/glossary.html">
-						<img src="/imgs/icons/file.svg" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/pigcoin.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/glossary.html">
-						<h3>プログラム用語集</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -755,14 +780,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="tus/tips.html">
-						<img src="/imgs/icons/gift.png" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/gift.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">
-						<h3>TUSの豆知識</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -789,14 +814,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/monologue.html">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+					<a href="/utility/monologue.html">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/monologue.html">
-						<h3>TUSの独り言</h3>
+					<a href="/utility/monologue.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -808,7 +833,7 @@
 
 
 
-	<!-- News -->
+	<!-- News [Android,Unity,Unreal Engine] -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 			<div class="row">
@@ -862,20 +887,21 @@
 
 
 
+	<!-- News [Android,Unity,Unreal Engine] -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips.html">
-						<img src="/imgs/icons/pigcoin.png" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/pigcoin.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">
-						<h3>TUSの豆知識</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -902,14 +928,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/glossary.html">
-						<img src="/imgs/icons/file.svg" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/pigcoin.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/glossary.html">
-						<h3>プログラム用語集</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -936,14 +962,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips.html">
-						<img src="/imgs/icons/gift.png" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/gift.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">
-						<h3>TUSの豆知識</h3>
+					<a href="/utility/tips.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -970,14 +996,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/monologue.html">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+					<a href="/utility/monologue.html">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/monologue.html">
-						<h3>TUSの独り言</h3>
+					<a href="/utility/monologue.html">
+						<h3>タイトル</h3>
 						<p>ここにおすすめの記事が表示されます</p>
 					</a>
 				</div>
@@ -989,6 +1015,13 @@
 
 
 
+	<!-- AdMax Bottom -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
+	</div>
+
+
+
 	<!-- Footer -->
 	<footer class="fdb-block footer-small bg-dark">
 		<div class="container">
@@ -997,7 +1030,7 @@
 
 					<ul class="nav justify-content-center">
 
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a class="nav-link" href="/index.html">Home</a>
 						</li>
 
@@ -1050,8 +1083,6 @@
 			});
 		});
 		</script>
-
-
 
 </body>
 
