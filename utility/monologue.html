@@ -3,7 +3,6 @@
 
 <head>
 
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
 	<script>
@@ -14,20 +13,7 @@
 	gtag('config', 'UA-133937032-1');
 	</script>
 
-	<script>
-	var page = window.location.pathname.split('/')
-	page = page[page.length - 1]
-
-	var nav = document.querySelector('a[href="' + page + '"]')
-	if (nav) {
-		nav.classList.add('active')
-	}
-
-	</script>
-
-
 	<title>TUSの独り言 - 広告クリッカー</title>
-
 
 	<!-- Site Information -->
 	<meta charset="UTF-8">
@@ -38,22 +24,18 @@
 	<meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
 	<meta name="msapplication-TileColor" content="#000000" />
 
-
 	<!-- Load Stylesheets -->
 	<link type="text/css" rel="stylesheet" href="/css/style.css">
 	<link type="text/css" rel="stylesheet" href="/css/plus.css">
 
-
 	<!-- Fabicon -->
 	<link rel="icon" href="/imgs/pigcoin.ico" >
-
 
 </head>
 
 
 
 <body>
-
 
     <!-- Header -->
     <header class="bg-dark" id="navigator">
@@ -78,19 +60,23 @@
 						</a>
 					</div>
 
-					<!-- Menu Icon -->    
+					<!-- Menu Bar -->
 					<div class="col-3 text-right" id="nav-drawer">
-
 						<input class="nav-unshown" id="nav-input" type="checkbox">
-							<label class="text-center" id="nav-open" for="nav-input">
-								<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
-								<p>Menu</p>
-							</label>
+
+						<!-- Menu Icon -->
+						<label class="text-center" id="nav-open" for="nav-input">
+							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+							<p>Menu</p>
+						</label>
 
 						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 
+						<!-- Contents -->
 						<div class="bg-dark p-3 mb-3" id="nav-content">
-							<ul class="navbar-nav ml-3 mr-auto text-left">
+
+							<!-- Menu -->
+							<ul class="navbar-nav ml-4 mr-auto text-left">
 
 								<li class="nav-item">
 									<a class="nav-link" href="/index.html">Home</a>
@@ -110,8 +96,39 @@
 
 							</ul>
 
-							<!-- programing Languages Selection Bar -->
+							<!-- Utility Menu -->
+							<div class="p-3 mt-3">
+
+								<p class="text-center">Utility</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/utility/tips.html">
+											<img class="card-img" src="/imgs/icons/pigcoin.svg" alt="tips" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/monologue.html">
+											<img class="card-img" src="/imgs/icons/user.svg" alt="monologue" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/glossary.html">
+											<img class="card-img" src="/imgs/icons/file.svg" alt="glossary" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+							<!-- Programing Languages Selection Menu -->
 							<div class="p-3">
+
+								<p class="text-center">Languages</p>
 
 								<div class="card-group">
 
@@ -227,7 +244,7 @@
 			<div class="row align-items-center justify-content-center">
 
 				<div class="col-12 col-md-10 col-lg-8 text-center my-3">
-					<img src="/imgs/icons/github.svg" alt="usricon" class="img-fluid" width="100" height="100">
+					<img src="/imgs/icons/user.svg" alt="usricon" class="img-fluid" width="100" height="100">
 				</div>
 
 				<div class="col-12 col-md-10 col-lg-8 text-center">
@@ -258,7 +275,7 @@
 				</li>
 
 				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-					<a href="/tus/monologue.html" itemprop="url">
+					<a href="/utility/monologue.html" itemprop="url">
 						<span itemprop="title">TUSの独り言</span>
 					</a>
 				</li>
@@ -276,6 +293,7 @@
 
 
 
+	<!-- Other Page Introduction -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 
@@ -286,14 +304,14 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/tips.html">
-						<img src="/imgs/icons/pigcoin.png" width="90" height="90">
+					<a href="/utility/tips.html">
+						<img src="/imgs/icons/pigcoin.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/tips.html">					
-						<h3>TUSの豆知識</h3>
+					<a href="/utility/tips.html">					
+						<h3>プログラミング豆知識</h3>
 						<p>プログラミングの豆知識を紹介しているページ</p>
 					</a>
 				</div>
@@ -303,13 +321,13 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/glossary.html">
+					<a href="/utility/glossary.html">
 						<img src="/imgs/icons/file.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/glossary.html">					
+					<a href="/utility/glossary.html">					
 						<h3>プログラム用語集</h3>
 						<p>用語を詳しく解説しているページ</p>
 					</a>
@@ -322,19 +340,20 @@
 
 
 
+	<!-- Article -->
 	<section class="fdb-block py-2 my-2">
 		<div class="container">
 
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/monologue/1.html">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+					<a href="/utility/monologue/1.html">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/monologue/1.html">					
+					<a href="/utility/monologue/1.html">					
 						<h3>TUSの独り言[#1]</h3>
 						<p>変革の時代を生きる（　＾ω＾）・・・</p>
 					</a>
@@ -345,13 +364,13 @@
 			<article class="m-3 row">
 
 				<div class="col-4 p-2 w-100 h-100">
-					<a href="/tus/monologue/2.html">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+					<a href="/utility/monologue/2.html">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
 				<div class="col-8 p-2 w-100 h-100 text-left">
-					<a href="/tus/monologue/2.html">
+					<a href="/utility/monologue/2.html">
 						<h3>TUSの独り言[#2]</h3>
 						<p>VRの今後について考える(；一_一)</p>
 					</a>
@@ -363,7 +382,7 @@
 
 				<div class="col-4 p-2 w-100 h-100">
 					<a href="#">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
@@ -380,7 +399,7 @@
 
 				<div class="col-4 p-2 w-100 h-100">
 					<a href="#">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
@@ -397,7 +416,7 @@
 
 				<div class="col-4 p-2 w-100 h-100">
 					<a href="#">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
@@ -414,7 +433,7 @@
 
 				<div class="col-4 p-2 w-100 h-100">
 					<a href="#">
-						<img src="/imgs/icons/github.svg" width="90" height="90">
+						<img src="/imgs/icons/user.svg" width="90" height="90">
 					</a>
 				</div>
 
@@ -501,10 +520,8 @@
 		});
 		</script>
 
-
-
 </body>
 
 </html>
 
-<!-- monologue.html -->
+<!-- /utility/monologue.html -->
