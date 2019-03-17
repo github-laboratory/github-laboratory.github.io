@@ -3,57 +3,37 @@
 
 <head>
 
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	gtag('config', 'UA-133937032-1');
-	</script>
-
-	<script>
-	var page = window.location.pathname.split('/')
-	page = page[page.length - 1]
-
-	var nav = document.querySelector('a[href="' + page + '"]')
-	if (nav) {
-		nav.classList.add('active')
-	}
-
-	</script>
-
+		gtag('config', 'UA-133937032-1');
+		</script>
 
 	<title>HTML&amp;CSS入門[#1] - "Hello Worldを表示してみよう" - 広告クリッカー</title>
 
+	<!-- Site Setting -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
 
 	<!-- Site Information -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
 	<meta name="description" content="HTML&amp;CSS入門 - 'Hello Worldを表示してみよう'　- HTML&amp;CSSを基礎から徹底的に解説！C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！">
-	<meta name="keywords" content="プログラミング入門,ソースコード,ゲーム開発,アプリ開発,C,C++,C#,Java,Kotlin,Python,Perl,HTML&amp;CSS,JavaScript,Android,Unity,Unreal Engine">
-	<meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
-	<meta name="msapplication-TileColor" content="#000000" />
-
 
 	<!-- Load Stylesheets -->
 	<link type="text/css" rel="stylesheet" href="/css/style.css">
 	<link type="text/css" rel="stylesheet" href="/css/plus.css">
 
-
 	<!-- Fabicon -->
 	<link rel="icon" href="/imgs/pigcoin.ico" >
-
 
 </head>
 
 
 
 <body>
-
 
     <!-- Header -->
     <header class="bg-dark" id="navigator">
@@ -78,19 +58,23 @@
 						</a>
 					</div>
 
-					<!-- Menu Icon -->    
+					<!-- Menu Bar -->
 					<div class="col-3 text-right" id="nav-drawer">
-
 						<input class="nav-unshown" id="nav-input" type="checkbox">
-							<label class="text-center" id="nav-open" for="nav-input">
-								<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
-								<p>Menu</p>
-							</label>
+
+						<!-- Menu Icon -->
+						<label class="text-center" id="nav-open" for="nav-input">
+							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+							<p>Menu</p>
+						</label>
 
 						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 
+						<!-- Contents -->
 						<div class="bg-dark p-3 mb-3" id="nav-content">
-							<ul class="navbar-nav ml-3 mr-auto text-left">
+
+							<!-- Menu -->
+							<ul class="navbar-nav ml-4 mr-auto text-left">
 
 								<li class="nav-item">
 									<a class="nav-link" href="/index.html">Home</a>
@@ -110,8 +94,39 @@
 
 							</ul>
 
-							<!-- programing Languages Selection Bar -->
+							<!-- Utility Menu -->
+							<div class="p-3 mt-3">
+
+								<p class="text-center">Utility</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/utility/tips.html">
+											<img class="card-img" src="/imgs/icons/pigcoin.svg" alt="tips" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/monologue.html">
+											<img class="card-img" src="/imgs/icons/user.svg" alt="monologue" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/glossary.html">
+											<img class="card-img" src="/imgs/icons/file.svg" alt="glossary" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+							<!-- Programing Languages Selection Menu -->
 							<div class="p-3">
+
+								<p class="text-center">Languages</p>
 
 								<div class="card-group">
 
@@ -286,7 +301,7 @@
 
 
 
-	<!-- Text 1 -->
+	<!-- Text -->
 	<section class="fdb-block">
 		<div class="container">
 			<div class="row">
@@ -333,7 +348,7 @@
 
 
 
-	<!-- Text 2 -->
+	<!-- Text -->
 	<section class="fdb-block">
 		<div class="container">
 			<div class="row">
@@ -350,6 +365,25 @@
 
 				</div>
 			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Pagination -->
+	<section class="fdb-block">
+		<div class="container">
+			<nav>
+				<ul class="pagination justify-content-between">
+					<li>
+						<a class="btn page-link rounded-pill disabled" href="#">前の記事</a>
+					</li>
+
+					<li>
+						<a class="btn page-link rounded-pill" href="#">次の記事</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</section>
 
@@ -423,8 +457,6 @@
 			});
 		});
 		</script>
-
-
 
 </body>
 
