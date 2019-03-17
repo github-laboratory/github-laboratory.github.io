@@ -3,7 +3,6 @@
 
 <head>
 
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
 	<script>
@@ -14,20 +13,7 @@
 	gtag('config', 'UA-133937032-1');
 	</script>
 
-	<script>
-	var page = window.location.pathname.split('/')
-	page = page[page.length - 1]
-
-	var nav = document.querySelector('a[href="' + page + '"]')
-	if (nav) {
-		nav.classList.add('active')
-	}
-
-	</script>
-
-
 	<title>C言語入門 - 広告クリッカー</title>
-
 
 	<!-- Site Information -->
 	<meta charset="UTF-8">
@@ -38,22 +24,18 @@
 	<meta name="msapplication-TileImage" content="/imgs/pigcoin.svg" />
 	<meta name="msapplication-TileColor" content="#000000" />
 
-
 	<!-- Load Stylesheets -->
 	<link type="text/css" rel="stylesheet" href="/css/style.css">
 	<link type="text/css" rel="stylesheet" href="/css/plus.css">
 
-
 	<!-- Fabicon -->
 	<link rel="icon" href="/imgs/pigcoin.ico" >
-
 
 </head>
 
 
 
 <body>
-
 
     <!-- Header -->
     <header class="bg-dark" id="navigator">
@@ -78,19 +60,23 @@
 						</a>
 					</div>
 
-					<!-- Menu Icon -->    
+					<!-- Menu Bar -->
 					<div class="col-3 text-right" id="nav-drawer">
-
 						<input class="nav-unshown" id="nav-input" type="checkbox">
-							<label class="text-center" id="nav-open" for="nav-input">
-								<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
-								<p>Menu</p>
-							</label>
+
+						<!-- Menu Icon -->
+						<label class="text-center" id="nav-open" for="nav-input">
+							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+							<p>Menu</p>
+						</label>
 
 						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 
+						<!-- Contents -->
 						<div class="bg-dark p-3 mb-3" id="nav-content">
-							<ul class="navbar-nav ml-3 mr-auto text-left">
+
+							<!-- Menu -->
+							<ul class="navbar-nav ml-4 mr-auto text-left">
 
 								<li class="nav-item">
 									<a class="nav-link" href="/index.html">Home</a>
@@ -110,14 +96,45 @@
 
 							</ul>
 
-							<!-- programing Languages Selection Bar -->
+							<!-- Utility Menu -->
+							<div class="p-3 mt-3">
+
+								<p class="text-center">Utility</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/utility/tips.html">
+											<img class="card-img" src="/imgs/icons/pigcoin.svg" alt="tips" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/monologue.html">
+											<img class="card-img" src="/imgs/icons/user.svg" alt="monologue" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/glossary.html">
+											<img class="card-img" src="/imgs/icons/file.svg" alt="glossary" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+							<!-- Programing Languages Selection Menu -->
 							<div class="p-3">
+
+								<p class="text-center">Languages</p>
 
 								<div class="card-group">
 
 									<div class="card">
 										<a href="/category/c/c.html">
-											<img class="card-img card-active" src="/imgs/langs/c.svg" alt="lang_c" width="30" height="30">
+											<img class="card-img" src="/imgs/langs/c.svg" alt="lang_c" width="30" height="30">
 										</a>
 									</div>
 
@@ -455,10 +472,8 @@
 		});
 		</script>
 
-
-
 </body>
 
 </html>
 
-<!-- c.html -->
+<!-- /category/c.html -->
