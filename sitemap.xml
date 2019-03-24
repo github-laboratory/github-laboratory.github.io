@@ -117,7 +117,19 @@
   <priority>0.6</priority>
 </url>
 <url>
+  <loc>https://github-laboratory.github.io/utility/tips/github.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/github_pages.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
   <loc>https://github-laboratory.github.io/utility/tips/ideone.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/interpreter.html</loc>
   <priority>0.6</priority>
 </url>
 <url>
@@ -128,6 +140,14 @@
   <loc>https://github-laboratory.github.io/utility/tips/text_editor.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/virtualbox.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/web_browser.html</loc>
+  <priority>0.6</priority>
+</url>
 
 <url>
   <loc>https://github-laboratory.github.io/category/c/program/1_hello_world.html</loc>
@@ -135,6 +155,15 @@
 </url>
 <url>
   <loc>https://github-laboratory.github.io/category/c/program/2_about_programming.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://github-laboratory.github.io/utility/monologue/1.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/monologue/2.html</loc>
   <priority>0.6</priority>
 </url>
 
