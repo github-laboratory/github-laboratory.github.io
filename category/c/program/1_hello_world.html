@@ -304,6 +304,31 @@
 				<div class="col text-left">
 
 					<div class="caption2">
+						<h3>C言語とは</h3>
+					</div>
+
+					<p class="lead">
+						<br>
+						C言語は、1972年にベル研究所によって発表されたプログラミング言語です。
+						<br>
+						<br>
+						プログラミング言語の中でも最初期に開発された言語の一つであり、後発の言語に多大な影響を与えました。
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Text -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="caption2">
 						<h3>開発環境の構築</h3>
 					</div>
 
@@ -312,13 +337,14 @@
 						C言語を学習する際に最低限必要になるのが、テキストエディタとコンパイラです。
 						<br>
 						<br>
-						テキストエディタとコンパイラの種類やインストール方法については、以下を参考にしてください。
+						テキストエディタとコンパイラのインストール方法については、以下を参考にしてください。
 					</p>
 
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 
 	<!-- Article -->
@@ -371,12 +397,67 @@
 				<div class="col text-left">
 
 					<div class="caption2">
+						<h3>統合開発環境</h3>
+					</div>
+
+					<p class="lead">
+						<br>
+						もっと快適な開発環境を構築したい方には、統合開発環境がおすすめです。
+						<br>
+						<br>
+						先述したように、C言語のプログラミングにはテキストエディタとコンパイラが必要ですが、
+						統合開発環境にはそれらがまとめて用意されており、さらにデバッグ用のツールなどの便利ツールが同梱されています。
+						<br>
+						<br>
+						統合開発環境のインストール方法については、以下をご覧ください。
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Article -->
+	<section class="fdb-block py-2 my-2">
+		<div class="container">
+
+			<article class="m-3 row">
+
+				<div class="col-4 p-2 w-100 h-100">
+					<a href="/utility/tips/text_editor.html">
+						<img src="/imgs/screenshots/notepad++.png" width="90" height="90">
+					</a>
+				</div>
+
+				<div class="col-8 p-2 w-100 h-100 text-left">
+					<a href="/utility/tips/text_editor.html">
+						<h3>統合開発環境</h3>
+						<p>統合開発環境のインストール方法を解説！</p>
+					</a>
+				</div>
+
+			</article>
+
+		</div>
+	</section>
+
+
+
+	<!-- Text -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="caption2">
 						<h3>オンライン開発環境</h3>
 					</div>
 
 					<p class="lead">
 						<br>
-						上記のインストール手順がよく分からない人、もっと手っ取り早くプログラミングしたい人には、Ideone.comがおすすめです。
+						上記のインストール手順がよく分からない方、もっと手っ取り早くプログラミングしたい方には、Ideone.comがおすすめです。
 						<br>
 						<br>
 						ソフトをインストールすることなく、ブラウザ上でプログラミングが可能です。
@@ -386,6 +467,7 @@
 			</div>
 		</div>
 	</section>
+
 
 
 	<!-- Article -->
@@ -427,6 +509,12 @@
 					<p class="lead">
 						<br>
 						さて、開発環境が整ったところで、まずはHello Worldという文字列を表示してみましょう。
+						<br>
+						<br>
+						これから学ぶプログラムは、Hello Worldと標準出力に表示するプログラムで、プログラミングのチュートリアルとしてよく用いられるものです。
+						<br>
+						<br>
+						下記のプログラムをテキストエディタで入力し、hello_world.cとして保存してください。
 					</p>
 
 				</div>
@@ -603,16 +691,31 @@ int main(void)
 				<div class="col text-left">
 
 					<div class="caption2">
-						<h3>コンパイル</h3>
+						<h3>コンパイル&amp;実行</h3>
 					</div>
 
 					<p class="lead">
 						<br>
 						gccでコンパイルしましょう。
+						<br>
+						<br>
+						以下のコマンドを入力しEnterを押してください。
+						<br>
+						<br>
+						コンパイルが実行されます。
 					</p>
 
 					<p class="codebox">
 						gcc -o hello_world.out hello_world.c
+					</p>
+
+					<p class="lead">
+						<br>
+						次に、以下のコマンドでプログラムを実行します。
+					</p>
+
+					<p class="codebox">
+						./hello_world.out
 					</p>
 
 				</div>
