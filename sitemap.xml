@@ -7,101 +7,32 @@
   <loc>https://github-laboratory.github.io/</loc>
   <priority>1.0</priority>
 </url>
-
 <url>
   <loc>https://github-laboratory.github.io/about.html</loc>
   <priority>0.8</priority>
 </url>
-
 <url>
   <loc>https://github-laboratory.github.io/contact.html</loc>
   <priority>0.8</priority>
 </url>
-
 <url>
   <loc>https://github-laboratory.github.io/privacy_policy.html</loc>
   <priority>0.8</priority>
 </url>
-
 
 <!-- Utility -->
 <url>
   <loc>https://github-laboratory.github.io/utility/tips.html</loc>
   <priority>0.8</priority>
 </url>
-
 <url>
   <loc>https://github-laboratory.github.io/utility/monologue.html</loc>
   <priority>0.8</priority>
 </url>
-
 <url>
   <loc>https://github-laboratory.github.io/utility/glossary.html</loc>
   <priority>0.8</priority>
 </url>
-
-
-<!-- Category -->
-<url>
-  <loc>https://github-laboratory.github.io/category/c/c.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/cpp/cpp.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/cs/cs.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/java/java.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/kotlin/kotlin.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/python/python.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/perl/perl.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/htmlcss/htmlcss.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/javascript/javascript.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/android/android.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/unity/unity.html</loc>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://github-laboratory.github.io/category/ue/ue.html</loc>
-  <priority>0.8</priority>
-</url>
-
 
 <!-- Project -->
 <url>
@@ -109,13 +40,108 @@
   <priority>0.8</priority>
 </url>
 
+<!-- Category -->
+<url>
+  <loc>https://github-laboratory.github.io/category/c/c.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/cpp/cpp.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/cs/cs.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/java/java.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/kotlin/kotlin.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/python/python.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/perl/perl.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/htmlcss/htmlcss.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/javascript/javascript.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/android/android.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/unity/unity.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/ue/ue.html</loc>
+  <priority>0.8</priority>
+</url>
 
 
 <!-- Article -->
+
+<!-- Tips -->
+
+<!-- Programming Tool -->
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/compiler.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/interpreter.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/text_editor.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/ide.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/ideone.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Operating System -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/windows.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/mac_os.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/linux.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Virtualization Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/virtualbox.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/vmware.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Web Service -->
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/github.html</loc>
   <priority>0.6</priority>
@@ -124,31 +150,121 @@
   <loc>https://github-laboratory.github.io/utility/tips/github_pages.html</loc>
   <priority>0.6</priority>
 </url>
-<url>
-  <loc>https://github-laboratory.github.io/utility/tips/ideone.html</loc>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://github-laboratory.github.io/utility/tips/interpreter.html</loc>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://github-laboratory.github.io/utility/tips/linux.html</loc>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://github-laboratory.github.io/utility/tips/text_editor.html</loc>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://github-laboratory.github.io/utility/tips/virtualbox.html</loc>
-  <priority>0.6</priority>
-</url>
+
+<!-- Web Browser -->
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/web_browser.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/google_chrome.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/chromium.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/microsoft_edge.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/internet_explorer.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/firefox.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/tor_browser.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/opera.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/safari.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/android_standard_browser.html</loc>
+  <priority>0.6</priority>
+</url>
 
+<!-- Paint Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/paint.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/paint_3d.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/gimp.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/inkscape.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Office Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/microsoft_office.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/openoffice.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/libreoffice.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Capture Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/amarectv4_live.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/super_amareco.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Video Editing Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/aviutl.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Voice Editing Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/audacity.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Game Production Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/wolf_rpg_editor.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- 3D Modeling Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/blender.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/sculptris.html</loc>
+  <priority>0.6</priority>
+</url>
+
+
+<!-- monologue -->
 <url>
   <loc>https://github-laboratory.github.io/utility/monologue/1.html</loc>
   <priority>0.6</priority>
@@ -177,7 +293,23 @@
   <loc>https://github-laboratory.github.io/utility/monologue/7.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/monologue/8.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/monologue/9.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/monologue/10.html</loc>
+  <priority>0.6</priority>
+</url>
 
+
+<!-- Article -->
+
+<!-- C -->
 <url>
   <loc>https://github-laboratory.github.io/category/c/program/1_hello_world.html</loc>
   <priority>0.6</priority>
@@ -187,58 +319,69 @@
   <priority>0.6</priority>
 </url>
 
+<!-- C++ -->
 <url>
   <loc>https://github-laboratory.github.io/category/cpp/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- C# -->
 <url>
   <loc>https://github-laboratory.github.io/category/cs/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- Java -->
 <url>
   <loc>https://github-laboratory.github.io/category/java/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- Kotlin -->
 <url>
   <loc>https://github-laboratory.github.io/category/kotlin/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- Python -->
 <url>
   <loc>https://github-laboratory.github.io/category/python/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- Perl -->
 <url>
   <loc>https://github-laboratory.github.io/category/perl/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- HTML CSS -->
 <url>
   <loc>https://github-laboratory.github.io/category/htmlcss/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- JavaScript -->
 <url>
   <loc>https://github-laboratory.github.io/category/javascript/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- Android -->
 <url>
-  <loc>https://github-laboratory.github.io/category/android/program/1_hello_world.html</loc>
+  <loc>https://github-laboratory.github.io/category/android/program/1_introduction.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- Unity -->
 <url>
-  <loc>https://github-laboratory.github.io/category/unity/program/1_hello_world.html</loc>
+  <loc>https://github-laboratory.github.io/category/unity/program/1_introduction.html</loc>
   <priority>0.6</priority>
 </url>
 
+<!-- Unreal Engine -->
 <url>
-  <loc>https://github-laboratory.github.io/category/ue/program/1_dounyuu.html</loc>
+  <loc>https://github-laboratory.github.io/category/ue/program/1_introduction.html</loc>
   <priority>0.6</priority>
 </url>
 
