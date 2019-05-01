@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-133937032-1');
+		</script>
+
+	<title>C++入門[#2] - "C++の処理系" - 広告クリッカー</title>
+
+	<!-- Site Setting -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- Site Information -->
+	<meta name="description" content="C++入門　- 'C++の処理系' - C++を基礎から徹底的に解説！C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！">
+
+	<!-- Load Stylesheets -->
+	<link type="text/css" rel="stylesheet" href="/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/css/plus.css">
+
+	<!-- Fabicon -->
+	<link rel="icon" href="/imgs/pigcoin.ico" >
+
+</head>
+
+
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark" id="navigator">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar col-12">
+
+					<!-- Site Icon -->
+					<div class="col-3 text-left">
+						<button class="text-center" type="button">
+							<a href="/index.html">
+								<img src="/imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
+							</a>
+							<p>Home</p>
+						</button>
+					</div>
+
+					<!-- Site Logo -->
+					<div class="col-6 text-center mb-4">
+						<a href="/index.html">
+							<span class="logo">広告クリッカー</span>
+						</a>
+					</div>
+
+					<!-- Menu Bar -->
+					<div class="col-3 text-right" id="nav-drawer">
+						<input class="nav-unshown" id="nav-input" type="checkbox">
+
+						<!-- Menu Icon -->
+						<label class="text-center" id="nav-open" for="nav-input">
+							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+							<p>Menu</p>
+						</label>
+
+						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+						<!-- Contents -->
+						<div class="bg-dark p-3 mb-3" id="nav-content">
+
+							<!-- Menu -->
+							<ul class="navbar-nav ml-4 mr-auto text-left">
+
+								<li class="nav-item">
+									<a class="nav-link" href="/index.html">Home</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/about.html">About</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/contact.html">Contact</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+								</li>
+
+							</ul>
+
+							<!-- Utility Menu -->
+							<div class="p-3 mt-3">
+
+								<p class="text-center">Utility</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/utility/tips.html">
+											<img class="card-img" src="/imgs/icons/pigcoin.svg" alt="tips" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/monologue.html">
+											<img class="card-img" src="/imgs/icons/user.svg" alt="monologue" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/glossary.html">
+											<img class="card-img" src="/imgs/icons/file.svg" alt="glossary" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+							<!-- Programing Languages Selection Menu -->
+							<div class="p-3">
+
+								<p class="text-center">Languages</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/c/c.html">
+											<img class="card-img" src="/imgs/langs/c.svg" alt="lang_c" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cpp/cpp.html">
+											<img class="card-img card-active" src="/imgs/langs/cpp.svg" alt="lang_cpp" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cs/cs.html">
+											<img class="card-img" src="/imgs/langs/cs.svg" alt="lang_cs" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/java/java.html">
+											<img class="card-img" src="/imgs/langs/java.svg" alt="lang_java" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/kotlin/kotlin.html">
+											<img class="card-img" src="/imgs/langs/kotlin.svg" alt="lang_kotlin" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/python/python.html">
+											<img class="card-img" src="/imgs/langs/python.svg" alt="lang_python" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/perl/perl.html">
+											<img class="card-img" src="/imgs/langs/perl.svg" alt="lang_perl" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/htmlcss/htmlcss.html">
+											<img class="card-img" src="/imgs/langs/html.svg" alt="lang_html" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/javascript/javascript.html">
+											<img class="card-img" src="/imgs/langs/javascript.svg" alt="lang_javascript" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/android/android.html">
+											<img class="card-img" src="/imgs/langs/android.svg" alt="lang_android" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/unity/unity.html">
+											<img class="card-img" src="/imgs/langs/unity.svg" alt="lang_unity" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/ue/ue.html">
+											<img class="card-img" src="/imgs/langs/ue.svg" alt="lang_ue" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+		  
+				</nav>
+			</div>
+		</div>
+    </header>
+
+
+
+	<!-- AdMax Top -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/9f5c68d87fa32839c8a5044310e0d277"></script>
+	</div>
+
+
+
+	<!-- Langs Description -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+
+				<div class="col-12 col-md-10 col-lg-8 text-center my-3">
+					<img src="/imgs/langs/cpp.svg" alt="lang_cpp" class="img-fluid" width="100" height="100">
+				</div>
+
+				<div class="col-12 col-md-10 col-lg-8 text-center">
+					<h2 class="ribbon"><strong>C++</strong></h2>
+				</div>
+
+				<div class="col-12 text-center">
+					<h4>
+						#2 C++の処理系
+					</h4>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Breadcrumb -->
+	<section class="fdb-block">
+		<div class="container">
+			<ul class="breadcrumb">
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/index.html" itemprop="url">
+						<span itemprop="title">Home</span>
+					</a>
+				</li>
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/category/cpp/cpp.html" itemprop="url">
+						<span itemprop="title">C++</span>
+					</a>
+				</li>
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/category/cpp/program/2_processing_system.html" itemprop="url">
+						<span itemprop="title">#2</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</section>
+
+
+
+	<!-- AdMax middle -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
+	</div>
+
+
+
+	<!-- Text -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="caption2">
+						<h3>C++の処理系</h3>
+					</div>
+
+					<p class="lead">
+						<br>
+						ここに入力
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Code -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="code">
+
+						<span class="code-title">ここに入力.cpp</span>
+
+						<pre class="prettyprint linenums lead">
+								<code>
+ここに入力
+								</code>
+							</pre>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Text -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="caption2">
+						<h3>ソースコードの説明</h3>
+					</div>
+
+					<p class="lead">
+						<br>
+						ここに入力
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Pagination -->
+	<section class="fdb-block">
+		<div class="container">
+			<nav>
+				<ul class="pagination justify-content-between">
+					<li>
+						<a class="btn page-link rounded-pill" href="/category/cpp/program/1_hello_world.html">前の記事</a>
+					</li>
+
+					<li>
+						<a class="btn page-link rounded-pill" href="#">次の記事</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+
+
+	<!-- AdMax Bottom -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/fc6e5dbaed0774622e44a5b9473a322a"></script>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="fdb-block footer-small bg-dark">
+		<div class="container">
+			<div class="row text-center align-items-center">
+				<div class="col-12">
+
+					<ul class="nav justify-content-center">
+
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/about.html">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/contact.html">Contact</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+						</li>
+
+					</ul>
+    
+					<p class="h5 mt-5">© 2019 広告クリッカー</p>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Paga Top Button -->
+	<p id="pagetopbtn"><a href="#">▲ Page Top</a></p>
+
+
+
+	<!--Load Script-->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/popper.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/prettify.js"></script>
+		<script type="text/javascript">
+		$(function($){
+			prettyPrint();
+		});
+		</script>
+
+	<script type="text/javascript" src="/js/slider.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 5000,
+			});
+		});
+		</script>
+
+</body>
+
+</html>
+
+<!-- /category/cpp/program/2_processing_system.html -->
