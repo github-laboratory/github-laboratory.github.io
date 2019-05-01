@@ -315,7 +315,7 @@
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://github-laboratory.github.io/category/c/program/2_about_programming.html</loc>
+  <loc>https://github-laboratory.github.io/category/c/program/2_processing_system.html</loc>
   <priority>0.6</priority>
 </url>
 
@@ -324,10 +324,18 @@
   <loc>https://github-laboratory.github.io/category/cpp/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/category/cpp/program/2_processing_system.html</loc>
+  <priority>0.6</priority>
+</url>
 
 <!-- C# -->
 <url>
   <loc>https://github-laboratory.github.io/category/cs/program/1_hello_world.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/cs/program/2_processing_system.html</loc>
   <priority>0.6</priority>
 </url>
 
@@ -336,10 +344,18 @@
   <loc>https://github-laboratory.github.io/category/java/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/category/java/program/2_processing_system.html</loc>
+  <priority>0.6</priority>
+</url>
 
 <!-- Kotlin -->
 <url>
   <loc>https://github-laboratory.github.io/category/kotlin/program/1_hello_world.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/kotlin/program/2_processing_system.html</loc>
   <priority>0.6</priority>
 </url>
 
@@ -348,10 +364,18 @@
   <loc>https://github-laboratory.github.io/category/python/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/category/python/program/2_processing_system.html</loc>
+  <priority>0.6</priority>
+</url>
 
 <!-- Perl -->
 <url>
   <loc>https://github-laboratory.github.io/category/perl/program/1_hello_world.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/perl/program/2_processing_system.html</loc>
   <priority>0.6</priority>
 </url>
 
@@ -360,10 +384,18 @@
   <loc>https://github-laboratory.github.io/category/htmlcss/program/1_hello_world.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/category/htmlcss/program/2_processing_system.html</loc>
+  <priority>0.6</priority>
+</url>
 
 <!-- JavaScript -->
 <url>
   <loc>https://github-laboratory.github.io/category/javascript/program/1_hello_world.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/category/javascript/program/2_processing_system.html</loc>
   <priority>0.6</priority>
 </url>
 
