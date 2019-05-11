@@ -91,13 +91,54 @@
 </url>
 
 
+
 <!-- Article -->
 
 <!-- Tips -->
 
 <!-- Programming Tool -->
 <url>
+  <loc>https://github-laboratory.github.io/utility/tips/terminal.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/windows_terminal.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/shell.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/bash.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/zsh.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/csh.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/command_prompt.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/powershell.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/tera_term.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
   <loc>https://github-laboratory.github.io/utility/tips/compiler.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/gcc.html</loc>
   <priority>0.6</priority>
 </url>
 <url>
@@ -105,15 +146,63 @@
   <priority>0.6</priority>
 </url>
 <url>
+  <loc>https://github-laboratory.github.io/utility/tips/windows_subsystem_for_linux.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/windows_subsystem_for_linux_2.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/exewrap.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Text Editor -->
+<url>
   <loc>https://github-laboratory.github.io/utility/tips/text_editor.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/notepad.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/vim.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/emacs.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/notepad++.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/visual_studio_code.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/atom.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- IDE -->
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/ide.html</loc>
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://github-laboratory.github.io/utility/tips/ideone.html</loc>
+  <loc>https://github-laboratory.github.io/utility/tips/eclipse.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/visual_studio.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/jupyter_notebook.html</loc>
   <priority>0.6</priority>
 </url>
 
@@ -130,6 +219,47 @@
   <loc>https://github-laboratory.github.io/utility/tips/linux.html</loc>
   <priority>0.6</priority>
 </url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/chalet_os.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/zorin_os.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/elementary_os.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/pop!_os.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/ubuntu_mate.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/manjaro_linux.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/solus.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/chromium_os.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/google_chrome_os.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/android.html</loc>
+  <priority>0.6</priority>
+</url>
+
 
 <!-- Virtualization Software -->
 <url>
@@ -148,6 +278,34 @@
 </url>
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/github_pages.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/google_analytics.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/google_search_console.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/formspree.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/sitemap_xml_editor.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/ideone.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/visual_studio_online.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/firefox_send.html</loc>
   <priority>0.6</priority>
 </url>
 
@@ -173,7 +331,7 @@
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://github-laboratory.github.io/utility/tips/mozila_firefox.html</loc>
+  <loc>https://github-laboratory.github.io/utility/tips/mozilla_firefox.html</loc>
   <priority>0.6</priority>
 </url>
 <url>
@@ -217,11 +375,43 @@
   <priority>0.6</priority>
 </url>
 <url>
+  <loc>https://github-laboratory.github.io/utility/tips/microsoft_word.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/microsoft_excel.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/microsoft_powerpoint.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/microsoft_outlook.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/microsoft_onenote.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
   <loc>https://github-laboratory.github.io/utility/tips/openoffice.html</loc>
   <priority>0.6</priority>
 </url>
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/libreoffice.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/mozilla_thunderbird.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/cubepdf_page.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/cubepdf_imagepicker.html</loc>
   <priority>0.6</priority>
 </url>
 
