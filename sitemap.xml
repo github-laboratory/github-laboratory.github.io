@@ -146,11 +146,23 @@
   <priority>0.6</priority>
 </url>
 <url>
+  <loc>https://github-laboratory.github.io/utility/tips/mingw.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/cygwin.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
   <loc>https://github-laboratory.github.io/utility/tips/windows_subsystem_for_linux.html</loc>
   <priority>0.6</priority>
 </url>
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/windows_subsystem_for_linux_2.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/wine.html</loc>
   <priority>0.6</priority>
 </url>
 <url>
@@ -415,6 +427,12 @@
   <priority>0.6</priority>
 </url>
 
+<!-- Compression and Decompression Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/lhaplus.html</loc>
+  <priority>0.6</priority>
+</url>
+
 <!-- Capture Software -->
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/amarectv4_live.html</loc>
@@ -428,6 +446,20 @@
 <!-- Video Editing Software -->
 <url>
   <loc>https://github-laboratory.github.io/utility/tips/aviutl.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/shotcut.html</loc>
+  <priority>0.6</priority>
+</url>
+
+<!-- Video Repair Software -->
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/divfix++.html</loc>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://github-laboratory.github.io/utility/tips/hd_video_repair_utility.html</loc>
   <priority>0.6</priority>
 </url>
 
