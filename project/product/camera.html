@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133937032-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-133937032-1');
+		</script>
+
+	<title>Project - "カメラアプリ" - 広告クリッカー</title>
+
+	<!-- Site Setting -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- Site Information -->
+	<meta name="description" content="Project - 'カメラアプリ' - C言語,C++,C#,Java,Kotlin,Python,Perl,HTML&ampCSS,JavaScriptまで、各種プログラミング言語を丁寧に解説！">
+
+	<!-- Load Stylesheets -->
+	<link type="text/css" rel="stylesheet" href="/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/css/plus.css">
+
+	<!-- Fabicon -->
+	<link rel="icon" href="/imgs/pigcoin.ico" >
+
+</head>
+
+
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark" id="navigator">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar col-12">
+
+					<!-- Site Icon -->
+					<div class="col-3 text-left">
+						<button class="text-center" type="button">
+							<a href="/index.html">
+								<img src="/imgs/pigcoin.svg" width="30" height="30" alt="siteicon">
+							</a>
+							<p>Home</p>
+						</button>
+					</div>
+
+					<!-- Site Logo -->
+					<div class="col-6 text-center mb-4">
+						<a href="/index.html">
+							<span class="logo">広告クリッカー</span>
+						</a>
+					</div>
+
+					<!-- Menu Bar -->
+					<div class="col-3 text-right" id="nav-drawer">
+						<input class="nav-unshown" id="nav-input" type="checkbox">
+
+						<!-- Menu Icon -->
+						<label class="text-center" id="nav-open" for="nav-input">
+							<img src="/imgs/icons/setting.svg" width="30" height="30" alt="menuicon">
+							<p>Menu</p>
+						</label>
+
+						<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+						<!-- Contents -->
+						<div class="bg-dark p-3 mb-3" id="nav-content">
+
+							<!-- Menu -->
+							<ul class="navbar-nav ml-4 mr-auto text-left">
+
+								<li class="nav-item">
+									<a class="nav-link" href="/index.html">Home</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/about.html">About</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/contact.html">Contact</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+								</li>
+
+							</ul>
+
+							<!-- Utility Menu -->
+							<div class="p-3 mt-3">
+
+								<p class="text-center">Utility</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/utility/tips.html">
+											<img class="card-img" src="/imgs/icons/pigcoin.svg" alt="tips" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/monologue.html">
+											<img class="card-img" src="/imgs/icons/user.svg" alt="monologue" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/utility/glossary.html">
+											<img class="card-img" src="/imgs/icons/file.svg" alt="glossary" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+							<!-- Programing Languages Selection Menu -->
+							<div class="p-3">
+
+								<p class="text-center">Languages</p>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/c/c.html">
+											<img class="card-img" src="/imgs/langs/c.svg" alt="lang_c" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cpp/cpp.html">
+											<img class="card-img" src="/imgs/langs/cpp.svg" alt="lang_cpp" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/cs/cs.html">
+											<img class="card-img" src="/imgs/langs/cs.svg" alt="lang_cs" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/java/java.html">
+											<img class="card-img" src="/imgs/langs/java.svg" alt="lang_java" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/kotlin/kotlin.html">
+											<img class="card-img" src="/imgs/langs/kotlin.svg" alt="lang_kotlin" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/python/python.html">
+											<img class="card-img" src="/imgs/langs/python.svg" alt="lang_python" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/perl/perl.html">
+											<img class="card-img" src="/imgs/langs/perl.svg" alt="lang_perl" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/htmlcss/htmlcss.html">
+											<img class="card-img" src="/imgs/langs/html.svg" alt="lang_html" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/javascript/javascript.html">
+											<img class="card-img" src="/imgs/langs/javascript.svg" alt="lang_javascript" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+								<div class="card-group">
+
+									<div class="card">
+										<a href="/category/android/android.html">
+											<img class="card-img" src="/imgs/langs/android.svg" alt="lang_android" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/unity/unity.html">
+											<img class="card-img" src="/imgs/langs/unity.svg" alt="lang_unity" width="30" height="30">
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="/category/ue/ue.html">
+											<img class="card-img" src="/imgs/langs/ue.svg" alt="lang_ue" width="30" height="30">
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+		  
+				</nav>
+			</div>
+		</div>
+    </header>
+
+
+
+	<!-- AdMax -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
+	</div>
+
+
+
+	<!-- Langs Description -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+
+				<div class="col-12 col-md-10 col-lg-8 text-center my-3">
+					<img src="/imgs/icons/project.svg" class="img-fluid" width="100" height="100">
+				</div>
+
+				<div class="col-12 col-md-10 col-lg-8 text-center">
+					<h2 class="ribbon"><strong>Project</strong></h2>
+				</div>
+
+				<div class="col-12 text-center">
+					<h4>
+						カメラアプリ
+					</h4>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Breadcrumb -->
+	<section class="fdb-block">
+		<div class="container">
+			<ul class="breadcrumb">
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/index.html" itemprop="url">
+						<span itemprop="title">Home</span>
+					</a>
+				</li>
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/project/project.html" itemprop="url">
+						<span itemprop="title">Project</span>
+					</a>
+				</li>
+
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/project/product/camera.html" itemprop="url">
+						<span itemprop="title">カメラアプリ</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</section>
+
+
+
+	<!-- AdMax -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
+	</div>
+
+
+
+	<!-- Text -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="caption2">
+						<h3>カメラアプリについて</h3>
+					</div>
+
+					<p class="lead">
+						<br>
+						普通のカメラアプリと思いきや、カメラの音が犬の鳴き声になっています。
+						<br>
+						<br>
+						「カシャッ」が「ワン」ですね。
+						<br>
+						<br>
+						また、撮影した画像のランダムな位置に子犬が映り込みます。
+						<br>
+						<br>
+						（画像の中に迷い込んだ、という設定です）
+						<br>
+						<br>
+						...
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Text -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="caption2">
+						<h3>仕様について</h3>
+					</div>
+
+					<p class="lead">
+						<br>
+						当アプリのアルゴリズムについてご紹介したいと思います。
+						<br>
+						<br>
+						アプリの大枠自体は、通常のカメラアプリです。
+						<br>
+						<br>
+						しかし、撮影ボタンが押されると、通常のカメラの場合は撮影音が鳴りますよね。
+						<br>
+						<br>
+						そこを当アプリでは一旦撮影音を消音し、その後犬の鳴き声を再生させています。
+						<br>
+						<br>
+						このような面倒な構成になっている理由は、Androidシステムの仕組みにあります。
+						<br>
+						<br>
+						カメラアプリは通常、撮影ボタンを押すと特定の音楽ファイルを再生するようになっています。
+						<br>
+						<br>
+						この音楽ファイルを犬の鳴き声に置き換えれば良いのですが、そんな単純にはいかないのです。
+						<br>
+						<br>
+						Androidのシステムファイルは通常の使用では編集することができません。
+						<br>
+						<br>
+						編集を行うためには、Android端末をroot化する必要があります。
+						<br>
+						<br>
+						しかし、root化を行うと、メーカーのサポート対象外となるほか、システムファイルを間違って弄ってしまうなんてことがあると、そのスマホは文鎮と化します。
+						<br>
+						<br>
+						ものすごいリスクを伴うので、基本的にこの方法は使えません。
+						<br>
+						<br>
+						そこで、一般的な無音カメラと同じアルゴリズムを用いて撮影音を消音してから、その上で犬の鳴き声を収録した音楽ファイルを流しています。
+						<br>
+						<br>
+						また、撮影した画像に子犬が映り込むようにするシステムは、通常の撮影画像の上に切り抜いた子犬の画像を重ねることで実現しています。
+						<br>
+						<br>
+						映り込む子犬の画像には複数のパターンが存在し、まず各画像に対応する番号を乱数によってランダムに選択します。
+						<br>
+						<br>
+						その後、画面サイズを取得、ランダムに選ばれた子犬の画像の縦横の長さを取得して、子犬の画像を設置できる2次元座標を計算します。
+						<br>
+						<br>
+						この時、左上を原点(0,0)とします。
+						<br>
+						<br>
+						（例えば、画面の大きさが縦30, 横10の端末で、子犬の画像が縦2, 横5の大きさだとすると、座標は縦0-28, 横0-5の範囲ですね。）
+						<br>
+						<br>
+						この範囲のXとYを乱数で決定し、撮影後の画像に子犬を配置して上書き保存します。
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Text -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col text-left">
+
+					<div class="caption2">
+						<h3>ダウンロードはこちらから</h3>
+					</div>
+
+					<p class="lead">
+						<br>
+						Coming Soon...
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Page Back -->
+	<section class="fdb-block">
+		<div class="container">
+			<div class="text-center">
+				<a class="btn btn-outline-secondary" href="/project/project.html">戻る</a>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- AdMax -->
+	<div class="text-center">
+		<script src="//adm.shinobi.jp/o/ff67b8182e83e25cef8a87e0a923e1c1"></script>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="fdb-block footer-small bg-dark">
+		<div class="container">
+			<div class="row text-center align-items-center">
+				<div class="col-12">
+
+					<ul class="nav justify-content-center">
+
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/about.html">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/contact.html">Contact</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/privacy_policy.html">Privacy Policy</a>
+						</li>
+
+					</ul>
+    
+					<p class="h5 mt-5">© 2019 広告クリッカー</p>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Paga Top Button -->
+	<p id="pagetopbtn"><a href="#">▲ Page Top</a></p>
+
+
+
+	<!--Load Script-->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/popper.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/prettify.js"></script>
+		<script type="text/javascript">
+		$(function($){
+			prettyPrint();
+		});
+		</script>
+
+	<script type="text/javascript" src="/js/slider.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 5000,
+			});
+		});
+		</script>
+
+</body>
+
+</html>
+
+<!-- /project/product/camera.html -->
