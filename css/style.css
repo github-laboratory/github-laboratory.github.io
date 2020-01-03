@@ -9766,14 +9766,14 @@ code {
 
 /* -- notfound.css -- */
 
-.notfound h1 {
+.notfound h3 {
 	color: #364e96;
 	padding: 0.5em 0;
 	border-top: solid 3px #364e96;
 	border-bottom: solid 3px #364e96;
 }
 
-.notfound h3 {
+.notfound h4 {
 	color: #364e96;
 	padding: 0.5em 0;
 }
