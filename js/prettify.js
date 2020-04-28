@@ -1,11 +1,8 @@
+
 var DecorationsT;
-
 var JobT;
-
 var SourceSpansT;
-
 var IN_GLOBAL_SCOPE = true;
-
 var PR;
 
 var PR_SHOULD_USE_CONTINUATION = true
@@ -14,9 +11,7 @@ if (typeof window !== 'undefined') {
 }
 
 var prettyPrintOne;
-
 var prettyPrint;
-
 
 (function () {
 	var win = (typeof window !== 'undefined') ? window : {};
